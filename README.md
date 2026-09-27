@@ -1,6 +1,6 @@
 # Litebot Funpay Crack
-## Crack made by markiz
-### fixes were made by chi_za
+**Crack made by markiz**
+**fixes were made by chi_za**
 
 Крякнутая модификация популярного браузерного расширения **FunPayLiteBot** для торговой площадки FunPay.
 
