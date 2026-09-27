@@ -1,0 +1,1910 @@
+<style>
+    .button-container {
+        width: 180px;
+        margin-right: 14px;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        /* Flush with the content area's left edge so button rows line up
+           with the Account tab (whose host content has no gutter).
+           `.lb-field-label`, `.lb-input`, and `.lb-input-desc--field`
+           share this same left edge. */
+        margin-left: 0;
+    }
+
+    .lb-settings-block {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .lb-input {
+        margin-bottom: 0.2em;
+        padding-left: 0;
+        display: flex !important;
+        align-items: initial;
+    }
+
+    /* Checkbox rows pack a label, optional inline pills (НАСТРОЙКИ /
+       COMMUNITY), and the box itself onto one line. Default
+       align-items: stretch leaves the label-text baseline above the
+       pill centerline since the label box is taller than the pills.
+       Center every flex child in the row so the text and the pills
+       sit on the same vertical centerline. */
+    /* CR-EXT-041: the "you are on an old version" notice.
+
+       Colours come from the page's own --lb-* variables so every theme
+       (FunPay light, dark, firewatch, red_moon) paints it natively, with
+       literal fallbacks for the light default. The accent is a warm amber
+       left rail rather than a red alert: being a version behind is worth
+       noticing, not worth alarming anyone. */
+    .LB-update-banner {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        margin: 0 0 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--lb-surface-border, #d1d5db);
+        border-left: 3px solid #d08700;
+        border-radius: 8px;
+        background: var(--lb-surface, #fff);
+        color: var(--lb-surface-text, #1f2937);
+    }
+    .LB-update-banner[hidden] { display: none; }
+
+    .LB-update-banner-icon {
+        flex: none;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #d08700;
+    }
+
+    .LB-update-banner-text { min-width: 0; }
+
+    .LB-update-banner-title {
+        margin: 0 0 2px;
+        font-weight: 600;
+    }
+
+    .LB-update-banner-body {
+        margin: 0;
+        color: var(--lb-surface-muted, #6a7280);
+    }
+
+    .LB-update-banner-steps {
+        margin: 8px 0 0;
+        padding-left: 20px;
+        color: var(--lb-surface-muted, #6a7280);
+    }
+    .LB-update-banner-steps li { margin: 2px 0; }
+
+    /* CR-EXT-042: the release-notes list.
+
+       Same palette rules as the banner above - page variables first,
+       light-theme literals as the fallback - so the section paints
+       natively on all four themes. Releases are separated by a hairline
+       rather than by cards: the list is read top-down, and a stack of
+       boxes would fight that. */
+    .LB-changelog-list {
+        list-style: none;
+        margin: 14px 0 0;
+        padding: 0;
+    }
+
+    .LB-changelog-release {
+        padding: 0 0 16px;
+        margin: 0 0 16px;
+        border-bottom: 1px solid var(--lb-surface-border, #e5e7eb);
+    }
+    .LB-changelog-release:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .LB-changelog-release-head {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .LB-changelog-version {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* Marks the release the reader is actually running. Quiet on purpose:
+       it orients, it does not announce. */
+    .LB-changelog-installed {
+        font-size: 11px;
+        padding: 1px 7px;
+        border-radius: 999px;
+        border: 1px solid var(--lb-surface-border, #d1d5db);
+        color: var(--lb-surface-muted, #6a7280);
+        white-space: nowrap;
+    }
+
+    .LB-changelog-date {
+        font-size: 12px;
+        color: var(--lb-surface-muted, #6a7280);
+        margin-left: auto;
+    }
+
+    .LB-changelog-items {
+        list-style: none;
+        margin: 8px 0 0;
+        padding: 0;
+    }
+    .LB-changelog-items li {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        margin: 5px 0;
+        /* Matches .lb-input-desc, the caption under every setting on this
+           page. Without an explicit size these lines inherited FunPay's
+           body size and read a good deal larger than any other prose in
+           the panel. */
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    /* Fixed width so the lines start on one left edge whatever the tag
+       says - a ragged text column is what makes a changelog tiring. */
+    .LB-changelog-tag {
+        flex: none;
+        width: 82px;
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 2px 0;
+        border-radius: 4px;
+        border: 1px solid currentColor;
+        opacity: 0.85;
+    }
+    .LB-changelog-tag[data-type="added"]    { color: #2f8f4e; }
+    .LB-changelog-tag[data-type="improved"] { color: #1f6feb; }
+    .LB-changelog-tag[data-type="fixed"]    { color: #d08700; }
+    .LB-changelog-tag[data-type="removed"]  { color: #a1a1aa; }
+
+    /* Narrow: the tag becomes a lead-in word above its line instead of a
+       column, so the text keeps a usable width. */
+    @media (max-width: 520px) {
+        .LB-changelog-items li {
+            display: block;
+        }
+        .LB-changelog-tag {
+            display: inline-block;
+            width: auto;
+            padding: 2px 6px;
+            margin: 0 6px 3px 0;
+        }
+        .LB-changelog-date { margin-left: 0; }
+    }
+
+    /* CR-EXT-040: a setting that only does anything while its parent is
+       on. The indent is the whole signal - there is no disabled state,
+       because the parent can be switched off from anywhere and a stale
+       greyed-out box would lie. The description says the dependency in
+       words for anyone who reads rather than scans. */
+    .lb-input--nested,
+    .lb-input-desc--nested {
+        margin-left: 22px;
+    }
+
+    .lb-input.checkbox {
+        align-items: center;
+    }
+
+    /* One-line caption rendered directly under each setting. Replaces
+       the previous question-mark tooltip - easier to scan, no hover
+       required. The left padding (1.7em) lines the text up with the
+       checkbox label, not the box itself. */
+    /* Block-level label that sits directly above an input/select.
+       Mirrors the small uppercase caption used for "Привязанные
+       аккаунты" (.LB-linked-title in style.css) so all field labels
+       in the settings sections read the same way. */
+    .lb-field-label {
+        margin: 0 0 8px;
+        padding-left: 0;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--lb-surface-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        /* Inline pills (Community badge on the custom-background row)
+           ride next to the caption text. As a default-block paragraph
+           the pill sat on the text baseline and looked top-anchored.
+           Flex-centering keeps the pill on the caption's centerline;
+           flex-wrap lets long captions break naturally without
+           dragging the pill onto the next line at narrow widths. */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Inline row for select + adjacent action (e.g. notify-preview
+       play button). Stretch alignment keeps the select and the round
+       icon-button on the exact same height regardless of font metrics. */
+    .lb-notify-row {
+        display: flex !important;
+        align-items: stretch;
+        gap: 10px;
+        max-width: 380px;
+    }
+    .lb-notify-row .LB-select {
+        flex: 1 1 auto;
+        height: 40px;
+        padding: 0 36px 0 14px;
+        font-size: 14px;
+        line-height: 1;
+        color: var(--lb-surface-text, #1f2937);
+        background-color: var(--lb-surface, #fff);
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5L6 6.5L11 1.5' stroke='%236a7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        border: 1px solid var(--lb-surface-border, #d1d5db);
+        border-radius: 8px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        transition: border-color .15s ease, box-shadow .15s ease;
+    }
+    .lb-notify-row .LB-select:hover {
+        border-color: #0b76ef;
+    }
+    .lb-notify-row .LB-select:focus {
+        outline: none;
+        border-color: #0b76ef;
+        box-shadow: 0 0 0 3px rgba(11, 118, 239, 0.18);
+    }
+    .LB-notify-preview {
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        padding: 0 !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 8px;
+        background: #0b76ef;
+        color: #fff;
+        cursor: pointer;
+        line-height: 1 !important;
+        box-shadow: 0 1px 2px rgba(11, 118, 239, 0.25);
+        transition: background-color .15s ease, box-shadow .15s ease, transform .1s ease;
+    }
+    .LB-notify-preview:hover {
+        background: #0a66cc;
+        box-shadow: 0 2px 6px rgba(11, 118, 239, 0.35);
+    }
+    .LB-notify-preview:active {
+        transform: scale(0.96);
+    }
+    .LB-notify-preview:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(11, 118, 239, 0.35);
+    }
+    .LB-notify-preview.is-playing {
+        background: #ef4444;
+        box-shadow: 0 1px 2px rgba(239, 68, 68, 0.3);
+    }
+    .LB-notify-preview.is-playing:hover {
+        background: #dc2626;
+        box-shadow: 0 2px 6px rgba(239, 68, 68, 0.35);
+    }
+    .LB-notify-preview-icon {
+        display: inline-flex;
+        width: 14px;
+        height: 14px;
+    }
+    .LB-notify-preview-icon svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+        fill: currentColor;
+    }
+    .LB-notify-preview .LB-notify-preview-icon-stop { display: none; }
+
+    /* Soft horizontal rule used to separate UI clusters that look
+       different (e.g. select-row group above a checkbox group) inside
+       a single settings panel. Inherits the muted border colour so it
+       reads on both light and dark themes. */
+    .lb-section-divider {
+        margin: 18px 0 16px;
+        border: 0;
+        border-top: 1px solid var(--lb-surface-border, rgba(0, 0, 0, 0.08));
+    }
+
+    /* Inline tier pill rendered next to a setting name when that setting
+       requires a paid status. Mirrors `.LB-level` from the page header
+       (same gradient palette, same pill shape) but scaled down so it
+       reads as a tag rather than a primary badge. */
+    .LB-feature-pill {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 1px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #fff;
+        vertical-align: middle;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        /* The parent `.lb-input` is `display: flex; align-items: initial;`
+           - `initial` resolves to stretch, so flex children would balloon
+           vertically. Center the pill so it stays at its natural height. */
+        align-self: center;
+    }
+    .LB-feature-pill[data-tier="community"] {
+        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    }
+    /* Pro pill - gold gradient matching `.LB-level[data-tier="pro"]` and
+       `.LB-tariff-card[data-tier="pro"] .LB-tariff-name`. Without this
+       rule the pill renders with no background (transparent) since the
+       base `.LB-feature-pill` doesn't define one. */
+    .LB-feature-pill[data-tier="pro"] {
+        background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    }
+    /* Premium pill - red→violet, matching `.LB-level[data-tier="premium"]`
+       and `.LB-tariff-card[data-tier="premium"] .LB-tariff-name`. */
+    .LB-feature-pill[data-tier="premium"] {
+        background: linear-gradient(135deg, #ef4444 0%, #9333ea 100%);
+    }
+    .LB-feature-pill {
+        cursor: pointer;
+        transition: filter .12s ease, box-shadow .12s ease;
+    }
+    .LB-feature-pill:hover {
+        filter: brightness(1.08);
+        box-shadow: 0 3px 8px rgba(79, 70, 229, 0.35);
+    }
+    /* Per-tier hover shadow so the glow tint stays coherent with the
+       pill's background gradient. */
+    .LB-feature-pill[data-tier="pro"]:hover {
+        box-shadow: 0 3px 8px rgba(245, 158, 11, 0.35);
+    }
+    .LB-feature-pill[data-tier="premium"]:hover {
+        box-shadow: 0 3px 8px rgba(147, 51, 234, 0.35);
+    }
+
+    /* Blue gradient action pill rendered next to a setting label -
+       replaces the previous gear icon for "Fast messages" so the user
+       sees a clear "Open settings" CTA rather than a hard-to-spot icon.
+       Same dimensions as `.LB-feature-pill` so the row stays balanced. */
+    .LB-settings-badge {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 1px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #fff !important;
+        vertical-align: middle;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        cursor: pointer;
+        background: linear-gradient(135deg, #0b76ef 0%, #1d4ed8 100%);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: filter .12s ease, box-shadow .12s ease, transform .05s ease;
+        /* See note on `.LB-feature-pill align-self`. */
+        align-self: center;
+    }
+    .LB-settings-badge:hover {
+        filter: brightness(1.08);
+        box-shadow: 0 3px 8px rgba(11, 118, 239, 0.35);
+    }
+    .LB-settings-badge:active {
+        transform: translateY(1px);
+    }
+    .LB-notify-preview.is-playing .LB-notify-preview-icon-play { display: none; }
+    .LB-notify-preview.is-playing .LB-notify-preview-icon-stop { display: inline-flex; }
+
+    /* Custom-background dim slider. Compact one-liner under the
+       picker - label / track / value all 12px, the track is a 3px
+       rail with a small round thumb so it reads as a control, not
+       as another field heading. */
+    .lb-bg-dim-row {
+        display: none;
+        align-items: center;
+        gap: 10px;
+        margin: 4px 0 10px;
+        padding-left: 0;
+        font-size: 12px;
+        color: var(--lb-surface-muted);
+    }
+    .lb-bg-dim-row--visible {
+        display: flex;
+    }
+    .lb-bg-dim-row label {
+        margin: 0;
+        white-space: nowrap;
+    }
+    .lb-bg-dim-row input[type="range"] {
+        flex: 1;
+        max-width: 200px;
+        height: 4px;
+        margin: 0;
+        padding: 0;
+        background: var(--lb-surface-border, rgba(255, 255, 255, 0.18));
+        border-radius: 2px;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .lb-bg-dim-row input[type="range"]::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--lb-accent, #b388eb);
+        cursor: pointer;
+        border: none;
+    }
+    .lb-bg-dim-row input[type="range"]::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--lb-accent, #b388eb);
+        cursor: pointer;
+        border: none;
+    }
+    .lb-bg-dim-row .lb-bg-dim-value {
+        font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+        min-width: 2.5em;
+        text-align: right;
+        opacity: 0.8;
+    }
+
+    /* Variant used when the description sits directly under a
+       `.lb-field-label` (block-level field caption) rather than next
+       to a checkbox. Sits flush-left with the label instead of the
+       checkbox text gutter. */
+    .lb-input-desc--field {
+        padding-left: 0 !important;
+        margin: -4px 0 10px !important;
+    }
+    .lb-input-desc {
+        margin: 2px 0 14px;
+        padding-left: 31px;
+        /* `--lb-surface-muted` switches to a brighter grey on dark
+           themes (firewatch / red_moon / dark) - without it the
+           hardcoded #6a7280 was too close to the dark background and
+           captions became unreadable. */
+        color: var(--lb-surface-muted, #6a7280);
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* "Скрыто функций: N · Показать снова" under the hide-locked switch.
+       Shown only when the list is not empty, and to everyone: the switch
+       above it is plan-gated and a seller without a plan cannot move it, so
+       this is their only way to undo a dismissal. Lines up with the caption
+       above it rather than the checkbox. */
+    .lb-hidden-paywalls {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        margin: -8px 0 14px;
+        padding-left: 31px;
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--lb-surface-muted, #6a7280);
+    }
+    .lb-hidden-paywalls button {
+        padding: 0;
+        border: none;
+        background: none;
+        color: inherit;
+        font: inherit;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .lb-hidden-paywalls button:hover {
+        text-decoration: none;
+    }
+
+    .lb-input label {
+        padding-left: 0px !important;
+        font-size: 18px;
+    }
+
+    .lb-input select {
+        font-size: 16px;
+    }
+
+    /* The `.custom-checkbox` rules used to live here. They now sit in
+       content/static/style.css, which the manifest injects on EVERY
+       funpay.com page - the lot-export and bulk-edit modals need the same
+       checkbox and only this page had it. Same rules, one copy. */
+
+    .btn-save {
+        margin-top: 10px;
+    }
+
+    .notification {
+        position: fixed;
+        z-index: 5000;
+        font-size: 1.1em;
+        padding: 0.8em 1em !important;
+        margin: 0;
+        white-space: pre-line;
+        right: 64.5px;
+        top: 20px;
+        width: 350px;
+    }
+
+    .anim-out {
+        animation: hideBlock 1s linear backwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+
+    @keyframes hideBlock {
+        0% {
+            display: block;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .theme-select {
+        display: block;
+        cursor: pointer;
+        height: 38px;
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        background-image: none;
+        border: 1px solid;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    }
+
+    .theme-select option {
+        cursor: pointer;
+    }
+
+    /**
+    * Tooltip Styles
+    */
+
+    /* Add this attribute to the element that needs a tooltip */
+    [data-tooltip] {
+        position: relative;
+        z-index: 2;
+        cursor: help;
+    }
+
+    /* Hide the tooltip content by default */
+    [data-tooltip]:before,
+    [data-tooltip]:after {
+        visibility: hidden;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Position tooltip above the element */
+    [data-tooltip]:before {
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        margin-bottom: 5px;
+        margin-left: -99px;
+        padding: 7px;
+        width: 220px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #000;
+        background-color: hsla(0, 0%, 20%, 0.9);
+        color: #fff;
+        content: attr(data-tooltip);
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    /* Triangle hack to make tooltip look like a speech bubble */
+    [data-tooltip]:after {
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -5px;
+        width: 0;
+        border-top: 5px solid #000;
+        border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+    }
+
+    /* Show tooltip content on hover */
+    [data-tooltip]:hover:before,
+    [data-tooltip]:hover:after {
+        visibility: visible;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+    }
+
+    .question-img {
+        width: 18px;
+        margin-left: 5px;
+        vertical-align: initial;
+    }
+
+    .setting-img {
+        width: 18px;
+        margin-left: 5px;
+        vertical-align: initial;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .modal {
+        top: 15%;
+    }
+
+    .review-modal {
+        position: fixed;
+        font-size: 16px;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        font-family: Arial, sans-serif;
+        z-index: 1000;
+        padding: 15px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
+        border-image: initial;
+        border-radius: 8px;
+    }
+
+    .function-modal-overlay {
+        position: fixed;
+        z-index: 9999;
+        left: 0; top: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .function-modal {
+        border-radius: 4px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        max-width: 95vw;
+        min-width: 320px;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        animation: fadeIn 0.2s;
+    }
+
+    @media (max-width: 800px) {
+        .function-modal { width: 98vw; min-width: 0; }
+    }
+
+    .function-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 24px 18px 24px;
+    }
+
+    .function-modal-title {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .function-modal-close {
+        background: none;
+        border: none;
+        font-size: 2em;
+        line-height: 1;
+        cursor: pointer;
+        color: #888;
+    }
+    .function-modal-close:hover { color: #e74c3c; }
+
+    .function-modal-desc {
+        padding: 12px 24px 10px 24px;
+        color: #444;
+        font-size: 1em;
+    }
+
+    .function-modal-table-container {
+        padding: 0 24px;
+        overflow-x: auto;
+        margin-bottom: 24px;
+    }
+
+    .function-modal-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 12px;
+    }
+
+    .function-modal-table thead {
+        font-size: 16px;
+    }
+
+    .function-modal-textarea {
+        min-width: 200px;
+    }
+
+    .function-modal-table th, .function-modal-table td {
+        border: none;
+        padding: 8px 6px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .function-modal-table th {
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .modal-checkbox {
+        width: 18px !important;
+        height: 18px !important;
+        margin: 10px !important;
+        -webkit-appearance: auto !important;
+    }
+
+    .function-modal-select {
+        width: 80px;
+        font-size: 1em;
+        padding: 2px 4px;
+    }
+
+    .function-modal-delete {
+        margin-top: 4px;
+        background: none;
+        border: none;
+        font-size: 1.4em;
+        line-height: 1;
+        color: #888;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .function-modal-delete:hover {
+        color: #e74c3c;
+    }
+
+    /* ---------- Sidebar settings layout ---------- */
+
+    .LB-settings-layout {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .LB-settings-nav {
+        width: 220px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: sticky;
+        top: 16px;
+    }
+
+    .LB-settings-nav-btn {
+        text-align: left;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 6px;
+        background: transparent;
+        font-size: 16px;
+        cursor: pointer;
+        color: inherit;
+        line-height: 1.2;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .LB-settings-nav-btn:hover {
+        background: rgba(11, 118, 239, 0.08);
+    }
+
+    .LB-settings-nav-btn.is-active {
+        background: rgba(11, 118, 239, 0.14);
+        color: #0b76ef;
+        font-weight: 600;
+    }
+
+    .LB-settings-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .LB-settings-panel {
+        display: none;
+    }
+
+    .LB-settings-panel.is-active {
+        display: block;
+    }
+
+    /* Account section */
+    .LB-account-host {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 560px;
+    }
+
+    .LB-account-card {
+        border: 1px solid var(--lb-surface-border, rgba(0, 0, 0, 0.08));
+        border-radius: 8px;
+        padding: 16px 18px;
+        background: var(--lb-row-bg, rgba(11, 118, 239, 0.04));
+        color: var(--lb-surface-text, inherit);
+        cursor: pointer;
+        transition: filter .12s ease, box-shadow .12s ease, transform .05s ease;
+    }
+    .LB-account-card:hover {
+        filter: brightness(1.04);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+    .LB-account-card:active {
+        transform: translateY(1px);
+    }
+    .LB-account-card:focus-visible {
+        outline: 2px solid rgba(11, 118, 239, 0.45);
+        outline-offset: 2px;
+    }
+
+    /* Tier-coloured border + tinted background. Hues mirror the
+       `.LB-level[data-tier=...]` pill in the page header so the user
+       sees the same colour everywhere their plan is referenced. */
+    .LB-account-card[data-tier="basic"] {
+        border-color: rgba(107, 114, 128, 0.55);
+        background: linear-gradient(135deg, rgba(107, 114, 128, 0.10), rgba(156, 163, 175, 0.10));
+    }
+    .LB-account-card[data-tier="community"] {
+        border-color: rgba(79, 70, 229, 0.55);
+        background: linear-gradient(135deg, rgba(79, 70, 229, 0.10), rgba(124, 58, 237, 0.10));
+    }
+    /* Pro tints - amber border + warm wash. Mirrors the `.LB-level` and
+       `.LB-tariff-card` gold gradients so the user sees the same colour
+       wherever their plan is referenced. */
+    .LB-account-card[data-tier="pro"] {
+        border-color: rgba(245, 158, 11, 0.55);
+        background: linear-gradient(135deg, rgba(245, 158, 11, 0.10), rgba(239, 68, 68, 0.10));
+    }
+    /* Premium escalates past Pro's gold into a red→violet wash - mirrors
+       `.LB-level[data-tier="premium"]` and `.LB-tariff-card[data-tier="premium"]`
+       so the user sees the same premium colour wherever their plan appears. The
+       violet border signals "beyond Pro" vs Pro's amber. */
+    .LB-account-card[data-tier="premium"] {
+        border-color: rgba(147, 51, 234, 0.55);
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.10), rgba(147, 51, 234, 0.10));
+    }
+
+    .LB-account-card-title {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--lb-surface-muted, #6a7280);
+        margin-bottom: 6px;
+    }
+
+    .LB-account-card-plan {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .LB-account-card-meta {
+        margin-top: 6px;
+        color: var(--lb-surface-muted, #6a7280);
+        font-size: 14px;
+    }
+
+    .LB-account-empty {
+        padding: 18px 20px;
+        border: 1px dashed var(--lb-surface-border, rgba(0, 0, 0, 0.12));
+        border-radius: 8px;
+        background: var(--lb-row-bg, transparent);
+        color: var(--lb-surface-text, #4b5563);
+    }
+
+    .LB-account-empty .btn {
+        margin-top: 12px;
+    }
+
+    .LB-info-row {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        max-width: 560px;
+    }
+
+    .LB-info-row-label {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--lb-surface-muted, #6a7280);
+    }
+
+    .LB-info-row-value {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* Sits right under an `.lb-field-label` in the merged Info tab
+       (extension version row). Flush-left like the section header
+       above it so the version string aligns with the label, the
+       "Секретные чаги" buttons, and the "Сброс" button. Sized down
+       from the earlier .LB-info-row-value (18px/600) so it reads as
+       content beneath a caption, not its own heading. */
+    .lb-info-version-value {
+        margin: 0 0 8px;
+        padding-left: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--lb-surface-text, inherit);
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* Golden Key panel - sits in the Account tab below subscription /
+       linked accounts. Mimics an "API key" UI: read-only field with
+       Show / Copy controls and a destructive Revoke button below. */
+    .LB-golden-key-panel {
+        border: 1px solid var(--lb-surface-border, rgba(0, 0, 0, 0.08));
+        border-radius: 8px;
+        padding: 16px 18px;
+        /* Match `.LB-account-card` neutral tint instead of the amber wash -
+           panel reads as "another section on the page", not a warning. */
+        background: var(--lb-row-bg, rgba(11, 118, 239, 0.04));
+        color: var(--lb-surface-text, inherit);
+        max-width: 560px;
+    }
+
+    .LB-golden-key-title {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .LB-golden-key-desc {
+        margin: 0 0 12px;
+        color: var(--lb-surface-muted, #6a7280);
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .LB-golden-key-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .LB-golden-key-input {
+        flex: 1 1 240px;
+        min-width: 0;
+        padding: 8px 10px;
+        border: 1px solid var(--lb-surface-border, #d1d5db);
+        border-radius: 4px;
+        background: var(--lb-surface, #fff);
+        color: var(--lb-surface-text, #333);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 13px;
+    }
+
+    .LB-golden-key-input::placeholder {
+        font-family: inherit;
+        color: var(--lb-surface-muted, #9ca3af);
+        font-style: italic;
+    }
+
+    .LB-golden-key-btn {
+        padding: 6px 12px !important;
+        font-size: 13px !important;
+    }
+
+    .LB-golden-key-btn[disabled],
+    .LB-golden-key-revoke[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .LB-golden-key-revoke {
+        padding: 6px 12px !important;
+        font-size: 13px !important;
+        color: #b91c1c !important;
+        border-color: rgba(185, 28, 28, 0.3) !important;
+    }
+
+    .LB-golden-key-revoke:hover:not([disabled]) {
+        background: rgba(185, 28, 28, 0.08) !important;
+    }
+
+    /* Destructive action in the Info tab. Same red-outline treatment as
+       the Golden Key revoke button, at the default button size since it
+       sits in a `.buttons` strip like "Сброс настроек" above it. */
+    .LB-delete-account-btn {
+        color: #b91c1c !important;
+        border-color: rgba(185, 28, 28, 0.3) !important;
+    }
+
+    .LB-delete-account-btn:hover:not([disabled]) {
+        background: rgba(185, 28, 28, 0.08) !important;
+    }
+
+    .LB-delete-account-btn[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .LB-golden-key-confirm-buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+    }
+
+    .LB-custom-ai-panel {
+        border: 1px solid var(--lb-surface-border, rgba(0, 0, 0, 0.08));
+        border-radius: 8px;
+        padding: 18px 20px;
+        background: var(--lb-row-bg, rgba(11, 118, 239, 0.04));
+        color: var(--lb-surface-text, inherit);
+        max-width: 620px;
+    }
+    .lb-ai-field-group {
+        margin-bottom: 14px;
+    }
+    .lb-ai-input {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid var(--lb-surface-border, #d1d5db);
+        border-radius: 4px;
+        background: var(--lb-surface, #fff);
+        color: var(--lb-surface-text, #333);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+    .lb-ai-input:focus {
+        border-color: #0b76ef;
+        outline: none;
+    }
+    .lb-ai-key-wrapper {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .lb-ai-key-wrapper .lb-ai-input {
+        flex: 1;
+    }
+    .lb-ai-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+    .lb-ai-status-msg {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    .lb-ai-status-msg.success {
+        color: #166534;
+        background: rgba(22, 163, 74, 0.15);
+    }
+    .lb-ai-status-msg.error {
+        color: #991b1b;
+        background: rgba(185, 28, 28, 0.15);
+    }
+    .lb-ai-status-msg.loading {
+        color: #1e40af;
+        background: rgba(37, 99, 235, 0.15);
+    }
+
+    /* On narrow viewports the sidebar collapses into a horizontal
+       button strip above the content - sticky positioning is dropped
+       so it doesn't fight with mobile scrolling. */
+    @media (max-width: 760px) {
+        .LB-settings-layout {
+            flex-direction: column;
+            gap: 12px;
+        }
+        /* Wrapped grid of pills on top of the content. Avoids the
+           horizontal scroll-strip the previous version produced -
+           every category is reachable with one tap, no swipe. */
+        .LB-settings-nav {
+            width: auto;
+            position: static;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding-bottom: 4px;
+        }
+        .LB-settings-nav-btn {
+            flex: 0 0 auto;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        /* Action button rows in Links / Reset stack to full-width
+           buttons. The desktop fixed 180px width starts overflowing
+           at the bottom of small phones. */
+        .buttons {
+            margin-left: 0;
+        }
+        .button-container {
+            width: 100%;
+            margin-right: 0;
+        }
+        .button-container .btn {
+            width: 100%;
+        }
+
+        /* Settings rows: tighter left padding so checkbox label gets
+           the full content width. */
+        .lb-input {
+            padding-left: 0;
+        }
+        .lb-input-desc {
+            padding-left: 1.7em;
+        }
+        .lb-field-label {
+            padding-left: 0;
+        }
+
+        /* Account section hosts max-width: 560px which is fine, but
+           `.LB-golden-key-input` flex-basis 240px can leave very
+           little room for Copy/Revoke. Drop the basis on narrow. */
+        .LB-golden-key-input {
+            flex: 1 1 100%;
+        }
+    }
+</style>
+
+<!-- CR-EXT-041. Hidden until the backend says a newer version exists;
+     updateBanner.ts fills the version line and the steps. Above the tab
+     layout on purpose, so it is visible whichever section is open. -->
+<div class="LB-update-banner" id="LB-update-banner" role="status" hidden>
+    <span class="LB-update-banner-icon" aria-hidden="true">⬆</span>
+    <div class="LB-update-banner-text">
+        <p class="LB-update-banner-title">{updateBannerTitle}</p>
+        <p class="LB-update-banner-body" id="LB-update-banner-body"></p>
+        <ol class="LB-update-banner-steps" id="LB-update-banner-steps"></ol>
+    </div>
+</div>
+
+<div class="LB-settings-layout">
+    <aside class="LB-settings-nav" role="tablist" aria-label="Settings categories">
+        <button type="button" class="LB-settings-nav-btn is-active" role="tab" data-section="account">👤 {settingsCategoryAccount}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="theme">⭐️ {settingTheme}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="customization">🎨 {settingsCategoryCustomization}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="offers">📒 {settingOffers}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="messages">💬 {messages}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="notifications">🔔 {settingsCategoryNotifications}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="purchases">🛒 {purchases}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="sales">💲 {sales}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="finances">💰 {finances}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="reviews">⭐ {settingsCategoryReviews}</button>
+
+        <!-- "Прочее" (general) category temporarily removed - its only setting moved to "Финансы".
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="general">⚡️ {settingOther}</button>
+        -->
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="api">🔑 {settingsCategoryApi}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="changelog">🆕 {settingsCategoryChangelog}</button>
+        <button type="button" class="LB-settings-nav-btn" role="tab" data-section="info">ℹ️ {settingsCategoryInfo}</button>
+    </aside>
+
+    <section class="LB-settings-content">
+
+        <div class="LB-settings-panel is-active" data-section="account" role="tabpanel">
+            <div class="LB-account-host"></div>
+        </div>
+
+        <div class="LB-settings-panel" data-section="theme" role="tabpanel">
+            <p class="lb-field-label">{settingThemeChoice}</p>
+            <div class="lb-input checkbox">
+                <select class="theme-select js-theme-select">
+                    <option value="light">{settingThemeLight}</option>
+                    <option value="dark">{settingThemeDark}</option>
+                    <option value="firewatch">{settingThemeFirewatch}</option>
+                    <option value="red_moon">Red Moon</option>
+                </select>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <p class="lb-field-label">
+                {settingThemeCustomBackground}
+                <span data-feature-pill="community"></span>
+            </p>
+            <p class="lb-input-desc lb-input-desc--field">{settingThemeCustomBackgroundDesc}</p>
+            <div class="lb-input">
+                <button type="button" class="btn btn-default" id="LB-theme-bg-pick">{settingThemeChooseImage}</button>
+                <button type="button" class="btn btn-danger" id="LB-theme-bg-clear" style="display: none; margin-left: 6px;">{settingThemeRemoveImage}</button>
+            </div>
+            <!-- Static "Set image" feedback container (id retained so wireCustomBackground.ts
+                 can find it; description text now lives in the lb-input-desc--field above). -->
+            <p class="lb-input-desc" id="LB-theme-bg-status" style="display: none;"></p>
+            <p class="lb-input-desc" id="LB-theme-bg-filename" style="display: none; padding-left: 0; font-family: monospace; font-size: 11px; opacity: 0.7;"></p>
+            <div class="lb-bg-dim-row" id="LB-theme-bg-dim-row">
+                <label for="LB-theme-bg-dim">{settingThemeCustomBackgroundDim}</label>
+                <input type="range" id="LB-theme-bg-dim" min="0" max="100" step="1" value="25">
+                <span id="LB-theme-bg-dim-value" class="lb-bg-dim-value">25%</span>
+            </div>
+        </div>
+
+        <div class="LB-settings-panel" data-section="customization" role="tabpanel">
+            <!-- The host renders the nickname-style block, which ends with
+                 "Скрывать стили ников" and its caption. Privacy mode sits after
+                 it: both are about hiding things from other people's eyes, so
+                 they read as a pair. -->
+            <div class="LB-customization-host"></div>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="privacyMode" id="privacyMode">
+                    <span>{settingsPrivacyMode}</span>
+                </label>
+                <span data-feature-pill="community"></span>
+            </div>
+            <p class="lb-input-desc">{settingsPrivacyModeDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="hideLockedFeatures" id="hideLockedFeatures">
+                    <span>{settingsHideLockedFeatures}</span>
+                </label>
+                <span data-feature-pill="community"></span>
+            </div>
+            <p class="lb-input-desc">{settingsHideLockedFeaturesDesc}</p>
+
+            <div class="lb-hidden-paywalls" id="LB-hidden-paywalls" style="display: none;">
+                <span id="LB-hidden-paywalls-count"></span>
+                <button type="button" id="LB-hidden-paywalls-reset">{settingsHiddenPaywallsReset}</button>
+            </div>
+        </div>
+
+        <div class="LB-settings-panel" data-section="offers" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="autoUp" id="autoUp">
+                    <span>{settingOfferAutoRaise}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{settingOfferAutoRaiseDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="raiseNotifications" id="raiseNotifications">
+                    <span>{raiseNotifications}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{raiseNotificationsDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="viewSellersPromo" id="viewSellersPromo">
+                    <span>{settingViewSellersPromo}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{settingViewSellersPromoDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="customPrices" id="customPrices">
+                    <span>{settingExactPrice}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{settingExactPriceDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="lotManagementPanel" id="lotManagementPanel">
+                    <span>{lotManagementPanel}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{lotManagementPanelDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="enableLotTranslate" id="enableLotTranslate">
+                    <span>{enableLotTranslate}</span>
+                </label>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{enableLotTranslateDesc}</p>
+
+            <!-- No caption, no description and no pill of its own: the two
+                 options say what they do, and this is a mode of the setting
+                 named, described and badged directly above rather than a
+                 feature in its own right (it resolves to the same
+                 lot_translate_en entitlement). Same 31px indent as the
+                 withdrawal-commission select under "Себестоимость лотов",
+                 which puts it on the left edge of the description above it. -->
+            <div class="lb-input checkbox" style="padding-left: 31px;">
+                <select class="theme-select LB-select" name="autoTranslateOnSave" id="autoTranslateOnSave">
+                    <option value="button">{autoTranslateModeButton}</option>
+                    <option value="auto">{autoTranslateModeAuto}</option>
+                </select>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showRealLotPrices" id="showRealLotPrices">
+                    <span>{showRealLotPrices}</span>
+                </label>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{showRealLotPricesDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <!-- CR-EXT-043 -->
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="bulkLotEdit" id="bulkLotEdit">
+                    <span>{bulkLotEdit}</span>
+                </label>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{bulkLotEditDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <!-- CR-EXT-044 -->
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="lotAiGenerate" id="lotAiGenerate">
+                    <span>{lotAiGenerate}</span>
+                </label>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{lotAiGenerateDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showSectionCommission" id="showSectionCommission">
+                    <span>{showSectionCommission}</span>
+                </label>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{showSectionCommissionDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="lotCostPrice" id="lotCostPrice">
+                    <span>{lotCostPrice}</span>
+                </label>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{lotCostPriceDesc}</p>
+
+            <div class="lb-input checkbox" style="padding-left: 31px;">
+                <select class="theme-select LB-select" name="withdrawalCommission" id="withdrawalCommission">
+                    <option value="3">{costPriceWithdrawalCommission} 3%</option>
+                    <option value="6">{costPriceWithdrawalCommission} 6%</option>
+                </select>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <!-- CR-EXT-045 -->
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="lotTransfer" id="lotTransfer">
+                    <span>{lotTransfer}</span>
+                </label>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{lotTransferDesc}</p>
+
+        </div>
+
+        <div class="LB-settings-panel" data-section="messages" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="fastMessages" id="fastMessages">
+                    <span>{settingsFastMessages}</span>
+                </label>
+                <a class="pointer LB-settings-badge">{fastMessagesSettingsButton}</a>
+                <span data-feature-pill="community"></span>
+            </div>
+            <p class="lb-input-desc">{settingsFastMessagesDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="welcomeMessageEnabled" id="welcomeMessageEnabled">
+                    <span>{welcomeMessageTitle}</span>
+                </label>
+                <a class="pointer LB-settings-badge LB-welcome-settings-badge">{welcomeMessageSettings}</a>
+                <span data-feature-pill="pro"></span>
+            </div>
+            <p class="lb-input-desc">{welcomeMessageDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="autoReplyEnabled" id="autoReplyEnabled">
+                    <span>{autoReplyTitle}</span>
+                </label>
+                <a class="pointer LB-settings-badge LB-autoreply-settings-badge">{autoReplySettings}</a>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{autoReplyDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="orderConfirmReplyEnabled" id="orderConfirmReplyEnabled">
+                    <span>{orderConfirmReplyTitle}</span>
+                </label>
+                <a class="pointer LB-settings-badge LB-orderconfirm-settings-badge">{orderConfirmReplySettings}</a>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{orderConfirmReplyDesc}</p>
+        </div>
+
+        <div class="LB-settings-panel" data-section="notifications" role="tabpanel">
+            <p class="lb-field-label">{settingCustomNotification}</p>
+            <p class="lb-input-desc lb-input-desc--field">{settingCustomNotificationDesc}</p>
+            <div class="lb-input lb-notify-row">
+                <select class="theme-select LB-select" name="customNotify" id="customNotify">
+                    <option value="default">{customNotifyOptionDefault}</option>
+                    <option value="vk">VK</option>
+                    <option value="custom">{customNotifyOptionCustom}</option>
+                    <!--
+                    <option value="discord">Discord</option>
+                    <option value="telegram">Telegram</option>
+                    <option value="imessage">iMessage</option>
+                    <option value="cash_register">{customNotifyOptionCashRegister}</option>
+                    <option value="coin">{customNotifyOptionCoin}</option>
+                    <option value="chime">{customNotifyOptionChime}</option>
+                    <option value="bell">{customNotifyOptionBell}</option>
+                    <option value="pop">{customNotifyOptionPop}</option>
+                    -->
+                </select>
+                <button type="button" class="LB-notify-preview"
+                        id="LB-notify-preview"
+                        title="{customNotifyPreviewTitle}"
+                        aria-label="{customNotifyPreviewTitle}">
+                    <span class="LB-notify-preview-icon LB-notify-preview-icon-play" aria-hidden="true">
+                        <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3 1.8v10.4c0 .7.8 1.1 1.4.7l8.2-5.2c.5-.3.5-1.1 0-1.4L4.4 1.1C3.8.7 3 1.1 3 1.8z"/></svg>
+                    </span>
+                    <span class="LB-notify-preview-icon LB-notify-preview-icon-stop" aria-hidden="true">
+                        <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="9" height="9" rx="1.5"/></svg>
+                    </span>
+                </button>
+            </div>
+
+            <div id="LB-notify-upload-row" style="display: none;">
+                <p class="lb-field-label">{customNotifyOptionCustom}</p>
+                <div class="lb-input">
+                    <button type="button" class="btn btn-default" id="LB-notify-sound-pick">{settingCustomNotifyChooseFile}</button>
+                    <button type="button" class="btn btn-danger" id="LB-notify-sound-clear" style="display: none; margin-left: 6px;">{settingThemeRemoveImage}</button>
+                    <span data-feature-pill="pro"></span>
+                </div>
+                <p class="lb-input-desc" id="LB-notify-sound-status" style="display: none; padding-left: 0;"></p>
+                <p class="lb-input-desc" id="LB-notify-sound-filename" style="display: none; padding-left: 0; margin-top: 8px; font-family: monospace; font-size: 12px; opacity: 0.8;"></p>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <p class="lb-field-label">{settingOrderSound}</p>
+            <p class="lb-input-desc lb-input-desc--field">{settingOrderSoundDesc}</p>
+            <div class="lb-input lb-notify-row">
+                <select class="theme-select LB-select" name="orderSound" id="orderSound">
+                    <option value="off">{orderSoundOptionOff}</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="custom">{customNotifyOptionCustom}</option>
+                    <!--
+                    <option value="discord">Discord</option>
+                    <option value="telegram">Telegram</option>
+                    <option value="imessage">iMessage</option>
+                    <option value="cash_register">{customNotifyOptionCashRegister}</option>
+                    <option value="coin">{customNotifyOptionCoin}</option>
+                    <option value="chime">{customNotifyOptionChime}</option>
+                    <option value="bell">{customNotifyOptionBell}</option>
+                    <option value="pop">{customNotifyOptionPop}</option>
+                    -->
+                </select>
+                <button type="button" class="LB-notify-preview"
+                        id="LB-order-sound-preview"
+                        title="{customNotifyPreviewTitle}"
+                        aria-label="{customNotifyPreviewTitle}">
+                    <span class="LB-notify-preview-icon LB-notify-preview-icon-play" aria-hidden="true">
+                        <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3 1.8v10.4c0 .7.8 1.1 1.4.7l8.2-5.2c.5-.3.5-1.1 0-1.4L4.4 1.1C3.8.7 3 1.1 3 1.8z"/></svg>
+                    </span>
+                    <span class="LB-notify-preview-icon LB-notify-preview-icon-stop" aria-hidden="true">
+                        <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="9" height="9" rx="1.5"/></svg>
+                    </span>
+                </button>
+                <span data-feature-pill="pro"></span>
+            </div>
+
+            <div id="LB-order-sound-upload-row" style="display: none;">
+                <p class="lb-field-label">{customNotifyOptionCustom}</p>
+                <div class="lb-input">
+                    <button type="button" class="btn btn-default" id="LB-order-sound-pick">{settingCustomNotifyChooseFile}</button>
+                    <button type="button" class="btn btn-danger" id="LB-order-sound-clear" style="display: none; margin-left: 6px;">{settingThemeRemoveImage}</button>
+                    <span data-feature-pill="pro"></span>
+                </div>
+                <p class="lb-input-desc" id="LB-order-sound-status" style="display: none; padding-left: 0;"></p>
+                <p class="lb-input-desc" id="LB-order-sound-filename" style="display: none; padding-left: 0; margin-top: 8px; font-family: monospace; font-size: 12px; opacity: 0.8;"></p>
+            </div>
+        </div>
+
+        <div class="LB-settings-panel" data-section="purchases" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showPurchasesStats" id="showPurchasesStats">
+                    <span>{showPurchasesStats}</span>
+                </label>
+                <span data-feature-pill="community"></span>
+            </div>
+            <p class="lb-input-desc">{showPurchasesStatsDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="exportPurchases" id="exportPurchases">
+                    <span>{exportPurchasesEnable}<span data-feature-pill="pro"></span></span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{exportPurchasesEnableDesc}</p>
+        </div>
+
+        <div class="LB-settings-panel" data-section="sales" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showSalesStats" id="showSalesStats">
+                    <span>{showSalesStats}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{showSalesStatsDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="quickCopyOrderId" id="quickCopyOrderId">
+                    <span>{quickCopyOrderId}</span>
+                </label>
+                <span data-feature-pill="community"></span>
+            </div>
+            <p class="lb-input-desc">{quickCopyOrderIdDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="exportSales" id="exportSales">
+                    <span>{exportSalesEnable}<span data-feature-pill="pro"></span></span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{exportSalesEnableDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showUnconfirmedSales" id="showUnconfirmedSales">
+                    <span>{showUnconfirmedSales}<span data-feature-pill="pro"></span></span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{showUnconfirmedSalesDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="supportConfirmTickets" id="supportConfirmTickets">
+                    <span>{supportConfirmTickets}<span data-feature-pill="pro"></span></span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{supportConfirmTicketsDesc}</p>
+        </div>
+
+        <div class="LB-settings-panel" data-section="finances" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="showFinancesStats" id="showFinancesStats">
+                    <span>{showFinancesStats}</span>
+                </label>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{showFinancesStatsDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="exportFinances" id="exportFinances">
+                    <span>{exportFinancesEnable}<span data-feature-pill="premium"></span></span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{exportFinancesEnableDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="hideBalance" id="hideBalance">
+                    <span>{settingsHideBalance}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{settingsHideBalanceDesc}</p>
+        </div>
+
+        <div class="LB-settings-panel" data-section="reviews" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="reviewReplyEnabled" id="reviewReplyEnabled">
+                    <span>{reviewReplyTitle}</span>
+                </label>
+                <a class="pointer LB-settings-badge LB-review-settings-badge">{reviewReplySettings}</a>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{reviewReplyDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="aiReviewReplyEnabled" id="aiReviewReplyEnabled">
+                    <span>{aiReviewReplyTitle}</span>
+                </label>
+                <a class="pointer LB-settings-badge LB-aireview-settings-badge">{aiReviewReplySettings}</a>
+                <span data-feature-pill="premium"></span>
+            </div>
+            <p class="lb-input-desc">{aiReviewReplyDesc}</p>
+
+            <hr class="lb-section-divider" />
+
+            <p class="lb-input-desc lb-input-desc--field">{reviewsRatingLimitsDesc}</p>
+            <div class="buttons">
+                <div class="button-container">
+                    <a href="https://funpay.com/sras/info" target="_blank" rel="noopener">
+                        <button type="button" class="btn btn-default">
+                            {reviewsRatingLimitsButton}
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- "Прочее" (general) category temporarily removed. Its only setting,
+             "Скрыть отображение баланса" (hideBalance), moved to the "Финансы"
+             (finances) panel above. Restore this panel + its nav button when the
+             category gets more settings.
+        <div class="LB-settings-panel" data-section="general" role="tabpanel">
+            <div class="lb-input checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="LB" name="hideBalance" id="hideBalance">
+                    <span>{settingsHideBalance}</span>
+                </label>
+            </div>
+            <p class="lb-input-desc">{settingsHideBalanceDesc}</p>
+        </div>
+        -->
+
+        <div class="LB-settings-panel" data-section="api" role="tabpanel">
+            <div class="LB-custom-ai-panel">
+                <div class="LB-golden-key-title" style="font-size: 16px; margin-bottom: 6px;">Настройки искусственного интеллекта (API)</div>
+                <p class="LB-golden-key-desc" style="margin-bottom: 14px;">
+                    Подключите любой OpenAI-совместимый API (OpenAI, OpenRouter, DeepSeek, Groq, локальный Ollama и др.). Все функции нейросети (генерация лотов в редакторе, автоответчик на отзывы) будут использовать введённые настройки.
+                </p>
+
+                <div class="lb-ai-presets" style="margin-bottom: 14px;">
+                    <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--lb-surface-muted, #6a7280);">БЫСТРЫЕ ШАБЛОНЫ (ПРЕСЕТЫ):</div>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button type="button" class="btn btn-default lb-ai-preset-btn" data-url="https://api.deepseek.com/v1" data-model="deepseek-chat" style="padding: 4px 10px; font-size: 12px;">⚡ DeepSeek (работает в РФ без VPN)</button>
+                        <button type="button" class="btn btn-default lb-ai-preset-btn" data-url="https://api.openai.com/v1" data-model="gpt-4o-mini" style="padding: 4px 10px; font-size: 12px;">OpenAI (требуется VPN)</button>
+                        <button type="button" class="btn btn-default lb-ai-preset-btn" data-url="https://api.proxyapi.ru/openai/v1" data-model="gpt-4o-mini" style="padding: 4px 10px; font-size: 12px;">ProxyAPI (РФ шлюз)</button>
+                        <button type="button" class="btn btn-default lb-ai-preset-btn" data-url="http://localhost:11434/v1" data-model="llama3" style="padding: 4px 10px; font-size: 12px;">Ollama (локально)</button>
+                    </div>
+                </div>
+
+                <div style="background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 6px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; line-height: 1.5;">
+                    ⚠️ <b>Если у вас «signal timed out» или ошибка сети:</b><br>
+                    Официальный сервер OpenAI (<code>api.openai.com</code>) заблокирован в РФ и не отвечает без включённого VPN.<br>
+                    Если у вас нет VPN, используйте <b>DeepSeek</b> (нажмите кнопку шаблона выше — он работает напрямую в РФ, дешёвый и выдаёт отличное качество) или российский прокси (ProxyAPI, VseGPT).
+                </div>
+
+                <div class="lb-ai-field-group">
+                    <label class="lb-field-label" for="LB-ai-base-url" style="font-weight: 600; display: block; margin-bottom: 4px;">Base URL</label>
+                    <p class="lb-input-desc lb-input-desc--field" style="margin-bottom: 6px;">Базовый адрес API (по умолчанию: <code>https://api.openai.com/v1</code>):</p>
+                    <input type="text" id="LB-ai-base-url" class="lb-ai-input" placeholder="https://api.openai.com/v1" spellcheck="false" autocomplete="off">
+                </div>
+
+                <div class="lb-ai-field-group">
+                    <label class="lb-field-label" for="LB-ai-api-key" style="font-weight: 600; display: block; margin-bottom: 4px;">API Key</label>
+                    <p class="lb-input-desc lb-input-desc--field" style="margin-bottom: 6px;">Секретный ключ API:</p>
+                    <div class="lb-ai-key-wrapper">
+                        <input type="password" id="LB-ai-api-key" class="lb-ai-input" placeholder="sk-..." spellcheck="false" autocomplete="off">
+                        <button type="button" id="LB-ai-key-toggle" class="btn btn-default" title="Показать/скрыть ключ" style="padding: 6px 12px;">👁</button>
+                    </div>
+                </div>
+
+                <div class="lb-ai-field-group">
+                    <label class="lb-field-label" for="LB-ai-model" style="font-weight: 600; display: block; margin-bottom: 4px;">Model</label>
+                    <p class="lb-input-desc lb-input-desc--field" style="margin-bottom: 6px;">Имя модели (например: <code>gpt-4o-mini</code>, <code>deepseek-chat</code>, <code>gpt-4o</code>):</p>
+                    <input type="text" id="LB-ai-model" class="lb-ai-input" placeholder="gpt-4o-mini" spellcheck="false" autocomplete="off">
+                </div>
+
+                <div class="lb-ai-actions">
+                    <button type="button" id="LB-ai-save-btn" class="btn btn-primary" style="padding: 7px 16px;">Сохранить настройки</button>
+                    <button type="button" id="LB-ai-test-btn" class="btn btn-default" style="padding: 7px 16px;">Проверить подключение</button>
+                    <span id="LB-ai-status" class="lb-ai-status-msg" style="display: none;"></span>
+                </div>
+            </div>
+
+            <hr class="lb-section-divider" style="margin: 24px 0 20px 0;" />
+
+            <div class="LB-api-host"></div>
+        </div>
+
+        <!-- CR-EXT-042. Filled by changelogSection.ts from the backend, on
+             first open rather than on page load. Ships empty: the status
+             line carries every state the section can be in (loading, and
+             "nothing to show"), so an unreachable backend leaves a sentence
+             rather than a blank panel. -->
+        <div class="LB-settings-panel" data-section="changelog" role="tabpanel">
+            <p class="lb-field-label">{changelogHeading}</p>
+            <p class="lb-input-desc lb-input-desc--field">{changelogDesc}</p>
+            <!-- Hidden with `display`, not `hidden`: this markup lands inside a
+                 FunPay page that brings its own CSS, and any author rule for `p`
+                 would out-rank the user agent's `[hidden] { display: none }`.
+                 #LB-theme-bg-status above is hidden the same way. -->
+            <p class="lb-input-desc lb-input-desc--field" id="LB-changelog-status" style="display: none;"></p>
+            <div id="LB-changelog-host"></div>
+        </div>
+
+        <!-- "Info" merged: Secret chats, Settings reset, Extension version.
+             Three smaller subsections separated by .lb-section-divider. -->
+        <div class="LB-settings-panel" data-section="info" role="tabpanel">
+            <p class="lb-field-label">{secretChats}</p>
+            <div class="buttons">
+                <div class="button-container">
+                    <a href="https://t.me/fplite" target="_blank" rel="noopener">
+                        <button type="button" class="btn btn-default">
+                            {settingsChatLinkTitle}
+                        </button>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="https://t.me/FunPayComNews" target="_blank" rel="noopener">
+                        <button type="button" class="btn btn-default">
+                            {settingsChannelLinkTitle}
+                        </button>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="https://dsc.gg/funpaycom" target="_blank" rel="noopener">
+                        <button type="button" class="btn btn-default">
+                            {settingsDiscordLinkTitle}
+                        </button>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="https://t.me/NightStrang6r" target="_blank" rel="noopener">
+                        <button type="button" class="btn btn-default">
+                            {settingsHelpLinkTitle}
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <p class="lb-field-label">{settingReset}</p>
+            <div class="buttons">
+                <div class="button-container">
+                    <button type="button" class="btn btn-default js-settings-reset">
+                        {settingsReset}
+                    </button>
+                </div>
+            </div>
+
+            <hr class="lb-section-divider" />
+
+            <div class="LB-account-id-section" hidden>
+                <p class="lb-field-label">{accountIdLabel}</p>
+                <p class="lb-info-version-value" id="LB-account-id-value"></p>
+                <hr class="lb-section-divider" />
+            </div>
+
+            <p class="lb-field-label">{infoVersionLabel}</p>
+            <p class="lb-info-version-value" id="LB-info-version-value"></p>
+
+            <!-- Account deletion. Hidden while signed out (nothing to delete) and
+                 shown by deleteAccountSection.ts on the first auth state it sees.
+                 The "blocked" line is hidden with `display`, not `hidden`, for the
+                 same reason as #LB-changelog-status above: FunPay's own CSS ships
+                 author rules for `p` that out-rank the user agent's
+                 `[hidden] { display: none }`. -->
+            <div class="LB-delete-account-section" hidden>
+                <hr class="lb-section-divider" />
+                <p class="lb-field-label">{deleteAccountLabel}</p>
+                <p class="lb-input-desc lb-input-desc--field LB-delete-account-blocked"
+                   id="LB-delete-account-blocked" style="display: none;">{deleteAccountBlocked}</p>
+                <div class="buttons">
+                    <div class="button-container">
+                        <button type="button" class="btn btn-default LB-delete-account-btn js-delete-account">
+                            {deleteAccountButton}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<div class="offer review-modal">
+    <p>{settingsReviewTitle}</p>
+    <div>
+        <a href="{storeReviewUrl}" target="_blank" class="btn btn-primary btn-block">{settingsReviewButton}</a>
+    </div>
+</div>

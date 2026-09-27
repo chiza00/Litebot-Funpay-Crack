@@ -1,0 +1,12 @@
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+scratch/
+scratch_*
+patch_*
+verify_*

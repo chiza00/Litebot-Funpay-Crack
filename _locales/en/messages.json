@@ -1,0 +1,2574 @@
+{
+    "nicknameColorTitle": {
+        "message": "Public nickname styles"
+    },
+    "nicknameColorDescription": {
+        "message": "Pick a style for your nickname - every extension user sees it across FunPay, on every page."
+    },
+    "nicknameColorPurple": {
+        "message": "Purple gradient"
+    },
+    "nicknameColorOrange": {
+        "message": "Orange gradient"
+    },
+    "nicknameColorOrangeLocked": {
+        "message": "The orange gradient requires Pro"
+    },
+    "nicknameColorNone": {
+        "message": "Standard"
+    },
+    "nicknameStyleGroupColor": {
+        "message": "Color"
+    },
+    "nicknameStyleGroupFont": {
+        "message": "Font"
+    },
+    "nicknameStyleGroupEffect": {
+        "message": "Effect"
+    },
+    "nicknameStyleColorLocked": {
+        "message": "Colour set by the effect"
+    },
+    "nicknameStyleUnsavedNote": {
+        "message": "Style not saved"
+    },
+    "nicknameStyleSaveButton": {
+        "message": "Save"
+    },
+    "nicknameStyleDiscardButton": {
+        "message": "Cancel"
+    },
+    "nicknameStyleUnsavedTitle": {
+        "message": "Nickname style not saved"
+    },
+    "nicknameStyleUnsavedBody": {
+        "message": "You tried on a nickname style but haven’t saved it. Save the changes?"
+    },
+    "nicknameStyleRestored": {
+        "message": "Nickname style restored"
+    },
+    "nicknameStyleRestorePartial": {
+        "message": "Part of the saved style is no longer available - only the available part was restored"
+    },
+    "nicknameStyleRestoreUnavailable": {
+        "message": "The saved nickname style is no longer available"
+    },
+    "nicknameStyleRestoreFailed": {
+        "message": "Couldn’t restore the nickname style - press “Save” to try again"
+    },
+    "nicknameColorHiddenBlocked": {
+        "message": "Nickname styles are hidden - turn \"Hide nickname styles\" off to change your style."
+    },
+    "goldenKeyCopyFailed": {
+        "message": "Couldn’t copy - click anywhere on the page and try again."
+    },
+    "nicknameStyleTierFree": {
+        "message": "Available to all"
+    },
+    "nicknameColorPreviewFallback": {
+        "message": "Your nickname"
+    },
+    "nicknameColorSaved": {
+        "message": "Nickname style saved"
+    },
+    "nicknameColorSaveFailed": {
+        "message": "Couldn't save the nickname style"
+    },
+    "nicknameColorProRequired": {
+        "message": "The orange gradient requires a Pro status"
+    },
+    "nicknameColorLinkFirst": {
+        "message": "Link your FunPay account first in the Account section"
+    },
+    "nicknameColorNeedCommunity": {
+        "message": "Public nickname style is available with a Community status"
+    },
+    "nicknameColorHideTitle": {
+        "message": "Hide nickname styles"
+    },
+    "nicknameColorHideDesc": {
+        "message": "Don't show other users' public nickname styles anywhere except on their profile pages. Your own nickname style will be set to standard for all users."
+    },
+    "nicknameColorHideNeedCommunity": {
+        "message": "Hiding nickname styles is available with a Community status"
+    },
+    "nicknameColorNeedPro": {
+        "message": "The orange nickname style is available with a Pro status"
+    },
+    "nicknameColorNeedPremium": {
+        "message": "Premium nickname styles are available with a Premium status"
+    },
+    "nicknameColorUpgrade": {
+        "message": "View plans"
+    },
+    "nicknameColorLoading": {
+        "message": "Loading…"
+    },
+    "nicknameColorPencilTitle": {
+        "message": "Change nickname style"
+    },
+    "nicknameColorOpenCustomization": {
+        "message": "Open customization"
+    },
+    "extName": {
+        "message": "FunPay Lite Bot"
+    },
+    "extDescription": {
+        "message": "💲 Dark theme, offers auto-boosting, sales statistics and other improvements for the FunPay marketplace"
+    },
+    "extSmallName": {
+        "message": "lite bot cracked by ilysha xd"
+    },
+    "socialLinkTelegram": {
+        "message": "https://t.me/fplite"
+    },
+    "socialLinkDiscord": {
+        "message": "https://dsc.gg/funpaycom"
+    },
+    "settingTheme": {
+        "message": "Theme"
+    },
+    "settingsCategoryCustomization": {
+        "message": "Customization"
+    },
+    "settingThemeLight": {
+        "message": "Light"
+    },
+    "settingThemeDark": {
+        "message": "Dark"
+    },
+    "settingThemeFirewatch": {
+        "message": "Firewatch"
+    },
+    "settingThemeChoice": {
+        "message": "Theme picker"
+    },
+    "settingThemeCustomBackground": {
+        "message": "Custom background image"
+    },
+    "settingThemeCustomBackgroundDesc": {
+        "message": "You can set a custom background image for the Firewatch and Red Moon themes."
+    },
+    "settingThemeCustomBackgroundOn": {
+        "message": "Custom image is set."
+    },
+    "settingThemeCustomBackgroundDim": {
+        "message": "Background dim"
+    },
+    "settingThemeCustomBackgroundTooLarge": {
+        "message": "Image is too large even after resize. Try a smaller one."
+    },
+    "settingThemeCustomBackgroundNotImage": {
+        "message": "Pick an image file (PNG / JPEG)."
+    },
+    "settingThemeCustomBackgroundTooSmall": {
+        "message": "This image is smaller than your screen. Pick a larger one."
+    },
+    "settingThemeChooseImage": {
+        "message": "Choose image…"
+    },
+    "settingThemeRemoveImage": {
+        "message": "Remove"
+    },
+    "featureGatedCustomBackgroundMessage": {
+        "message": "Custom background images require the Community plan."
+    },
+    "settingOffers": {
+        "message": "Offers"
+    },
+    "settingOfferAutoRaise": {
+        "message": "Auto-raise offers"
+    },
+    "lotManagementTitle": {
+        "message": "Lot management"
+    },
+    "raiseAllButton": {
+        "message": "Raise all offers"
+    },
+    "raiseAllBusy": {
+        "message": "Raising…"
+    },
+    "raiseAllStarted": {
+        "message": "Raising started…"
+    },
+    "raiseAllRaised": {
+        "message": "raised"
+    },
+    "raiseAllWillRaise": {
+        "message": "will be raised"
+    },
+    "raiseAllWait": {
+        "message": "not yet"
+    },
+    "raiseAllDone": {
+        "message": "Done"
+    },
+    "raiseAllNone": {
+        "message": "No offers to raise"
+    },
+    "raiseAllCancel": {
+        "message": "Cancel"
+    },
+    "raiseAllStopped": {
+        "message": "Stopped"
+    },
+    "raiseAllError": {
+        "message": "error"
+    },
+    "raiseAllSection": {
+        "message": "Section"
+    },
+    "raiseAllSummary": {
+        "message": "Checked $CHECKED$, raised $RAISED$",
+        "placeholders": {
+            "checked": { "content": "$1", "example": "128" },
+            "raised": { "content": "$2", "example": "12" }
+        }
+    },
+    "raiseNotifications": {
+        "message": "Raise notifications"
+    },
+    "raiseNotificationsDesc": {
+        "message": "Show a notification for every successful raise: both for the «Raise all offers» button and for auto-raise. Turn it off if you have a lot of sections."
+    },
+    "lotManagementPanel": {
+        "message": "Lot management panel on profile"
+    },
+    "lotManagementPanelDesc": {
+        "message": "Show the «Lot management» panel with the «Raise all offers» button on your FunPay profile."
+    },
+    "settingExactPrice": {
+        "message": "Exact price"
+    },
+    "settingNotifications": {
+        "message": "Notifications"
+    },
+    "settingCustomNotification": {
+        "message": "Custom notification sound"
+    },
+    "customNotifyOptionDefault": {
+        "message": "Default"
+    },
+    "customNotifyOptionCashRegister": {
+        "message": "Cash register"
+    },
+    "customNotifyOptionCoin": {
+        "message": "Coin"
+    },
+    "customNotifyOptionChime": {
+        "message": "Chime"
+    },
+    "customNotifyOptionBell": {
+        "message": "Bell"
+    },
+    "customNotifyOptionPop": {
+        "message": "Pop"
+    },
+    "customNotifyPreviewTitle": {
+        "message": "Preview sound"
+    },
+    "customNotifyOptionCustom": {
+        "message": "Custom sound"
+    },
+    "settingCustomNotifyChooseFile": {
+        "message": "Choose MP3…"
+    },
+    "settingCustomNotifyNotMp3": {
+        "message": "Pick an MP3 file."
+    },
+    "settingCustomNotifyTooLarge": {
+        "message": "File is too large (max 1 MB)."
+    },
+    "featureGatedCustomNotifySoundMessage": {
+        "message": "Uploading your own notification sound is a Pro feature."
+    },
+    "settingOrderSound": {
+        "message": "Custom sound for a new order"
+    },
+    "settingOrderSoundDesc": {
+        "message": "Plays your chosen sound when you get a new order, even when no FunPay tab is open. Keep your browser running."
+    },
+    "orderSoundOptionOff": {
+        "message": "Off"
+    },
+    "featureGatedCustomOrderSoundMessage": {
+        "message": "Playing your own sound on a new order is a Pro feature."
+    },
+    "settingsReset": {
+        "message": "Reset settings"
+    },
+    "settingsPrivacyMode": {
+        "message": "Privacy mode"
+    },
+    "settingsPrivacyModeDesc": {
+        "message": "Blurs your nickname, the other person’s nickname, your balance and order numbers, so you can screenshot a page without painting over anything. Hover a blurred spot to read it."
+    },
+    "settingsHideLockedFeatures": {
+        "message": "Hide unavailable features"
+    },
+    "settingsHideLockedFeaturesDesc": {
+        "message": "Extension buttons and blocks your plan does not cover simply will not appear on FunPay pages."
+    },
+    "settingsHiddenPaywallsCount": {
+        "message": "Features hidden one by one: $COUNT$.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "3" }
+        }
+    },
+    "settingsHiddenPaywallsReset": {
+        "message": "Show them again"
+    },
+    "settingsHiddenPaywallsCleared": {
+        "message": "Done, the hidden features are shown again."
+    },
+    "featureGatedHideLockedFeatures": {
+        "message": "Hiding unavailable features requires the Community plan."
+    },
+    "featureGatedPrivacyMode": {
+        "message": "Privacy mode requires the Community plan."
+    },
+    "privacyModeOn": {
+        "message": "Privacy mode on"
+    },
+    "privacyModeOff": {
+        "message": "Privacy mode off"
+    },
+    "settingsHideBalance": {
+        "message": "Hide balance display"
+    },
+    "settingOther": {
+        "message": "Other"
+    },
+    "settingOfferAutoRaiseDesc": {
+        "message": "Automatically raises all your lots. Do not close your browser to work."
+    },
+    "settingExactPriceDesc": {
+        "message": "Adds fields to the lot editing window for entering the price displayed for both the seller and the buyer."
+    },
+    "settingCustomNotificationDesc": {
+        "message": "Replaces the loud chat notification sound to the selected one."
+    },
+    "settingsHideBalanceDesc": {
+        "message": "It can be useful when you need to share the screen, but do not want to show the account balance."
+    },
+    "settingViewSellersPromo": {
+        "message": "Display promo-lot icons"
+    },
+    "settingViewSellersPromoDesc": {
+        "message": "Displays icons of all promotional lots in the offer table, even hidden ones."
+    },
+    "settingsChatLinkTitle": {
+        "message": "Secret chat of sellers 🕵"
+    },
+    "settingsDiscordLinkTitle": {
+        "message": "Secret Discord server 👾"
+    },
+    "settingsChannelLinkTitle": {
+        "message": "Secret FunPay channel 👀"
+    },
+    "settingsHelpLinkTitle": {
+        "message": "Report a bug / Order development ⚒️"
+    },
+    "settingReset": {
+        "message": "♻️ Reset"
+    },
+    "settingsReviewTitle": {
+        "message": "Your review will only take a minute, but it is priceless for us! ✨"
+    },
+    "settingsReviewButton": {
+        "message": "Leave a review"
+    },
+    "priceLabelSeller": {
+        "message": "(for seller)"
+    },
+    "priceLabelBuyer": {
+        "message": "(for buyer)"
+    },
+    "settingsSaved": {
+        "message": "✔️ Saved"
+    },
+    "settingsNotSaved": {
+        "message": "❌ Failed to save"
+    },
+    "raiseResponseHours": {
+        "message": "hour"
+    },
+    "raiseResponseMinutes": {
+        "message": "minute"
+    },
+    "raiseResponseSeconds": {
+        "message": "second"
+    },
+    "resetSettingsConfirm": {
+        "message": "Are you sure you want to reset settings?"
+    },
+    "statsHeader": {
+        "message": "Statistics"
+    },
+    "statsUpdateButton": {
+        "message": "Update Data"
+    },
+    "statsUpdateButtonUpdating": {
+        "message": "Updating..."
+    },
+    "statsUpdatingTitle": {
+        "message": "Updating data…"
+    },
+    "statsUpdatingOrders": {
+        "message": "orders fetched"
+    },
+    "statsUpdatingOf": {
+        "message": "of"
+    },
+    "statsCancelButton": {
+        "message": "Cancel"
+    },
+    "statsCancelling": {
+        "message": "Cancelling…"
+    },
+    "statsToday": {
+        "message": "Today"
+    },
+    "statsYesterday": {
+        "message": "Yesterday"
+    },
+    "stats24Hours": {
+        "message": "24 Hours"
+    },
+    "stats7Days": {
+        "message": "Week"
+    },
+    "stats30Days": {
+        "message": "Month"
+    },
+    "stats365Days": {
+        "message": "Year"
+    },
+    "statsTotalTime": {
+        "message": "All Time"
+    },
+    "statsTotalOrders": {
+        "message": "Total Orders"
+    },
+    "statsTotalrevenue": {
+        "message": "Total Revenue"
+    },
+    "statsAverageSalePrice": {
+        "message": "Average Sale Price"
+    },
+    "statsOrdersClosed": {
+        "message": "Closed"
+    },
+    "statsPendingConfirmation": {
+        "message": "Pending"
+    },
+    "statsReturns": {
+        "message": "Returns"
+    },
+    "statsUniqueCustomers": {
+        "message": "Unique Customers"
+    },
+    "statsTopCustomer": {
+        "message": "Top Customer"
+    },
+    "statsHighestSale": {
+        "message": "Highest Sale"
+    },
+    "statsPopularProduct": {
+        "message": "Most Popular Product"
+    },
+    "statsPopularCategory": {
+        "message": "Most Popular Category"
+    },
+    "salesMonthJanuary": {
+        "message": "January"
+    },
+    "salesMonthFebruary": { 
+        "message": "February"
+    },
+    "salesMonthMarch": { 
+        "message": "March"
+    },
+    "salesMonthApril": { 
+        "message": "April"
+    },
+    "salesMonthMay": { 
+        "message": "May"
+    },
+    "salesMonthJune": { 
+        "message": "June"
+    },
+    "salesMonthJuly": { 
+        "message": "July"
+    },
+    "salesMonthAugust": { 
+        "message": "August"
+    },
+    "salesMonthSeptember": { 
+        "message": "September"
+    },
+    "salesMonthOctober": { 
+        "message": "October"
+    },
+    "salesMonthNovember": { 
+        "message": "November"
+    },
+    "salesMonthDecember": { 
+        "message": "December"
+    },
+    "sales": {
+        "message": "Sales"
+    },
+    "purchases": {
+        "message": "Purchases"
+    },
+    "showSalesStats": {
+        "message": "Display sales statistics"
+    },
+    "showSalesStatsDesc": {
+        "message": "Adds detailed statistics to the Sales page."
+    },
+    "statsTabNumbers": {
+        "message": "Statistics"
+    },
+    "statsTabCards": {
+        "message": "Cards"
+    },
+    "statsTabCharts": {
+        "message": "Charts"
+    },
+    "statsTabDiagrams": {
+        "message": "Diagrams"
+    },
+    "statsTabDetailed": {
+        "message": "Top lists"
+    },
+    "statsTabFull": {
+        "message": "All data"
+    },
+    "statsInfoPeriod": {
+        "message": "Period:"
+    },
+    "statsInfoOrders": {
+        "message": "Orders:"
+    },
+    "statsInfoSold": {
+        "message": "Sold:"
+    },
+    "statsInfoBought": {
+        "message": "Bought:"
+    },
+    "chartProfitTitle": {
+        "message": "Revenue by day"
+    },
+    "chartSpentTitle": {
+        "message": "Spending by day"
+    },
+    "chartOrdersTitle": {
+        "message": "Orders by day"
+    },
+    "chartCategoriesTitle": {
+        "message": "Orders by category"
+    },
+    "chartStatusTitle": {
+        "message": "Orders by status"
+    },
+    "chartCurrencyTitle": {
+        "message": "Revenue by currency"
+    },
+    "chartCurrencySpentTitle": {
+        "message": "Spending by currency"
+    },
+    "statsCategoryOther": {
+        "message": "Other"
+    },
+    "statsDetailTopBuyers": {
+        "message": "Top buyers"
+    },
+    "statsDetailTopSellers": {
+        "message": "Top sellers"
+    },
+    "statsDetailTopProducts": {
+        "message": "Top products"
+    },
+    "statsDetailTopCategories": {
+        "message": "Top categories"
+    },
+    "statsDetailOrdersSuffix": {
+        "message": "ord."
+    },
+    "statsDetailTimesSuffix": {
+        "message": "sold"
+    },
+    "statsDetailShowMore": {
+        "message": "Show more"
+    },
+    "statsLockedCharts": {
+        "message": "Charts are available with"
+    },
+    "statsLockedDiagrams": {
+        "message": "Diagrams are available with"
+    },
+    "statsLockedDetailed": {
+        "message": "Detailed stats are available with"
+    },
+    "chartsEmpty": {
+        "message": "No data for the selected period"
+    },
+    "showPurchasesStats": {
+        "message": "Display purchases statistics"
+    },
+    "showPurchasesStatsDesc": {
+        "message": "Adds detailed statistics to the Purchases page."
+    },
+    "showSectionCommission": {
+        "message": "Display section commission"
+    },
+    "showSectionCommissionDesc": {
+        "message": "Shows the FunPay commission percentage for the section next to the heading on your offers page."
+    },
+    "sectionCommissionLabel": {
+        "message": "Commission:"
+    },
+    "offerEditCommissionLabel": {
+        "message": "Section commission"
+    },
+    "exportSalesEnable": {
+        "message": "Sales export"
+    },
+    "exportSalesEnableDesc": {
+        "message": "Adds the Export button on the Sales page."
+    },
+    "exportPurchasesEnable": {
+        "message": "Purchases export"
+    },
+    "exportPurchasesEnableDesc": {
+        "message": "Adds the Export button on the Purchases page."
+    },
+    "featureGatedExportMessage": {
+        "message": "Exporting the orders archive is a Pro-tier feature. Get Pro to enable it."
+    },
+    "featureGatedCustomNotifyMessage": {
+        "message": "This notification sound is only available to Community status holders."
+    },
+    "statsExportButton": {
+        "message": "Export"
+    },
+    "statsExportButtonTitle": {
+        "message": "Export the archive…"
+    },
+    "statsResetConfirmTitle": {
+        "message": "Refresh archive?"
+    },
+    "statsResetConfirmMessage": {
+        "message": "The local cache will be wiped and rebuilt from FunPay. On a large archive this can take a couple of minutes."
+    },
+    "statsResetConfirmAction": {
+        "message": "Clear and refresh"
+    },
+    "statsRefreshLastN": {
+        "message": "Last $COUNT$ orders",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "500"
+            }
+        }
+    },
+    "statsRefreshCustom": {
+        "message": "Custom amount"
+    },
+    "statsRefreshCustomHint": {
+        "message": "Enter how many of the newest orders to load."
+    },
+    "statsRefreshAll": {
+        "message": "All orders (full reload)"
+    },
+    "statsRefreshPartialHint": {
+        "message": "The newest $COUNT$ orders will be downloaded again. Older ones stay in the archive untouched.",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "500"
+            }
+        }
+    },
+    "statsRefreshAction": {
+        "message": "Refresh"
+    },
+    "confirmCancel": {
+        "message": "Cancel"
+    },
+    "confirmOk": {
+        "message": "OK"
+    },
+    "exportSalesTitle": {
+        "message": "Export sales"
+    },
+    "exportPurchasesTitle": {
+        "message": "Export purchases"
+    },
+    "exportFormatLabel": {
+        "message": "Format"
+    },
+    "exportFormatXlsx": {
+        "message": "Excel (.xlsx)"
+    },
+    "exportFormatJson": {
+        "message": "JSON (.json)"
+    },
+    "exportRangeLabel": {
+        "message": "Period"
+    },
+    "exportRangeAllTime": {
+        "message": "All time"
+    },
+    "exportRangeCustom": {
+        "message": "Custom"
+    },
+    "exportRangeCustomHint": {
+        "message": "Or pick custom dates:"
+    },
+    "commonClose": {
+        "message": "Close"
+    },
+    "calendarPrevMonth": {
+        "message": "Previous month"
+    },
+    "calendarNextMonth": {
+        "message": "Next month"
+    },
+    "calendarMonthSelect": {
+        "message": "Month"
+    },
+    "calendarYearSelect": {
+        "message": "Year"
+    },
+    "exportDatePlaceholder": {
+        "message": "DD.MM.YYYY"
+    },
+    "exportOpenCalendar": {
+        "message": "Open calendar"
+    },
+    "exportCountLabel": {
+        "message": "Will export:"
+    },
+    "exportRangeFrom": {
+        "message": "From"
+    },
+    "exportRangeTo": {
+        "message": "To"
+    },
+    "exportRangeInvalid": {
+        "message": "Choose a date range or tick «All time»."
+    },
+    "exportSubmit": {
+        "message": "Export"
+    },
+    "exportCancel": {
+        "message": "Cancel"
+    },
+    "exportInProgress": {
+        "message": "Exporting…"
+    },
+    "exportNoData": {
+        "message": "Nothing to export - the archive is empty for this range."
+    },
+    "exportSuccess": {
+        "message": "Exported $count$ $word$.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "42" },
+            "word": { "content": "$2", "example": "orders" }
+        }
+    },
+    "exportFailed": {
+        "message": "Export failed: $REASON$",
+        "placeholders": { "reason": { "content": "$1" } }
+    },
+    "statsPurchasesHeader": {
+        "message": "Purchases"
+    },
+    "statsPurchasesTotalOrders": {
+        "message": "Total purchases"
+    },
+    "statsPurchasesTotalSpent": {
+        "message": "Total spent"
+    },
+    "statsPurchasesAveragePrice": {
+        "message": "Average price"
+    },
+    "statsUniqueSellers": {
+        "message": "Unique sellers"
+    },
+    "statsTopSeller": {
+        "message": "Top seller"
+    },
+    "statsHighestPurchase": {
+        "message": "Highest purchase"
+    },
+    "secretChats": {
+        "message": "👀 Secret chats"
+    },
+    "messages": {
+        "message": "Messages"
+    },
+    "settingsFastMessages": {
+        "message": "Fast Messages"
+    },
+    "settingsFastMessagesDesc": {
+        "message": "Type / (slash) in chat to quickly send pre-written messages."
+    },
+    "fastMessagesSettingsButton": {
+        "message": "Settings"
+    },
+    "fastMessagesTitle": {
+        "message": "Fast Messages"
+    },
+    "bindName": {
+        "message": "Name"
+    },
+    "bindNamePlaceholder": {
+        "message": "Short name"
+    },
+    "bindMessage": {
+        "message": "Message"
+    },
+    "bindMessagePlaceholder": {
+        "message": "Message Text"
+    },
+    "enabled": {
+        "message": "Enabled"
+    },
+    "instantSend": {
+        "message": "Instant Send"
+    },
+    "delete": {
+        "message": "Delete"
+    },
+    "add": {
+        "message": "Add"
+    },
+    "position": {
+        "message": "Position"
+    },
+    "positionOptionSlash": {
+        "message": "Dropdown on /"
+    },
+    "positionOptionAbove": {
+        "message": "Above input field"
+    },
+    "positionOptionSidebar": {
+        "message": "Bottom right from chat column"
+    },
+    "positionLimitWarning": {
+        "message": "You cannot create more than 10 elements with positions 'Above input field' and 'Bottom right from the chat column'."
+    },
+    "availableForSubscribers": {
+        "message": "This feature is available only with Community status"
+    },
+    "checkSubscription": {
+        "message": "Check status"
+    },
+    "funPayChat": {
+        "message": "FunPay Community chat"
+    },
+    "funPayChannel": {
+        "message": "FunPay Community channel"
+    },
+    "linkYourTelegram": {
+        "message": "Link your Telegram to check status"
+    },
+    "falseSubscriptionCheck": {
+        "message": "Status not granted"
+    },
+    "tariffsTitle": {
+        "message": "Status"
+    },
+    "tariffsLoading": {
+        "message": "Loading…"
+    },
+    "tariffsEmpty": {
+        "message": "No plans available."
+    },
+    "tariffsLoadFailed": {
+        "message": "Failed to load plans ($REASON$)",
+        "placeholders": { "reason": { "content": "$1" } }
+    },
+    "communityActiveBadge": {
+        "message": "Active"
+    },
+    "tariffsCurrentPlanLabel": {
+        "message": "Current plan"
+    },
+    "tariffsObtainedLabel": {
+        "message": "Obtained"
+    },
+    "tariffsLoginRequired": {
+        "message": "Please sign in first"
+    },
+    "tariffsBuyButton": {
+        "message": "Buy"
+    },
+    "tariffsRenewButton": {
+        "message": "Renew"
+    },
+    "tariffsBuyOpening": {
+        "message": "Opening checkout…"
+    },
+    "tariffsBuyFailed": {
+        "message": "Couldn't start checkout. Please try again."
+    },
+    "featureGatedCommunityTitle": {
+        "message": "Available with Community"
+    },
+    "featureGatedProfileDescriptionMessage": {
+        "message": "A public profile description is available with the Community plan."
+    },
+    "featureGatedProTitle": {
+        "message": "Available with Pro"
+    },
+    "featureGatedPremiumTitle": {
+        "message": "Available with Premium"
+    },
+    "featureGatedFastMessagesMessage": {
+        "message": "Fast Messages is a Community-tier feature. Get Community to enable it."
+    },
+    "featureGatedPurchasesStatsMessage": {
+        "message": "Purchase statistics is a Community-tier feature. Get Community to enable it."
+    },
+    "featureGatedSectionCommissionMessage": {
+        "message": "Section commission display is a Pro-tier feature. Get Pro to enable it."
+    },
+    "featureGatedLotTranslateMessage": {
+        "message": "Lot translation is a Pro-tier feature. Get Pro to enable it."
+    },
+    "profileDescriptionHeading": {
+        "message": "Description"
+    },
+    "profileDescriptionAdd": {
+        "message": "Add description"
+    },
+    "profileDescriptionEditTitle": {
+        "message": "Edit description"
+    },
+    "profileDescriptionPlaceholder": {
+        "message": "Tell others about yourself - this description is visible to all extension users."
+    },
+    "profileDescriptionSave": {
+        "message": "Save"
+    },
+    "profileDescriptionCancel": {
+        "message": "Cancel"
+    },
+    "profileDescriptionSaved": {
+        "message": "Description saved"
+    },
+    "profileDescriptionError": {
+        "message": "Could not save the description"
+    },
+    "profileDescriptionLinkFirst": {
+        "message": "Link your FunPay account on the Lite Bot page first"
+    },
+    "profileDescriptionContactBlocked": {
+        "message": "Sharing contact info (Telegram, email, phone, social media, etc.) is against FunPay rules and can get your account banned. Remove contacts from the description."
+    },
+    "profileDescriptionProhibited": {
+        "message": "Prohibited content (drugs, pornography) is against FunPay rules and can get your account banned. Remove the prohibited content from the description."
+    },
+    "funpayLinkTitle": {
+        "message": "FunPay account"
+    },
+    "funpayLinkBusyStart": {
+        "message": "Preparing…"
+    },
+    "funpayLinkBusyCreating": {
+        "message": "Creating verification lot…"
+    },
+    "funpayLinkBusyConfirming": {
+        "message": "Confirming…"
+    },
+    "funpayLinkBusyUnlink": {
+        "message": "Unlinking…"
+    },
+    "funpayLinkSuccess": {
+        "message": "FunPay account linked"
+    },
+    "funpayUnlinkSuccess": {
+        "message": "FunPay account unlinked"
+    },
+    "funpayLinkFailed": {
+        "message": "Couldn’t link the FunPay account"
+    },
+    "funpayLinkErrCode": {
+        "message": "Verification lot not found, please try again"
+    },
+    "funpayLinkErrMismatch": {
+        "message": "The lot was created under a different FunPay account"
+    },
+    "funpayLinkErrExpired": {
+        "message": "The link request expired, start again"
+    },
+    "funpayLinkErrFunpay": {
+        "message": "Could not read the lot from FunPay, please try again"
+    },
+    "funpayLinkErrSession": {
+        "message": "Your session expired, sign in again"
+    },
+    "funpayLinkErrCantSell": {
+        "message": "Sales aren't open on this FunPay account yet, so it couldn't be linked. To open them, take FunPay's short seller test and add a phone number, then try again."
+    },
+    "funpayLinkErrLotFailed": {
+        "message": "Couldn't link the FunPay account: the verification lot could not be created. Most often this means sales aren't open on the account yet - it has never created a lot. To open them, take FunPay's short seller test and add a phone number, then try again."
+    },
+    "enableLotTranslate": {
+        "message": "Translate lot to English"
+    },
+    "enableLotTranslateDesc": {
+        "message": "Adds a 'Translate to English' button on the lot edit page that fills the English title and description from the Russian copy."
+    },
+    "autoTranslateModeButton": {
+        "message": "Translate on button press"
+    },
+    "autoTranslateModeAuto": {
+        "message": "Translate automatically on save"
+    },
+    "lotTranslateAutoFailed": {
+        "message": "Could not translate - the lot was saved without the English text"
+    },
+    "lotTranslateAutoNoPermission": {
+        "message": "No access to the translator. Grant it in the add-on settings, or switch auto-translate on again"
+    },
+    "updateBannerTitle": {
+        "message": "A new version of the extension is out"
+    },
+    "updateBannerBody": {
+        "message": "You have $CURRENT$, the current one is $LATEST$.",
+        "placeholders": {
+            "current": { "content": "$1", "example": "2.1.2" },
+            "latest": { "content": "$2", "example": "2.2.0" }
+        }
+    },
+    "updateStep1": {
+        "message": "Go to this link in the browser: chrome://extensions/"
+    },
+    "updateStep2": {
+        "message": "Turn on Developer mode."
+    },
+    "updateStep3": {
+        "message": "Press the \"Update\" button."
+    },
+    "showRealLotPrices": {
+        "message": "Real lot prices"
+    },
+    "showRealLotPricesDesc": {
+        "message": "Under each lot's price in the section table, shows the real price: the amount without FunPay commission and payment-system fees (what the seller actually receives)."
+    },
+    "featureGatedRealLotPricesMessage": {
+        "message": "Real lot prices is a Pro-tier feature. Get Pro to enable it."
+    },
+    "lotTranslateButton": {
+        "message": "Translate from Russian"
+    },
+    "lotTranslateSectionLabel": {
+        "message": "Automatic translation"
+    },
+    "lotTranslateStatusLoading": {
+        "message": "Translating…"
+    },
+    "lotTranslateStatusDone": {
+        "message": "Lot translated successfully"
+    },
+    "lotTranslateStatusError": {
+        "message": "Could not translate"
+    },
+    "lotTranslatePermissionDenied": {
+        "message": "Translation permission denied"
+    },
+    "lotTranslateValidationMissingTitle": {
+        "message": "Fill in the Russian lot title first"
+    },
+    "lotTranslateValidationMissingDesc": {
+        "message": "Fill in the Russian lot description first"
+    },
+    "lotTranslateValidationMissingBoth": {
+        "message": "Fill in the Russian title and description first"
+    },
+    "lotTranslateConsentTitle": {
+        "message": "Translation permission"
+    },
+    "lotTranslateConsentBody": {
+        "message": "To translate lot titles and descriptions into English, the extension needs one-time access to translate.googleapis.com."
+    },
+    "lotTranslateConsentGrant": {
+        "message": "Allow"
+    },
+    "lotTranslateConsentCancel": {
+        "message": "Cancel"
+    },
+    "featureGatedOpenTariffs": {
+        "message": "Open statuses"
+    },
+    "featureGatedHideThis": {
+        "message": "Don't show this feature"
+    },
+    "featureGatedHiddenToast": {
+        "message": "We won't show it again. To bring it back, open the extension settings, Customisation."
+    },
+    "pendingUnlockReady": {
+        "message": "Your subscription changed — the feature is available. Reload the page if you still cannot see it."
+    },
+    "trialOfferTitle": {
+        "message": "3 days of Premium, free"
+    },
+    "trialOfferBody": {
+        "message": "A gift from us: every feature of the extension is yours for 3\u00a0days\u00a0- use anything you like. No card needed."
+    },
+    "trialOfferStart": {
+        "message": "Get Premium for 3 days"
+    },
+    "trialOfferLater": {
+        "message": "Not now"
+    },
+    "trialOfferNote": {
+        "message": "The gift is tied to your FunPay account."
+    },
+    "trialOfferWorking": {
+        "message": "Turning on…"
+    },
+    "trialStartedToast": {
+        "message": "Premium is on for 3 days. Everything is available already."
+    },
+    "trialAlreadyUsed": {
+        "message": "This FunPay account has already had its trial."
+    },
+    "trialHasPaidPlan": {
+        "message": "The trial is for accounts that have never had a paid plan."
+    },
+    "trialNeedsLogin": {
+        "message": "Sign in to start the trial."
+    },
+    "trialClosed": {
+        "message": "The trial isn't available right now. Please try again later."
+    },
+    "trialFailed": {
+        "message": "Could not start the trial. Please try again later."
+    },
+    "trialNotEstablished": {
+        "message": "The trial is for sellers with at least one review on FunPay."
+    },
+    "trialFunpayUnreachable": {
+        "message": "Could not check the account on FunPay. Please try again."
+    },
+    "trialLinkFailed": {
+        "message": "Could not link the FunPay account. Please try again."
+    },
+    "trialNeedsFunpay": {
+        "message": "Sign in to FunPay in this browser to get the trial."
+    },
+    "settingsCategoryAccount": {
+        "message": "Account"
+    },
+    "accountSubscriptionTitle": {
+        "message": "Status"
+    },
+    "accountSubscriptionBasic": {
+        "message": "Basic"
+    },
+    "accountSubscriptionExpires": {
+        "message": "Active until"
+    },
+    "accountSubscriptionLifetime": {
+        "message": "Lifetime"
+    },
+    "accountSignInPrompt": {
+        "message": "Sign in to manage your account and status."
+    },
+    "settingsCategoryInfo": {
+        "message": "Info"
+    },
+    "settingsCategoryChangelog": {
+        "message": "Changelog"
+    },
+    "changelogHeading": {
+        "message": "What changed"
+    },
+    "changelogDesc": {
+        "message": "The list of changes by extension version - new features, improvements, and fixes."
+    },
+    "changelogLoading": {
+        "message": "Loading the changelog…"
+    },
+    "changelogEmpty": {
+        "message": "The changelog isn't available right now. Every release is announced on our Telegram channel."
+    },
+    "changelogInstalled": {
+        "message": "you're on this one"
+    },
+    "changelogTypeAdded": {
+        "message": "New"
+    },
+    "changelogTypeImproved": {
+        "message": "Improved"
+    },
+    "changelogTypeFixed": {
+        "message": "Fixed"
+    },
+    "changelogTypeRemoved": {
+        "message": "Removed"
+    },
+    "settingsCategoryReviews": {
+        "message": "Reviews"
+    },
+    "reviewsRatingLimitsButton": {
+        "message": "View rating restrictions"
+    },
+    "reviewsRatingLimitsDesc": {
+        "message": "Information about the account's rating restrictions"
+    },
+    "settingsCategoryApi": {
+        "message": "API"
+    },
+    "infoVersionLabel": {
+        "message": "🔖 Extension version"
+    },
+    "deleteAccountLabel": {
+        "message": "🗑️ Account deletion"
+    },
+    "deleteAccountBlocked": {
+        "message": "An account with an active subscription cannot be deleted. Wait until the subscription expires."
+    },
+    "deleteAccountButton": {
+        "message": "Delete FunPay Lite Bot account"
+    },
+    "deleteAccountConfirmTitle": {
+        "message": "Delete your FunPay Lite Bot account?"
+    },
+    "deleteAccountConfirmText": {
+        "message": "Your FunPay Lite Bot account will be deleted along with your order history. Linked accounts (FunPay, Telegram, Google, VK) will be unlinked. The extension keeps working, just signed out. This cannot be undone."
+    },
+    "deleteAccountConfirmCta": {
+        "message": "Yes, delete"
+    },
+    "deleteAccountDone": {
+        "message": "Account deleted"
+    },
+    "deleteAccountFailed": {
+        "message": "Could not delete the account. Please try again later."
+    },
+    "accountIdCopyHint": {
+        "message": "Click to copy the account ID"
+    },
+    "accountIdCopied": {
+        "message": "Account ID copied"
+    },
+    "accountIdCopyFailed": {
+        "message": "Could not copy the account ID"
+    },
+    "accountIdLabel": {
+        "message": "🆔 Account ID"
+    },
+    "goldenKeyTitle": {
+        "message": "Authorization - Golden Key"
+    },
+    "goldenKeyDesc": {
+        "message": "This key is stored in your FunPay cookies and is often used by external automation tools. It grants full access to your account - never share it."
+    },
+    "goldenKeyMissing": {
+        "message": "Key not found. Sign in on funpay.com to populate it."
+    },
+    "goldenKeyShow": {
+        "message": "Show"
+    },
+    "goldenKeyHide": {
+        "message": "Hide"
+    },
+    "goldenKeyCopy": {
+        "message": "Copy"
+    },
+    "goldenKeyCopied": {
+        "message": "Key copied"
+    },
+    "goldenKeyRevoke": {
+        "message": "Revoke"
+    },
+    "goldenKeyRevokeConfirmTitle": {
+        "message": "Revoke Golden Key?"
+    },
+    "goldenKeyRevokeConfirmText": {
+        "message": "This will drop your FunPay session in all browsers. You'll be signed out and will need to log in on funpay.com again."
+    },
+    "goldenKeyRevokeConfirmCta": {
+        "message": "Yes, revoke"
+    },
+    "goldenKeyRevokeCancel": {
+        "message": "Cancel"
+    },
+    "goldenKeyRevoked": {
+        "message": "Golden Key revoked"
+    },
+    "goldenKeyRevokeFailed": {
+        "message": "Could not revoke the key. Try logging out manually on funpay.com."
+    },
+    "tariffsBasicIncluded": {
+        "message": "Free"
+    },
+    "communityLinkTelegramFirst": {
+        "message": "Link Telegram in the user menu first, then come back."
+    },
+    "authLogIn": {
+        "message": "Log In"
+    },
+    "authRegister": {
+        "message": "Register"
+    },
+    "authRegisterWith": {
+        "message": "Sign up with $PROVIDER$",
+        "placeholders": { "provider": { "content": "$1" } }
+    },
+    "authLoginSubtitle": {
+        "message": "Use the provider you signed up with."
+    },
+    "authRegisterSubtitle": {
+        "message": "Create a new FunPayLiteBot account."
+    },
+    "authNoAccountTitle": {
+        "message": "Account not found"
+    },
+    "authNoAccountBody": {
+        "message": "We couldn't find a FunPayLiteBot account linked to this provider. Do you want to register a new one with it?"
+    },
+    "authNoAccountConfirm": {
+        "message": "Register"
+    },
+    "authAlreadyRegisteredTitle": {
+        "message": "Account already exists"
+    },
+    "authAlreadyRegisteredBody": {
+        "message": "An account is already registered with this provider. Do you want to log in instead?"
+    },
+    "authAlreadyRegisteredConfirm": {
+        "message": "Log in"
+    },
+    "authCancel": {
+        "message": "Cancel"
+    },
+    "authNoAccountSwitchHint": {
+        "message": "Account not found. Switch to the Register tab to create one."
+    },
+    "authAlreadyRegisteredSwitchHint": {
+        "message": "Account already exists. Switch to the Log in tab to access it."
+    },
+    "authTelegramFastLoginUnsupported": {
+        "message": "Telegram's instant-login doesn't redirect back to extensions. Please log in by QR code or phone number instead."
+    },
+    "authLogOut": {
+        "message": "Log Out"
+    },
+    "authLoginWith": {
+        "message": "Continue with $PROVIDER$",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authLinkedAccounts": {
+        "message": "Linked accounts"
+    },
+    "authLinked": {
+        "message": "Linked"
+    },
+    "authNotLinked": {
+        "message": "Not linked"
+    },
+    "authLink": {
+        "message": "Link"
+    },
+    "authUnlink": {
+        "message": "Unlink"
+    },
+    "authLinkConflict": {
+        "message": "This $PROVIDER$ account is already linked to another user.",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authCannotUnlinkLast": {
+        "message": "Cannot unlink the only provider - link another one first."
+    },
+    "authSessionExpired": {
+        "message": "Session expired. Please log in again."
+    },
+    "authLoginFailed": {
+        "message": "Login failed: $REASON$",
+        "placeholders": {
+            "reason": { "content": "$1", "example": "OAUTH_GOOGLE_TOKEN_REJECTED" }
+        }
+    },
+    "authLoggedIn": {
+        "message": "Signed in as $NAME$",
+        "placeholders": {
+            "name": { "content": "$1", "example": "Andrii" }
+        }
+    },
+    "authLoggedOut": {
+        "message": "Signed out"
+    },
+    "authProviderLinked": {
+        "message": "$PROVIDER$ linked",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authProviderUnlinked": {
+        "message": "$PROVIDER$ unlinked",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "telegramLinkTitle": {
+        "message": "Link Telegram"
+    },
+    "telegramLinkOAuthOption": {
+        "message": "Log in with Telegram"
+    },
+    "telegramLinkOAuthDesc": {
+        "message": "Authorize in the browser via Telegram. The quickest way if Telegram opens for you."
+    },
+    "telegramLinkCodeOption": {
+        "message": "Link with a code"
+    },
+    "telegramLinkCodeDesc": {
+        "message": "Use this if Telegram login is blocked in your browser. We'll give you a code to send to the bot."
+    },
+    "telegramLinkCodeInstructions": {
+        "message": "Open @FunPayLiteBot and send this code to it."
+    },
+    "telegramLinkCodeWaiting": {
+        "message": "Waiting for confirmation from the bot…"
+    },
+    "telegramLinkCodeSuccess": {
+        "message": "Telegram linked successfully!"
+    },
+    "telegramLoginCodeButton": {
+        "message": "Log in with a Telegram code"
+    },
+    "telegramLoginCodeTitle": {
+        "message": "Log in with Telegram"
+    },
+    "telegramLoginOAuthOption": {
+        "message": "Standard login"
+    },
+    "telegramLoginOAuthDesc": {
+        "message": "Via the Telegram page (oauth.telegram.org)."
+    },
+    "telegramLoginCodeOption": {
+        "message": "Log in with a code"
+    },
+    "telegramLoginCodeDesc": {
+        "message": "If the Telegram page won't open. Send a code to the bot."
+    },
+    "telegramLoginCodeInstructions": {
+        "message": "Open @FunPayLiteBot, send this code, and confirm the login."
+    },
+    "telegramLoginCodeWaiting": {
+        "message": "Waiting for confirmation in Telegram…"
+    },
+    "telegramLoginCodeSuccess": {
+        "message": "Done! You're logged in."
+    },
+    "telegramLoginCodeError": {
+        "message": "Couldn't complete the login. Please try again."
+    },
+    "authRetry": {
+        "message": "Retry"
+    },
+    "telegramLinkOpenBot": {
+        "message": "Open the bot"
+    },
+    "telegramLinkCopy": {
+        "message": "Copy"
+    },
+    "telegramLinkCodeError": {
+        "message": "Couldn't get a code. Please try again."
+    },
+    "telegramLinkAlreadyLinked": {
+        "message": "Telegram is already linked to your account."
+    },
+    "telegramLinkCopied": {
+        "message": "Code copied"
+    },
+    "quickCopyOrderId": {
+        "message": "Copy order number"
+    },
+    "quickCopyOrderIdDesc": {
+        "message": "On the order page, adds a copy icon - click it to copy the order number."
+    },
+    "orderIdCopied": {
+        "message": "Order number copied"
+    },
+    "orderIdCopyHint": {
+        "message": "Click to copy the order number"
+    },
+    "orderIdCopyFailed": {
+        "message": "Failed to copy the order number"
+    },
+    "featureGatedQuickCopyMessage": {
+        "message": "Copy order number is a Community feature. Get Community to enable it."
+    },
+    "showUnconfirmedSales": {
+        "message": "Copy ID of unconfirmed sales"
+    },
+    "showUnconfirmedSalesDesc": {
+        "message": "Adds the «Copy unconfirmed» button on the Sales page next to Export, for quick extraction of order numbers that buyers have paid for but haven't confirmed yet."
+    },
+    "unconfirmedOrdersButton": {
+        "message": "Copy unconfirmed orders"
+    },
+    "unconfirmedSalesTitle": {
+        "message": "Unconfirmed sales"
+    },
+    "unconfirmedOrdersThresholdAll": {
+        "message": "All paid"
+    },
+    "unconfirmedOrdersThreshold12": {
+        "message": "Paid >12 hours"
+    },
+    "unconfirmedOrdersThreshold24": {
+        "message": "Paid >24 hours"
+    },
+    "unconfirmedOrdersThreshold48": {
+        "message": "Paid >48 hours"
+    },
+    "unconfirmedOrdersThreshold72": {
+        "message": "Paid >72 hours"
+    },
+    "unconfirmedOrdersCount": {
+        "message": "Found: $COUNT$",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "unconfirmedOrdersLoading": {
+        "message": "Loading…"
+    },
+    "unconfirmedOrdersCopy": {
+        "message": "Copy"
+    },
+    "unconfirmedOrdersCopied": {
+        "message": "Copied ✓"
+    },
+    "unconfirmedOrdersClose": {
+        "message": "Close"
+    },
+    "unconfirmedOrdersStatusError": {
+        "message": "Could not fetch the list"
+    },
+    "featureGatedUnconfirmedOrdersMessage": {
+        "message": "Copying unconfirmed orders is a Pro-tier feature. Get Pro to enable it."
+    },
+    "supportConfirmTickets": {
+        "message": "Support tickets to confirm orders"
+    },
+    "supportConfirmTicketsDesc": {
+        "message": "When a buyer doesn't confirm an order, the order page gets two buttons: «Send for confirmation» opens a FunPay support ticket for that order, «Add to confirmation list» puts the order on a list you send from the My sales page. Before anything goes out, the extension checks that the orders are still waiting for confirmation and shows you the ticket text."
+    },
+    "featureGatedSupportConfirmTickets": {
+        "message": "Filing support tickets to confirm orders is a Pro-tier feature. Get Pro to enable it."
+    },
+    "supportConfirmSend": {
+        "message": "Send for confirmation"
+    },
+    "supportConfirmSentAt": {
+        "message": "Ticket sent $TIME$",
+        "placeholders": {
+            "time": {
+                "content": "$1",
+                "example": "10/09, 14:05"
+            }
+        }
+    },
+    "supportConfirmAddToList": {
+        "message": "Add to confirmation list"
+    },
+    "supportConfirmRemoveFromList": {
+        "message": "Remove from confirmation list"
+    },
+    "supportConfirmAdded": {
+        "message": "Order added to the confirmation list. Orders in the list: $COUNT$. Send the list from the My sales page.",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "3"
+            }
+        }
+    },
+    "supportConfirmRemoved": {
+        "message": "Order removed from the confirmation list."
+    },
+    "supportConfirmListButton": {
+        "message": "Send confirmation list ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "3"
+            }
+        }
+    },
+    "supportTicketSendFromCopy": {
+        "message": "Send to support"
+    },
+    "supportTicketTitle": {
+        "message": "FunPay support ticket"
+    },
+    "supportTicketLead": {
+        "message": "Topic: the buyer forgot to confirm the order. Support will read the order chat and confirm the order if the goods were delivered."
+    },
+    "supportTicketChecking": {
+        "message": "Checking which orders are still waiting for confirmation…"
+    },
+    "supportTicketOrders": {
+        "message": "Orders in the ticket"
+    },
+    "supportTicketText": {
+        "message": "Ticket text"
+    },
+    "supportTicketTextOne": {
+        "message": "Hello! The buyer hasn't confirmed order $ORDERS$. The goods were delivered, as the order chat shows. Please confirm the order. Thank you!",
+        "placeholders": {
+            "orders": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketTextMany": {
+        "message": "Hello! The buyers haven't confirmed orders $ORDERS$. The goods were delivered, as the order chats show. Please confirm these orders. Thank you!",
+        "placeholders": {
+            "orders": {
+                "content": "$1",
+                "example": "#BLPWJF6T, #GZSHW9UT"
+            }
+        }
+    },
+    "supportTicketOverflow": {
+        "message": "One ticket takes up to $MAX$ orders. The other $COUNT$ can go in the next ticket.",
+        "placeholders": {
+            "max": {
+                "content": "$1",
+                "example": "25"
+            },
+            "count": {
+                "content": "$2",
+                "example": "4"
+            }
+        }
+    },
+    "supportTicketSkippedNotPaid": {
+        "message": "No longer waiting for confirmation, left out of the ticket: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketSkippedRecent": {
+        "message": "Already sent to support in the last 24 hours, left out of the ticket: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T (10/09, 14:05)"
+            }
+        }
+    },
+    "supportTicketNothing": {
+        "message": "Nothing to send."
+    },
+    "supportTicketRemoveFromList": {
+        "message": "Remove from the list"
+    },
+    "supportTicketRemoveFromTicket": {
+        "message": "Remove from the ticket"
+    },
+    "supportTicketSend": {
+        "message": "Send ticket"
+    },
+    "supportTicketSending": {
+        "message": "Sending the ticket…"
+    },
+    "supportTicketSent": {
+        "message": "Ticket sent. Support will reply in the ticket."
+    },
+    "supportTicketSentToast": {
+        "message": "The FunPay support ticket has been sent."
+    },
+    "supportTicketOpen": {
+        "message": "Open the ticket"
+    },
+    "supportTicketMyTickets": {
+        "message": "My tickets"
+    },
+    "supportTicketNewManual": {
+        "message": "Create a ticket manually"
+    },
+    "supportTicketRetry": {
+        "message": "Try again"
+    },
+    "supportTicketErrLogin": {
+        "message": "Could not open FunPay support. Make sure you are logged in to FunPay and try again."
+    },
+    "supportTicketErrCheck": {
+        "message": "Could not check the orders on FunPay. Check your connection and try again."
+    },
+    "supportTicketErrNetwork": {
+        "message": "Could not reach FunPay support. The ticket was not sent. Please try again."
+    },
+    "supportTicketErrForm": {
+        "message": "The FunPay support form has changed, so the extension sent nothing. Please create the ticket manually."
+    },
+    "supportTicketErrRejected": {
+        "message": "FunPay support did not accept the ticket: $REASON$",
+        "placeholders": {
+            "reason": {
+                "content": "$1",
+                "example": "HTTP 403"
+            }
+        }
+    },
+    "supportTicketErrUncertain": {
+        "message": "Could not tell whether the ticket was created. Before sending again, open your support tickets and check."
+    },
+    "supportTicketErrBusy": {
+        "message": "A ticket is already being sent. Please wait for the result."
+    },
+    "supportTicketErrGeneric": {
+        "message": "Could not send the ticket. Try again."
+    },
+    "supportTicketErrCheckLogin": {
+        "message": "It looks like you are logged out of FunPay. Log in and try again."
+    },
+    "supportTicketErrAccount": {
+        "message": "FunPay support is logged in as $SUPPORT$, but on FunPay you are $FUNPAY$. The ticket was not sent. Open support, log out there and try again.",
+        "placeholders": {
+            "support": {
+                "content": "$1",
+                "example": "OldNick"
+            },
+            "funpay": {
+                "content": "$2",
+                "example": "MaxQV"
+            }
+        }
+    },
+    "supportTicketOpenSupport": {
+        "message": "Open support"
+    },
+    "supportTicketSkippedUnseen": {
+        "message": "Not found among your unconfirmed sales, left out of the ticket: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketUncertainMark": {
+        "message": "outcome unknown"
+    },
+    "supportConfirmMaybeSentAt": {
+        "message": "Ticket possibly sent $TIME$",
+        "placeholders": {
+            "time": {
+                "content": "$1",
+                "example": "10/09, 14:05"
+            }
+        }
+    },
+    "welcomeMessageTitle": {
+        "message": "Welcome message"
+    },
+    "welcomeMessageDesc": {
+        "message": "Automatically sends a preset message to a buyer who writes to you for the first time (or again, after the timeout). Runs in the background while the browser is open."
+    },
+    "welcomeMessagePlaceholder": {
+        "message": "Hello! Thanks for reaching out, I'll reply shortly."
+    },
+    "welcomeMessageVars": {
+        "message": "Variables: {buyername} - buyer's name, {welcome} - time-of-day greeting, {date} - date and time."
+    },
+    "welcomeMessageCooldownLabel": {
+        "message": "Send again after"
+    },
+    "welcomeMessageUnitHours": {
+        "message": "hours"
+    },
+    "welcomeMessageUnitDays": {
+        "message": "days"
+    },
+    "welcomeMessageCooldownDesc": {
+        "message": "If the buyer writes again after this time, the message is sent again. 0 - send only once per chat."
+    },
+    "welcomeMessageImagesLabel": {
+        "message": "Images (optional)"
+    },
+    "welcomeMessageAddImage": {
+        "message": "Add image"
+    },
+    "welcomeMessageRemoveImage": {
+        "message": "Remove"
+    },
+    "welcomeMessageImageNotImage": {
+        "message": "Please choose an image."
+    },
+    "welcomeMessageImageFailed": {
+        "message": "Couldn't add the image."
+    },
+    "featureGatedWelcomeMessage": {
+        "message": "The welcome message is a Pro-tier feature. Get Pro to enable it."
+    },
+    "welcomeMessageSettings": {
+        "message": "Settings"
+    },
+    "reviewReplyTitle": {
+        "message": "Auto-reply to reviews"
+    },
+    "reviewReplyDesc": {
+        "message": "Automatically posts a reply to a buyer's review on your order - a separate text per rating (1-5 stars). Runs in the background while the browser is open."
+    },
+    "reviewReplySettings": {
+        "message": "Settings"
+    },
+    "reviewReplyModalDesc": {
+        "message": "Set a reply for each rating. A reply is sent only when the received rating has text. An empty field means no reply for that rating."
+    },
+    "reviewReplyPlaceholder": {
+        "message": "Thank you for your review and rating!"
+    },
+    "reviewReplyVars": {
+        "message": "Variables: {buyername} - buyer's name, {lotname} - lot name, {orderid} - order number, {stars} - rating, {date} - date and time."
+    },
+    "featureGatedReviewReply": {
+        "message": "\"Auto-reply to reviews\" is a Premium feature. Get Premium to enable it."
+    },
+    "aiReviewReplyTitle": {
+        "message": "AI auto-reply to a buyer review"
+    },
+    "aiReviewReplyDesc": {
+        "message": "Answers a review with text written by AI from the buyer's own words instead of a fixed template. If the AI is unavailable, your template for that rating is sent. Runs in the background while the browser is open."
+    },
+    "aiReviewReplySettings": {
+        "message": "Settings"
+    },
+    "aiReviewReplyModalDesc": {
+        "message": "The reply is published publicly in your name, so the AI never promises refunds or discounts, never admits fault and never leaves contacts outside FunPay. If a reply fails the check, your template from \"Auto-reply to reviews\" is sent instead."
+    },
+    "aiReviewReplyRatingsLabel": {
+        "message": "Which ratings to answer"
+    },
+    "aiReviewReplyNoteLabel": {
+        "message": "Preferred tone"
+    },
+    "aiReviewReplyNotePlaceholder": {
+        "message": "For example: keep it short and informal, no emoji"
+    },
+    "aiReviewReplyHint": {
+        "message": "Up to 300 characters. Shares the lot-text allowance of 1000 generations per month."
+    },
+    "aiReviewReplySave": {
+        "message": "Save"
+    },
+    "aiReviewReplySaved": {
+        "message": "Saved"
+    },
+    "aiReviewReplyUnsaved": {
+        "message": "Unsaved changes"
+    },
+    "featureGatedAiReviewReply": {
+        "message": "\"AI auto-reply to a buyer review\" is a Premium feature. Get Premium to enable it."
+    },
+    "autoReplyTitle": {
+        "message": "Keyword auto-reply"
+    },
+    "autoReplyDesc": {
+        "message": "Automatically sends a configured response when a buyer's message exactly matches a command or contains a given word or phrase. Runs in the background while the browser is open."
+    },
+    "autoReplySettings": {
+        "message": "Settings"
+    },
+    "autoReplyModalDesc": {
+        "message": "Add rules. For each new buyer message, the first matching rule fires. \"Exact match\" - the message equals the keyword; \"Contains\" - the keyword occurs in the message."
+    },
+    "autoReplyColKeyword": {
+        "message": "Keyword / phrase"
+    },
+    "autoReplyColMode": {
+        "message": "Mode"
+    },
+    "autoReplyColResponse": {
+        "message": "Response"
+    },
+    "autoReplyColEnabled": {
+        "message": "On"
+    },
+    "autoReplyModeExact": {
+        "message": "Exact match"
+    },
+    "autoReplyModeContains": {
+        "message": "Contains"
+    },
+    "autoReplyKeywordPlaceholder": {
+        "message": "e.g. price"
+    },
+    "autoReplyResponsePlaceholder": {
+        "message": "Response text"
+    },
+    "autoReplyAddRule": {
+        "message": "Add rule"
+    },
+    "autoReplyVars": {
+        "message": "Variables: {buyername} - buyer's name, {date} - date and time."
+    },
+    "featureGatedAutoReply": {
+        "message": "\"Keyword auto-reply\" is a Premium feature. Get Premium to enable it."
+    },
+    "orderConfirmReplyTitle": {
+        "message": "Auto-reply after order confirmation"
+    },
+    "orderConfirmReplyDesc": {
+        "message": "Automatically sends a set message right after a buyer confirms an order. Runs in the background while the browser is open."
+    },
+    "orderConfirmReplySettings": {
+        "message": "Settings"
+    },
+    "orderConfirmReplyModalDesc": {
+        "message": "The message is sent once per order confirmation. It defaults to \"Thank you for your purchase!\" and you can change it to anything."
+    },
+    "orderConfirmReplyPlaceholder": {
+        "message": "Thank you for your purchase!"
+    },
+    "orderConfirmReplyVars": {
+        "message": "Variables: {buyername} - buyer name, {orderid} - order number, {date} - date and time."
+    },
+    "orderConfirmReplyDefault": {
+        "message": "Thank you for your purchase!"
+    },
+    "orderConfirmReplySave": {
+        "message": "Save"
+    },
+    "orderConfirmReplySaved": {
+        "message": "Saved"
+    },
+    "orderConfirmReplyUnsaved": {
+        "message": "Unsaved changes"
+    },
+    "featureGatedOrderConfirmReply": {
+        "message": "\"Auto-reply after order confirmation\" is a Premium feature. Get Premium to enable it."
+    },
+    "lotCostPrice": {
+        "message": "Lot cost price"
+    },
+    "lotCostPriceDesc": {
+        "message": "Adds a cost-price field with a currency picker on the lot-edit page and shows your net profit. The cost price is also included in the order export. Applies to existing lots."
+    },
+    "costPriceLabel": {
+        "message": "Cost price (optional)"
+    },
+    "costPriceNetProfitLabel": {
+        "message": "Net profit"
+    },
+    "costPriceNoRate": {
+        "message": "no rate"
+    },
+    "costPriceWithdrawalCommission": {
+        "message": "Withdrawal fee"
+    },
+    "featureGatedLotCostPrice": {
+        "message": "\"Lot cost price\" is a Premium feature. Get Premium to enable it."
+    },
+    "finances": {
+        "message": "Finances"
+    },
+    "showFinancesStats": {
+        "message": "Finance statistics"
+    },
+    "showFinancesStatsDesc": {
+        "message": "On the balance page (/account/balance) shows statistics over your operations: income, expenses, net flow, a per-type breakdown and a chart."
+    },
+    "exportFinancesEnable": {
+        "message": "Finance export"
+    },
+    "exportFinancesEnableDesc": {
+        "message": "An export button for the operations history to Excel / JSON on the balance page."
+    },
+    "financesStatsTitle": {
+        "message": "Statistics"
+    },
+    "financesCardIncome": {
+        "message": "Income"
+    },
+    "financesCardExpense": {
+        "message": "Expenses"
+    },
+    "financesCardNet": {
+        "message": "Net flow"
+    },
+    "financesCardOps": {
+        "message": "Total operations"
+    },
+    "financesTypesTitle": {
+        "message": "By operation type"
+    },
+    "financesChartTitle": {
+        "message": "Dynamics (income / expenses)"
+    },
+    "financesUpdate": {
+        "message": "Update"
+    },
+    "financesExport": {
+        "message": "Export"
+    },
+    "financesUpdating": {
+        "message": "Loading operations…"
+    },
+    "financesEmpty": {
+        "message": "No data for the period"
+    },
+    "financesTypeOrder": {
+        "message": "Orders"
+    },
+    "financesTypePayment": {
+        "message": "Deposits"
+    },
+    "financesTypeWithdraw": {
+        "message": "Withdrawals"
+    },
+    "financesTypeWithdrawCancel": {
+        "message": "Withdrawal cancels"
+    },
+    "financesTypeRefund": {
+        "message": "Refunds"
+    },
+    "financesTypeOther": {
+        "message": "Other"
+    },
+    "financesStatusComplete": {
+        "message": "Completed"
+    },
+    "financesStatusWaiting": {
+        "message": "Pending"
+    },
+    "financesStatusCancel": {
+        "message": "Cancelled"
+    },
+    "financesTopIncome": {
+        "message": "Most income from"
+    },
+    "financesTopExpense": {
+        "message": "Most spent on"
+    },
+    "financesDiagramStatus": {
+        "message": "By status"
+    },
+    "financesDiagramCurrency": {
+        "message": "By currency"
+    },
+    "financesDetailNet": {
+        "message": "Net flow by type"
+    },
+    "exportFinancesTitle": {
+        "message": "Finance export"
+    },
+    "featureGatedFinanceStats": {
+        "message": "\"Finances\" (statistics & export) is a Premium feature. Get Premium to enable it."
+    },
+    "settingsCategoryNotifications": {
+        "message": "Notifications"
+    },
+    "bulkLotEdit": {
+        "message": "Bulk lot editing"
+    },
+    "bulkLotEditDesc": {
+        "message": "Adds a \"Select lots\" button to your offers page and to your own profile: pick any number of lots and switch them on or off, change their price, or delete them. Inside a section you can also drag lots into a new order, which is applied by recreating the ones that moved."
+    },
+    "featureGatedBulkLotEdit": {
+        "message": "Bulk lot editing requires the Pro plan."
+    },
+    "bulkEnter": {
+        "message": "Select lots"
+    },
+    "bulkExit": {
+        "message": "Done"
+    },
+    "bulkOrderApply": {
+        "message": "Apply order"
+    },
+    "bulkOrderAsk": {
+        "message": "Lots to be recreated: $COUNT$ of $TOTAL$. Their ids will change, so links to them in chats and on other sites stop working and the lots lose their age. Auto-delivery goods are carried over. The copy is created before the original is deleted, so no lot can go missing.",
+        "placeholders": { "count": { "content": "$1" }, "total": { "content": "$2" } }
+    },
+    "bulkOrderConfirm": {
+        "message": "Recreate: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderDone": {
+        "message": "Order applied. Lots recreated: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderDuplicate": {
+        "message": "Lot $ID$ now exists twice - the extra copy can be deleted by hand",
+        "placeholders": { "id": { "content": "$1" } }
+    },
+    "bulkOrderFailed": {
+        "message": "The order was only partly applied"
+    },
+    "bulkOrderHint": {
+        "message": "Drag a row to change the order"
+    },
+    "bulkOrderMovedN": {
+        "message": "Moved: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderNothing": {
+        "message": "The order is already this"
+    },
+    "bulkOrderReset": {
+        "message": "Undo moves"
+    },
+    "bulkOrderTitle": {
+        "message": "Apply the new order?"
+    },
+    "bulkSelectAll": {
+        "message": "All"
+    },
+    "bulkSelectedN": {
+        "message": "Selected: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkNothingSelected": {
+        "message": "Pick lots - click a row"
+    },
+    "bulkActivate": {
+        "message": "Switch on"
+    },
+    "bulkDeactivate": {
+        "message": "Switch off"
+    },
+    "bulkPrice": {
+        "message": "Price…"
+    },
+    "bulkDelete": {
+        "message": "Delete"
+    },
+    "bulkCancel": {
+        "message": "Stop"
+    },
+    "bulkActivatedN": {
+        "message": "switched on: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeactivatedN": {
+        "message": "switched off: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPricedN": {
+        "message": "repriced: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeletedN": {
+        "message": "deleted: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkSkippedN": {
+        "message": "unchanged: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkFailedN": {
+        "message": "failed: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkUnknownN": {
+        "message": "unknown: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkRateLimited": {
+        "message": "FunPay asked us to slow down - stopped"
+    },
+    "bulkCancelled": {
+        "message": "stopped"
+    },
+    "bulkDeleteTitle": {
+        "message": "Delete the selected lots?"
+    },
+    "bulkDeleteAsk": {
+        "message": "This will delete $COUNT$ lot(s). It cannot be undone.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeleteAskChips": {
+        "message": "This will delete $COUNT$ lot(s). Currency lots are skipped - they cannot be deleted this way. It cannot be undone.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeleteConfirm": {
+        "message": "Delete: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkChipsOnly": {
+        "message": "Currency lots are not deleted this way - set their stock to zero instead"
+    },
+    "bulkPriceTitle": {
+        "message": "Change price"
+    },
+    "bulkPriceLead": {
+        "message": "Applies to selected lots: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceModeSet": {
+        "message": "Set to"
+    },
+    "bulkPriceModeAdd": {
+        "message": "Add"
+    },
+    "bulkPriceModeSub": {
+        "message": "Subtract"
+    },
+    "bulkPriceModePctUp": {
+        "message": "Raise by %"
+    },
+    "bulkPriceModePctDown": {
+        "message": "Lower by %"
+    },
+    "bulkPriceRound": {
+        "message": "Round to whole"
+    },
+    "bulkPriceMin": {
+        "message": "Not below"
+    },
+    "bulkPriceMax": {
+        "message": "Not above"
+    },
+    "bulkPricePreview": {
+        "message": "What you get"
+    },
+    "bulkPriceMore": {
+        "message": "…and $COUNT$ more",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceUnreadable": {
+        "message": "No preview for: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceApply": {
+        "message": "Apply"
+    },
+    "bulkPriceApplyN": {
+        "message": "Apply to $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "lotAiGenerate": {
+        "message": "AI lot text"
+    },
+    "lotAiGenerateDesc": {
+        "message": "A button on the offer form asks the AI to write the title, description and post-purchase message from your lot data. The result appears in a separate window first, and nothing reaches the lot until you press insert."
+    },
+    "transferSearch": {
+        "message": "Search by name"
+    },
+    "transferSearching": {
+        "message": "Looking for sections with your lots"
+    },
+    "transferNothingFound": {
+        "message": "No lots found"
+    },
+    "transferOtherGames": {
+        "message": "Other"
+    },
+    "transferFindNote": {
+        "message": "Sections missing? The ones where every lot is switched off do not show on the profile."
+    },
+    "transferFindNear": {
+        "message": "Search my games"
+    },
+    "transferFindFar": {
+        "message": "Search everywhere (over an hour)"
+    },
+    "lotTransfer": {
+        "message": "Lot export"
+    },
+    "lotTransferDesc": {
+        "message": "Adds \"Export lots\" and \"Import lots\" buttons to your own profile page. Export saves every lot and currency section to one file, as JSON or Excel; import creates lots from such a file and accepts either format. Existing lots are never changed on import: only new ones are created. The export button appears on other sellers' profiles too, but there it saves only what a buyer can see: descriptions, price and stock, without auto-delivery goods or the after-payment message."
+    },
+    "featureGatedLotTransfer": {
+        "message": "Lot export requires the Premium plan."
+    },
+    "transferExportButton": {
+        "message": "Export lots"
+    },
+    "transferImportButton": {
+        "message": "Import lots"
+    },
+    "transferExportTitle": {
+        "message": "Export lots to a file"
+    },
+    "transferImportTitle": {
+        "message": "Import lots from a file"
+    },
+    "transferExportLead": {
+        "message": "Tick the sections you want to export."
+    },
+    "transferImportLead": {
+        "message": "In the file"
+    },
+    "transferSelectAll": {
+        "message": "Select all"
+    },
+    "transferSelected": {
+        "message": "Sections selected"
+    },
+    "transferKindLots": {
+        "message": "lots"
+    },
+    "transferKindChips": {
+        "message": "currency"
+    },
+    "transferIncludeDisabled": {
+        "message": "Include switched-off lots"
+    },
+    "transferWarnTime": {
+        "message": "This will take about"
+    },
+    "transferWarnKeepOpen": {
+        "message": "Keep this tab open and stay on the page while it runs."
+    },
+    "transferWarnSecrets": {
+        "message": "The file will contain your auto-delivery goods, logins and passwords included. Keep it the way you keep a password."
+    },
+    "lotManagementForeignTitle": {
+        "message": "Seller's lots"
+    },
+    "transferExportForeignButton": {
+        "message": "Export seller's lots"
+    },
+    "transferExportForeignTitle": {
+        "message": "Export seller's lots"
+    },
+    "transferExportForeignLead": {
+        "message": "Tick the seller's sections you want to save."
+    },
+    "transferWarnPublicOnly": {
+        "message": "Another profile can only be read as a buyer sees it: descriptions, price and stock. Auto-delivery goods and the after-payment message are not included — only the lot owner sees those."
+    },
+    "transferWarnPublicOff": {
+        "message": "Switched-off lots are not on the site, so they cannot be in the file. Lots created from such a file are switched off — check them before turning them on."
+    },
+    "transferCurrencySkip": {
+        "message": "Skipped because of the file's currency"
+    },
+    "transferCreatedOff": {
+        "message": "Lots from another profile were created switched off — check them before turning them on"
+    },
+    "transferParamUnplaced": {
+        "message": "Parameter not carried over, the default was left in place"
+    },
+    "transferUnderMinute": {
+        "message": "under a minute"
+    },
+    "transferMinutesShort": {
+        "message": "min"
+    },
+    "transferHoursShort": {
+        "message": "h"
+    },
+    "transferCancel": {
+        "message": "Cancel"
+    },
+    "transferStartExport": {
+        "message": "Export"
+    },
+    "transferStartImport": {
+        "message": "Import"
+    },
+    "transferAbort": {
+        "message": "Stop"
+    },
+    "transferAborting": {
+        "message": "Stopping…"
+    },
+    "transferKeepOpenShort": {
+        "message": "Keep the tab open"
+    },
+    "transferDone": {
+        "message": "Done"
+    },
+    "transferSaved": {
+        "message": "Lots saved"
+    },
+    "transferSavedChips": {
+        "message": "currency sections"
+    },
+    "transferCreated": {
+        "message": "Lots created"
+    },
+    "transferWroteChips": {
+        "message": "currency sections"
+    },
+    "transferStopped": {
+        "message": "Stopped"
+    },
+    "transferSkippedDisabled": {
+        "message": "Switched-off skipped"
+    },
+    "transferSkippedDeleted": {
+        "message": "Deleted skipped"
+    },
+    "transferSectionSkipped": {
+        "message": "section skipped"
+    },
+    "transferFailed": {
+        "message": "Could not export"
+    },
+    "transferImportFailed": {
+        "message": "Could not import"
+    },
+    "transferBadJson": {
+        "message": "This is not an export file: it could not be read."
+    },
+    "transferBadFormat": {
+        "message": "This is not a FunPay Lite Bot lot export file."
+    },
+    "transferNewerFile": {
+        "message": "The file was made by a newer version of the extension. Update the extension."
+    },
+    "transferEmptyFile": {
+        "message": "The file contains no lots."
+    },
+    "featureGatedLotAiGenerate": {
+        "message": "AI lot text requires the Pro plan."
+    },
+    "lotAiSectionLabel": {
+        "message": "AI text"
+    },
+    "lotAiButton": {
+        "message": "Write lot text"
+    },
+    "lotAiUndo": {
+        "message": "Undo"
+    },
+    "lotAiModalTitle": {
+        "message": "Generate a lot"
+    },
+    "lotAiSubjectLabel": {
+        "message": "What are you selling?"
+    },
+    "lotAiSubjectPlaceholder": {
+        "message": "e.g. a Steam account with email and 200 games"
+    },
+    "lotAiTemplateLabel": {
+        "message": "Link to a template lot, optional"
+    },
+    "lotAiTemplatePlaceholder": {
+        "message": "https://funpay.com/lots/offer?id=…"
+    },
+    "lotAiTemplateDesc": {
+        "message": "We will open that lot and use its text as a style sample. It can be selling anything - only the manner is borrowed, not the content."
+    },
+    "lotAiTemplateBadUrl": {
+        "message": "That does not look like a FunPay lot link. Example: https://funpay.com/lots/offer?id=12345678"
+    },
+    "lotAiTemplateFailed": {
+        "message": "Could not read the template lot. Check the link or remove it"
+    },
+    "lotAiFieldTitle": {
+        "message": "Title"
+    },
+    "lotAiFieldDescription": {
+        "message": "Description"
+    },
+    "lotAiFieldPaymentMsg": {
+        "message": "Message after payment"
+    },
+    "lotAiFieldNotWritable": {
+        "message": "This section does not allow editing this field, you can copy the text by hand"
+    },
+    "lotAiWorking": {
+        "message": "Writing, this usually takes a few seconds"
+    },
+    "lotAiAgain": {
+        "message": "Generate again"
+    },
+    "lotAiInsert": {
+        "message": "Insert into the lot"
+    },
+    "lotAiQuotaLeft": {
+        "message": "Generations left this month: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "lotAiInserted": {
+        "message": "Text inserted. Check it and save the lot"
+    },
+    "lotAiUndone": {
+        "message": "Previous text restored"
+    },
+    "lotAiInsertNothing": {
+        "message": "Nothing to fill in this section"
+    },
+    "lotAiErrorQuota": {
+        "message": "You have used up this month of generations. The limit resets on the 1st"
+    },
+    "lotAiErrorBusy": {
+        "message": "Too many requests right now. Try again in a minute"
+    },
+    "lotAiErrorUnavailable": {
+        "message": "Generation is temporarily unavailable. Try again later"
+    },
+    "lotAiErrorRejected": {
+        "message": "The text did not pass our checks and was discarded. Press again, or say more clearly what you are selling"
+    },
+    "lotAiErrorFeature": {
+        "message": "AI generation requires the Pro plan"
+    },
+    "lotAiErrorSession": {
+        "message": "Sign in to FunPayLiteBot to use generation"
+    },
+    "lotAiErrorNetwork": {
+        "message": "No connection to the server. Check your internet and try again"
+    },
+    "lotAiErrorGeneric": {
+        "message": "Could not write the text. Try again"
+    },
+    "lotAiStart": {
+        "message": "Generate"
+    }
+}

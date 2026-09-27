@@ -1,0 +1,2574 @@
+{
+    "nicknameColorTitle": {
+        "message": "Публичные стили ника"
+    },
+    "nicknameColorDescription": {
+        "message": "Выберите стиль для своего ника - его увидят все пользователи расширения на FunPay, на всех страницах."
+    },
+    "nicknameColorPurple": {
+        "message": "Фиолетовый градиент"
+    },
+    "nicknameColorOrange": {
+        "message": "Оранжевый градиент"
+    },
+    "nicknameColorOrangeLocked": {
+        "message": "Оранжевый градиент доступен только с Pro"
+    },
+    "nicknameColorNone": {
+        "message": "Стандартный"
+    },
+    "nicknameStyleGroupColor": {
+        "message": "Цвет"
+    },
+    "nicknameStyleGroupFont": {
+        "message": "Шрифт"
+    },
+    "nicknameStyleGroupEffect": {
+        "message": "Эффект"
+    },
+    "nicknameStyleColorLocked": {
+        "message": "Цвет задаётся эффектом"
+    },
+    "nicknameStyleUnsavedNote": {
+        "message": "Стиль не сохранён"
+    },
+    "nicknameStyleSaveButton": {
+        "message": "Сохранить"
+    },
+    "nicknameStyleDiscardButton": {
+        "message": "Отменить"
+    },
+    "nicknameStyleUnsavedTitle": {
+        "message": "Стиль ника не сохранён"
+    },
+    "nicknameStyleUnsavedBody": {
+        "message": "Вы примерили стиль ника, но не сохранили его. Сохранить изменения?"
+    },
+    "nicknameStyleRestored": {
+        "message": "Стиль ника восстановлен"
+    },
+    "nicknameStyleRestorePartial": {
+        "message": "Часть сохранённого стиля больше недоступна - восстановлено только доступное"
+    },
+    "nicknameStyleRestoreUnavailable": {
+        "message": "Сохранённый стиль ника больше недоступен"
+    },
+    "nicknameStyleRestoreFailed": {
+        "message": "Не удалось восстановить стиль ника - нажмите «Сохранить», чтобы повторить"
+    },
+    "nicknameColorHiddenBlocked": {
+        "message": "Стили ников скрыты - отключите «Скрывать стили ников», чтобы менять свой стиль."
+    },
+    "goldenKeyCopyFailed": {
+        "message": "Не удалось скопировать - кликните по странице и попробуйте снова."
+    },
+    "nicknameStyleTierFree": {
+        "message": "Доступно всем"
+    },
+    "nicknameColorPreviewFallback": {
+        "message": "Ваш ник"
+    },
+    "nicknameColorSaved": {
+        "message": "Стиль ника сохранён"
+    },
+    "nicknameColorSaveFailed": {
+        "message": "Не удалось сохранить стиль ника"
+    },
+    "nicknameColorProRequired": {
+        "message": "Оранжевый градиент доступен только со статусом Pro"
+    },
+    "nicknameColorLinkFirst": {
+        "message": "Сначала привяжите аккаунт FunPay в разделе «Аккаунт»"
+    },
+    "nicknameColorNeedCommunity": {
+        "message": "Публичный стиль ника доступен со статусом Community"
+    },
+    "nicknameColorHideTitle": {
+        "message": "Скрывать стили ников"
+    },
+    "nicknameColorHideDesc": {
+        "message": "Не показывать публичные стили ников других пользователей нигде, кроме страниц их профилей. Ваш собственный стиль ника при этом станет стандартным для всех пользователей."
+    },
+    "nicknameColorHideNeedCommunity": {
+        "message": "Скрытие стилей ников доступно со статусом Community"
+    },
+    "nicknameColorNeedPro": {
+        "message": "Оранжевый стиль ника доступен со статусом Pro"
+    },
+    "nicknameColorNeedPremium": {
+        "message": "Премиум-стили ника доступны со статусом Premium"
+    },
+    "nicknameColorUpgrade": {
+        "message": "Подробнее о статусах"
+    },
+    "nicknameColorLoading": {
+        "message": "Загрузка…"
+    },
+    "nicknameColorPencilTitle": {
+        "message": "Изменить стиль ника"
+    },
+    "nicknameColorOpenCustomization": {
+        "message": "Открыть кастомизацию"
+    },
+    "extName": {
+        "message": "FunPay Lite Bot"
+    },
+    "extDescription": {
+        "message": "💲 Тёмная тема, автоподнятие предложений, статистика продаж и другие улучшения для торговой площадки FunPay"
+    },
+    "extSmallName": {
+        "message": "lite bot cracked by ilysha xd"
+    },
+    "socialLinkTelegram": {
+        "message": "https://t.me/fplite"
+    },
+    "socialLinkDiscord": {
+        "message": "https://dsc.gg/funpaycom"
+    },
+    "settingTheme": {
+        "message": "Тема"
+    },
+    "settingsCategoryCustomization": {
+        "message": "Кастомизация"
+    },
+    "settingThemeLight": {
+        "message": "Светлая"
+    },
+    "settingThemeDark": {
+        "message": "Тёмная"
+    },
+    "settingThemeFirewatch": {
+        "message": "Firewatch"
+    },
+    "settingThemeChoice": {
+        "message": "Выбор темы"
+    },
+    "settingThemeCustomBackground": {
+        "message": "Своё фоновое изображение"
+    },
+    "settingThemeCustomBackgroundDesc": {
+        "message": "Вы можете установить свой фоновый рисунок для тем Firewatch и Red Moon."
+    },
+    "settingThemeCustomBackgroundOn": {
+        "message": "Свой фон задан."
+    },
+    "settingThemeCustomBackgroundDim": {
+        "message": "Затемнение фона"
+    },
+    "settingThemeCustomBackgroundTooLarge": {
+        "message": "Изображение слишком большое даже после сжатия. Попробуйте меньше."
+    },
+    "settingThemeCustomBackgroundNotImage": {
+        "message": "Выберите изображение (PNG / JPEG)."
+    },
+    "settingThemeCustomBackgroundTooSmall": {
+        "message": "Это изображение меньше вашего экрана. Выберите больше."
+    },
+    "settingThemeChooseImage": {
+        "message": "Выбрать изображение…"
+    },
+    "settingThemeRemoveImage": {
+        "message": "Убрать"
+    },
+    "featureGatedCustomBackgroundMessage": {
+        "message": "Свой фоновый рисунок доступен с тарифом Community."
+    },
+    "settingOffers": {
+        "message": "Предложения"
+    },
+    "settingOfferAutoRaise": {
+        "message": "Автоподнятие предложений"
+    },
+    "lotManagementTitle": {
+        "message": "Управление лотами"
+    },
+    "raiseAllButton": {
+        "message": "Поднять все предложения"
+    },
+    "raiseAllBusy": {
+        "message": "Поднимаю…"
+    },
+    "raiseAllStarted": {
+        "message": "Поднятие запущено…"
+    },
+    "raiseAllRaised": {
+        "message": "поднято"
+    },
+    "raiseAllWillRaise": {
+        "message": "будет поднято"
+    },
+    "raiseAllWait": {
+        "message": "пока рано"
+    },
+    "raiseAllDone": {
+        "message": "Готово"
+    },
+    "raiseAllNone": {
+        "message": "Нет предложений для поднятия"
+    },
+    "raiseAllCancel": {
+        "message": "Отмена"
+    },
+    "raiseAllStopped": {
+        "message": "Остановлено"
+    },
+    "raiseAllError": {
+        "message": "ошибка"
+    },
+    "raiseAllSection": {
+        "message": "Раздел"
+    },
+    "raiseAllSummary": {
+        "message": "Проверено - $CHECKED$, поднято - $RAISED$",
+        "placeholders": {
+            "checked": { "content": "$1", "example": "128" },
+            "raised": { "content": "$2", "example": "12" }
+        }
+    },
+    "raiseNotifications": {
+        "message": "Уведомления о поднятии"
+    },
+    "raiseNotificationsDesc": {
+        "message": "Показывать уведомление при каждом успешном поднятии: и для кнопки «Поднять все», и для автоподнятия. Отключите, если разделов очень много."
+    },
+    "lotManagementPanel": {
+        "message": "Панель управления лотами в профиле"
+    },
+    "lotManagementPanelDesc": {
+        "message": "Показывать панель «Управление лотами» с кнопкой «Поднять все предложения» на вашем профиле FunPay."
+    },
+    "settingExactPrice": {
+        "message": "Точная цена"
+    },
+    "settingNotifications": {
+        "message": "Уведомления"
+    },
+    "settingCustomNotification": {
+        "message": "Кастомный звук уведомлений"
+    },
+    "customNotifyOptionDefault": {
+        "message": "По умолчанию"
+    },
+    "customNotifyOptionCashRegister": {
+        "message": "Касса"
+    },
+    "customNotifyOptionCoin": {
+        "message": "Монета"
+    },
+    "customNotifyOptionChime": {
+        "message": "Перезвон"
+    },
+    "customNotifyOptionBell": {
+        "message": "Колокольчик"
+    },
+    "customNotifyOptionPop": {
+        "message": "Хлопок"
+    },
+    "customNotifyPreviewTitle": {
+        "message": "Прослушать звук"
+    },
+    "customNotifyOptionCustom": {
+        "message": "Свой звук"
+    },
+    "settingCustomNotifyChooseFile": {
+        "message": "Выбрать MP3…"
+    },
+    "settingCustomNotifyNotMp3": {
+        "message": "Выберите MP3-файл."
+    },
+    "settingCustomNotifyTooLarge": {
+        "message": "Файл слишком большой (макс. 1 МБ)."
+    },
+    "featureGatedCustomNotifySoundMessage": {
+        "message": "Загрузка своего звука уведомления доступна со статусом Pro."
+    },
+    "settingOrderSound": {
+        "message": "Свой звук для нового заказа"
+    },
+    "settingOrderSoundDesc": {
+        "message": "Проигрывает выбранный звук при новом заказе, даже если вкладка FunPay не открыта. Браузер должен быть запущён."
+    },
+    "orderSoundOptionOff": {
+        "message": "Выключено"
+    },
+    "featureGatedCustomOrderSoundMessage": {
+        "message": "Свой звук для нового заказа доступен со статусом Pro."
+    },
+    "settingsReset": {
+        "message": "Сбросить настройки"
+    },
+    "settingsPrivacyMode": {
+        "message": "Режим приватности"
+    },
+    "settingsPrivacyModeDesc": {
+        "message": "Прячет за размытием ваш ник, ник собеседника, баланс и номера заказов - страницу можно скриншотить, ничего не закрашивая вручную. Наведите курсор на размытое, чтобы прочитать его."
+    },
+    "settingsHideLockedFeatures": {
+        "message": "Скрывать недоступные функции"
+    },
+    "settingsHideLockedFeaturesDesc": {
+        "message": "Кнопки и блоки расширения, которых нет в вашем тарифе, просто не появятся на страницах FunPay."
+    },
+    "settingsHiddenPaywallsCount": {
+        "message": "Скрыто функций по отдельности: $COUNT$.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "3" }
+        }
+    },
+    "settingsHiddenPaywallsReset": {
+        "message": "Показать снова"
+    },
+    "settingsHiddenPaywallsCleared": {
+        "message": "Готово, скрытые функции снова показываются."
+    },
+    "featureGatedHideLockedFeatures": {
+        "message": "Скрытие недоступных функций доступно с планом Community."
+    },
+    "featureGatedPrivacyMode": {
+        "message": "Режим приватности доступен с планом Community."
+    },
+    "privacyModeOn": {
+        "message": "Режим приватности включён"
+    },
+    "privacyModeOff": {
+        "message": "Режим приватности выключен"
+    },
+    "settingsHideBalance": {
+        "message": "Скрыть отображение баланса"
+    },
+    "settingOther": {
+        "message": "Прочее"
+    },
+    "settingOfferAutoRaiseDesc": {
+        "message": "Автоматически поднимает все ваши лоты. Для работы не закрывайте браузер."
+    },
+    "settingExactPriceDesc": {
+        "message": "Добавляет в окно редактирования лотов поля для ввода цены, отображаемой как для продавца, так и для покупателя."
+    },
+    "settingCustomNotificationDesc": {
+        "message": "Заменяет звук громкого уведомления чата на выбранный."
+    },
+    "settingsHideBalanceDesc": {
+        "message": "Бывает полезно, когда нужно продемонстрировать экран, но не хочется показывать баланс аккаунта."
+    },
+    "settingViewSellersPromo": {
+        "message": "Отображать значки промо-лотов"
+    },
+    "settingViewSellersPromoDesc": {
+        "message": "Отображает все значки промо-лотов в таблице предложений, даже если они скрыты."
+    },
+    "settingsChatLinkTitle": {
+        "message": "Секретный чат продавцов 🕵"
+    },
+    "settingsDiscordLinkTitle": {
+        "message": "Секретный сервер Discord 👾"
+    },
+    "settingsChannelLinkTitle": {
+        "message": "Секретный канал FunPay 👀"
+    },
+    "settingsHelpLinkTitle": {
+        "message": "Сообщить об ошибке / Заказать разработку ⚒️"
+    },
+    "settingReset": {
+        "message": "♻️ Сброс"
+    },
+    "settingsReviewTitle": {
+        "message": "Ваш отзыв займет всего минуту, а для нас он бесценен! ✨"
+    },
+    "settingsReviewButton": {
+        "message": "Оставить отзыв"
+    },
+    "priceLabelSeller": {
+        "message": "(для продавца)"
+    },
+    "priceLabelBuyer": {
+        "message": "(для покупателя)"
+    },
+    "settingsSaved": {
+        "message": "✔️ Сохранено"
+    },
+    "settingsNotSaved": {
+        "message": "❌ Не удалось сохранить"
+    },
+    "raiseResponseHours": {
+        "message": "час"
+    },
+    "raiseResponseMinutes": {
+        "message": "минут"
+    },
+    "raiseResponseSeconds": {
+        "message": "секунд"
+    },
+    "resetSettingsConfirm": {
+        "message": "Вы уверены, что хотите сбросить настройки?"
+    },
+    "statsHeader": {
+        "message": "Статистика"
+    },
+    "statsUpdateButton": {
+        "message": "Обновить данные"
+    },
+    "statsUpdateButtonUpdating": {
+        "message": "Обновление..."
+    },
+    "statsUpdatingTitle": {
+        "message": "Обновление данных…"
+    },
+    "statsUpdatingOrders": {
+        "message": "заказов получено"
+    },
+    "statsUpdatingOf": {
+        "message": "из"
+    },
+    "statsCancelButton": {
+        "message": "Отмена"
+    },
+    "statsCancelling": {
+        "message": "Отмена…"
+    },
+    "statsToday": {
+        "message": "Сегодня"
+    },
+    "statsYesterday": {
+        "message": "Вчера"
+    },
+    "stats24Hours": {
+        "message": "24 часа"
+    },
+    "stats7Days": {
+        "message": "Неделя"
+    },
+    "stats30Days": {
+        "message": "Месяц"
+    },
+    "stats365Days": {
+        "message": "Год"
+    },
+    "statsTotalTime": {
+        "message": "Всё время"
+    },
+    "statsTotalOrders": {
+        "message": "Всего заказов"
+    },
+    "statsTotalrevenue": {
+        "message": "Всего заработано"
+    },
+    "statsAverageSalePrice": {
+        "message": "Средний чек"
+    },
+    "statsOrdersClosed": {
+        "message": "Закрыто"
+    },
+    "statsPendingConfirmation": {
+        "message": "В ожидании"
+    },
+    "statsReturns": {
+        "message": "Возвраты"
+    },
+    "statsUniqueCustomers": {
+        "message": "Уникальных покупателей"
+    },
+    "statsTopCustomer": {
+        "message": "Самый активный покупатель"
+    },
+    "statsHighestSale": {
+        "message": "Самая дорогая продажа"
+    },
+    "statsPopularProduct": {
+        "message": "Самый популярный товар"
+    },
+    "statsPopularCategory": {
+        "message": "Самая популярная категория"
+    },
+    "salesMonthJanuary": {
+        "message": "января"
+    },
+    "salesMonthFebruary": { 
+        "message": "февраля"
+    },
+    "salesMonthMarch": { 
+        "message": "марта"
+    },
+    "salesMonthApril": { 
+        "message": "апреля"
+    },
+    "salesMonthMay": { 
+        "message": "мая"
+    },
+    "salesMonthJune": { 
+        "message": "июня"
+    },
+    "salesMonthJuly": { 
+        "message": "июля"
+    },
+    "salesMonthAugust": { 
+        "message": "августа"
+    },
+    "salesMonthSeptember": { 
+        "message": "сентября"
+    },
+    "salesMonthOctober": { 
+        "message": "октября"
+    },
+    "salesMonthNovember": { 
+        "message": "ноября"
+    },
+    "salesMonthDecember": { 
+        "message": "декабря"
+    },
+    "sales": {
+        "message": "Продажи"
+    },
+    "purchases": {
+        "message": "Покупки"
+    },
+    "showSalesStats": {
+        "message": "Отображать статистику продаж"
+    },
+    "showSalesStatsDesc": {
+        "message": "Добавляет детальную статистику на страницу Продажи."
+    },
+    "statsTabNumbers": {
+        "message": "Статистика"
+    },
+    "statsTabCards": {
+        "message": "Карточки"
+    },
+    "statsTabCharts": {
+        "message": "Графики"
+    },
+    "statsTabDiagrams": {
+        "message": "Диаграммы"
+    },
+    "statsTabDetailed": {
+        "message": "ТОП-списки"
+    },
+    "statsTabFull": {
+        "message": "Все данные"
+    },
+    "statsInfoPeriod": {
+        "message": "Период:"
+    },
+    "statsInfoOrders": {
+        "message": "Заказов:"
+    },
+    "statsInfoSold": {
+        "message": "Продаж:"
+    },
+    "statsInfoBought": {
+        "message": "Покупок:"
+    },
+    "chartProfitTitle": {
+        "message": "Выручка по дням"
+    },
+    "chartSpentTitle": {
+        "message": "Расходы по дням"
+    },
+    "chartOrdersTitle": {
+        "message": "Заказы по дням, шт."
+    },
+    "chartCategoriesTitle": {
+        "message": "Заказы по категориям"
+    },
+    "chartStatusTitle": {
+        "message": "Заказы по статусам"
+    },
+    "chartCurrencyTitle": {
+        "message": "Выручка по валютам"
+    },
+    "chartCurrencySpentTitle": {
+        "message": "Расходы по валютам"
+    },
+    "statsCategoryOther": {
+        "message": "Прочие"
+    },
+    "statsDetailTopBuyers": {
+        "message": "Топ покупателей"
+    },
+    "statsDetailTopSellers": {
+        "message": "Топ продавцов"
+    },
+    "statsDetailTopProducts": {
+        "message": "Топ товаров"
+    },
+    "statsDetailTopCategories": {
+        "message": "Топ категорий"
+    },
+    "statsDetailOrdersSuffix": {
+        "message": "зак."
+    },
+    "statsDetailTimesSuffix": {
+        "message": "раз"
+    },
+    "statsDetailShowMore": {
+        "message": "Показать ещё"
+    },
+    "statsLockedCharts": {
+        "message": "Графики доступны со статусом"
+    },
+    "statsLockedDiagrams": {
+        "message": "Диаграммы доступны со статусом"
+    },
+    "statsLockedDetailed": {
+        "message": "Детальная статистика доступна со статусом"
+    },
+    "chartsEmpty": {
+        "message": "Нет данных за выбранный период"
+    },
+    "showPurchasesStats": {
+        "message": "Отображать статистику покупок"
+    },
+    "showPurchasesStatsDesc": {
+        "message": "Добавляет детальную статистику на страницу Покупки."
+    },
+    "showSectionCommission": {
+        "message": "Отображать комиссию раздела"
+    },
+    "showSectionCommissionDesc": {
+        "message": "Показывает процент комиссии FunPay для раздела рядом с заголовком на странице ваших предложений."
+    },
+    "sectionCommissionLabel": {
+        "message": "Комиссия:"
+    },
+    "offerEditCommissionLabel": {
+        "message": "Комиссия раздела"
+    },
+    "exportSalesEnable": {
+        "message": "Экспорт продаж"
+    },
+    "exportSalesEnableDesc": {
+        "message": "Добавляет кнопку «Экспорт» на страницу Продажи."
+    },
+    "exportPurchasesEnable": {
+        "message": "Экспорт покупок"
+    },
+    "exportPurchasesEnableDesc": {
+        "message": "Добавляет кнопку «Экспорт» на страницу Покупки."
+    },
+    "featureGatedExportMessage": {
+        "message": "Экспорт архива заказов - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "featureGatedCustomNotifyMessage": {
+        "message": "Этот звук уведомлений доступен только при статусе Community."
+    },
+    "statsExportButton": {
+        "message": "Экспорт"
+    },
+    "statsExportButtonTitle": {
+        "message": "Экспортировать архив…"
+    },
+    "statsResetConfirmTitle": {
+        "message": "Обновить архив?"
+    },
+    "statsResetConfirmMessage": {
+        "message": "Локальный кеш будет очищен и заказы загрузятся с FunPay заново. На больших архивах это может занять несколько минут."
+    },
+    "statsResetConfirmAction": {
+        "message": "Очистить и обновить"
+    },
+    "statsRefreshLastN": {
+        "message": "Последние $COUNT$ заказов",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "500"
+            }
+        }
+    },
+    "statsRefreshCustom": {
+        "message": "Своё число"
+    },
+    "statsRefreshCustomHint": {
+        "message": "Укажите, сколько последних заказов загрузить."
+    },
+    "statsRefreshAll": {
+        "message": "Все заказы (полная перезагрузка)"
+    },
+    "statsRefreshPartialHint": {
+        "message": "Последние $COUNT$ заказов будут загружены заново. Более старые останутся в архиве без изменений.",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "500"
+            }
+        }
+    },
+    "statsRefreshAction": {
+        "message": "Обновить"
+    },
+    "confirmCancel": {
+        "message": "Отмена"
+    },
+    "confirmOk": {
+        "message": "OK"
+    },
+    "exportSalesTitle": {
+        "message": "Экспорт продаж"
+    },
+    "exportPurchasesTitle": {
+        "message": "Экспорт покупок"
+    },
+    "exportFormatLabel": {
+        "message": "Формат"
+    },
+    "exportFormatXlsx": {
+        "message": "Excel (.xlsx)"
+    },
+    "exportFormatJson": {
+        "message": "JSON (.json)"
+    },
+    "exportRangeLabel": {
+        "message": "Период"
+    },
+    "exportRangeAllTime": {
+        "message": "За всё время"
+    },
+    "exportRangeCustom": {
+        "message": "Свои даты"
+    },
+    "exportRangeCustomHint": {
+        "message": "Или укажи свои даты:"
+    },
+    "commonClose": {
+        "message": "Закрыть"
+    },
+    "calendarPrevMonth": {
+        "message": "Предыдущий месяц"
+    },
+    "calendarNextMonth": {
+        "message": "Следующий месяц"
+    },
+    "calendarMonthSelect": {
+        "message": "Месяц"
+    },
+    "calendarYearSelect": {
+        "message": "Год"
+    },
+    "exportDatePlaceholder": {
+        "message": "ДД.ММ.ГГГГ"
+    },
+    "exportOpenCalendar": {
+        "message": "Открыть календарь"
+    },
+    "exportCountLabel": {
+        "message": "Будет экспортировано:"
+    },
+    "exportRangeFrom": {
+        "message": "С"
+    },
+    "exportRangeTo": {
+        "message": "По"
+    },
+    "exportRangeInvalid": {
+        "message": "Выберите даты или поставьте «За всё время»."
+    },
+    "exportSubmit": {
+        "message": "Экспортировать"
+    },
+    "exportCancel": {
+        "message": "Отмена"
+    },
+    "exportInProgress": {
+        "message": "Экспорт…"
+    },
+    "exportNoData": {
+        "message": "Экспортировать нечего - архив за этот период пуст."
+    },
+    "exportSuccess": {
+        "message": "Экспортировано: $count$ $word$.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "42" },
+            "word": { "content": "$2", "example": "orders" }
+        }
+    },
+    "exportFailed": {
+        "message": "Не удалось экспортировать: $REASON$",
+        "placeholders": { "reason": { "content": "$1" } }
+    },
+    "statsPurchasesHeader": {
+        "message": "Статистика"
+    },
+    "statsPurchasesTotalOrders": {
+        "message": "Всего покупок"
+    },
+    "statsPurchasesTotalSpent": {
+        "message": "Общая сумма"
+    },
+    "statsPurchasesAveragePrice": {
+        "message": "Средняя цена"
+    },
+    "statsUniqueSellers": {
+        "message": "Уникальных продавцов"
+    },
+    "statsTopSeller": {
+        "message": "Топ продавец"
+    },
+    "statsHighestPurchase": {
+        "message": "Самая дорогая покупка"
+    },
+    "secretChats": {
+        "message": "👀 Секретные чаты"
+    },
+    "messages": {
+        "message": "Сообщения"
+    },
+    "settingsFastMessages": {
+        "message": "Быстрые сообщения"
+    },
+    "settingsFastMessagesDesc": {
+        "message": "Напишите / (слэш) в чате, чтобы быстро отправить заранее подготовленные сообщения."
+    },
+    "fastMessagesSettingsButton": {
+        "message": "Настройки"
+    },
+    "fastMessagesTitle": {
+        "message": "Быстрые сообщения"
+    },
+    "bindName": {
+        "message": "Название"
+    },
+    "bindNamePlaceholder": {
+        "message": "Короткое название"
+    },
+    "bindMessage": {
+        "message": "Сообщение"
+    },
+    "bindMessagePlaceholder": {
+        "message": "Текст сообщения"
+    },
+    "enabled": {
+        "message": "Включено"
+    },
+    "instantSend": {
+        "message": "Мгновенная отправка"
+    },
+    "delete": {
+        "message": "Удалить"
+    },
+    "add": {
+        "message": "Добавить"
+    },
+    "position": {
+        "message": "Позиция"
+    },
+    "positionOptionSlash": {
+        "message": "Выпадающий список при /"
+    },
+    "positionOptionAbove": {
+        "message": "Над полем ввода"
+    },
+    "positionOptionSidebar": {
+        "message": "Справа внизу в колонке от чата"
+    },
+    "positionLimitWarning": {
+        "message": "Нельзя создавать больше 10 элементов с позициями 'Над полем ввода' и 'Справа внизу в колонке от чата'."
+    },
+    "availableForSubscribers": {
+        "message": "Эта функция доступна только при статусе Community"
+    },
+    "checkSubscription": {
+        "message": "Проверить статус"
+    },
+    "funPayChat": {
+        "message": "Чат FunPay Community"
+    },
+    "funPayChannel": {
+        "message": "Канал FunPay Community"
+    },
+    "linkYourTelegram": {
+        "message": "Привяжите ваш Telegram для проверки статуса"
+    },
+    "falseSubscriptionCheck": {
+        "message": "Статус не получен"
+    },
+    "tariffsTitle": {
+        "message": "Статус"
+    },
+    "tariffsLoading": {
+        "message": "Загрузка…"
+    },
+    "tariffsEmpty": {
+        "message": "Нет доступных планов."
+    },
+    "tariffsLoadFailed": {
+        "message": "Не удалось загрузить планы ($REASON$)",
+        "placeholders": { "reason": { "content": "$1" } }
+    },
+    "communityActiveBadge": {
+        "message": "Активен"
+    },
+    "tariffsCurrentPlanLabel": {
+        "message": "Текущий план"
+    },
+    "tariffsObtainedLabel": {
+        "message": "Получен"
+    },
+    "tariffsLoginRequired": {
+        "message": "Сначала войдите в аккаунт"
+    },
+    "tariffsBuyButton": {
+        "message": "Купить"
+    },
+    "tariffsRenewButton": {
+        "message": "Продлить"
+    },
+    "tariffsBuyOpening": {
+        "message": "Открываем оплату…"
+    },
+    "tariffsBuyFailed": {
+        "message": "Не удалось перейти к оплате. Попробуйте ещё раз."
+    },
+    "featureGatedCommunityTitle": {
+        "message": "Доступно с Community"
+    },
+    "featureGatedProfileDescriptionMessage": {
+        "message": "Публичное описание профиля доступно со статусом Community."
+    },
+    "featureGatedProTitle": {
+        "message": "Доступно с Pro"
+    },
+    "featureGatedPremiumTitle": {
+        "message": "Доступно с Premium"
+    },
+    "featureGatedFastMessagesMessage": {
+        "message": "«Быстрые сообщения» - функция статуса Community. Получите его, чтобы включить."
+    },
+    "featureGatedPurchasesStatsMessage": {
+        "message": "«Статистика покупок» - функция статуса Community. Получите его, чтобы включить."
+    },
+    "featureGatedSectionCommissionMessage": {
+        "message": "«Отображение комиссии раздела» - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "featureGatedLotTranslateMessage": {
+        "message": "Перевод лота на английский - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "profileDescriptionHeading": {
+        "message": "Описание"
+    },
+    "profileDescriptionAdd": {
+        "message": "Добавить описание"
+    },
+    "profileDescriptionEditTitle": {
+        "message": "Редактировать описание"
+    },
+    "profileDescriptionPlaceholder": {
+        "message": "Расскажите о себе - это описание увидят все пользователи расширения."
+    },
+    "profileDescriptionSave": {
+        "message": "Сохранить"
+    },
+    "profileDescriptionCancel": {
+        "message": "Отмена"
+    },
+    "profileDescriptionSaved": {
+        "message": "Описание сохранено"
+    },
+    "profileDescriptionError": {
+        "message": "Не удалось сохранить описание"
+    },
+    "profileDescriptionLinkFirst": {
+        "message": "Сначала привяжите аккаунт FunPay на странице Lite Bot"
+    },
+    "profileDescriptionContactBlocked": {
+        "message": "Передача контактных данных (Telegram, почта, телефон, соцсети и т.п.) запрещена правилами FunPay - за это можно получить блокировку аккаунта. Уберите контакты из описания."
+    },
+    "profileDescriptionProhibited": {
+        "message": "Размещение запрещённого контента (наркотические средства, порнография) запрещено правилами FunPay - за это можно получить блокировку аккаунта. Уберите запрещённый контент из описания."
+    },
+    "funpayLinkTitle": {
+        "message": "Аккаунт FunPay"
+    },
+    "funpayLinkBusyStart": {
+        "message": "Подготовка…"
+    },
+    "funpayLinkBusyCreating": {
+        "message": "Создаём проверочный лот…"
+    },
+    "funpayLinkBusyConfirming": {
+        "message": "Подтверждаем привязку…"
+    },
+    "funpayLinkBusyUnlink": {
+        "message": "Отвязываем…"
+    },
+    "funpayLinkSuccess": {
+        "message": "Аккаунт FunPay привязан"
+    },
+    "funpayUnlinkSuccess": {
+        "message": "Аккаунт FunPay отвязан"
+    },
+    "funpayLinkFailed": {
+        "message": "Не удалось привязать аккаунт FunPay"
+    },
+    "funpayLinkErrCode": {
+        "message": "Проверочный лот не найден, попробуйте ещё раз"
+    },
+    "funpayLinkErrMismatch": {
+        "message": "Лот создан под другим аккаунтом FunPay"
+    },
+    "funpayLinkErrExpired": {
+        "message": "Запрос на привязку истёк, начните заново"
+    },
+    "funpayLinkErrFunpay": {
+        "message": "Не удалось прочитать лот с FunPay, попробуйте ещё раз"
+    },
+    "funpayLinkErrSession": {
+        "message": "Сессия истекла, войдите снова"
+    },
+    "funpayLinkErrCantSell": {
+        "message": "На этом аккаунте FunPay ещё не открыты продажи, поэтому привязать его не получилось. Чтобы открыть продажи, пройдите на FunPay небольшой тест и привяжите номер телефона, а затем попробуйте снова."
+    },
+    "funpayLinkErrLotFailed": {
+        "message": "Не удалось привязать аккаунт FunPay: не получилось создать проверочный лот. Чаще всего это значит, что на аккаунте ещё не открыты продажи - он ни разу не создавал лот. Чтобы открыть продажи, пройдите на FunPay небольшой тест и привяжите номер телефона, а затем попробуйте снова."
+    },
+    "enableLotTranslate": {
+        "message": "Перевод лота на английский"
+    },
+    "enableLotTranslateDesc": {
+        "message": "Добавляет на страницу редактирования лота кнопку «Перевести на английский», которая заполняет английское название и описание по русскому оригиналу."
+    },
+    "autoTranslateModeButton": {
+        "message": "Переводить по нажатию кнопки"
+    },
+    "autoTranslateModeAuto": {
+        "message": "Переводить автоматически при сохранении"
+    },
+    "lotTranslateAutoFailed": {
+        "message": "Не удалось перевести - лот сохранён без английского текста"
+    },
+    "lotTranslateAutoNoPermission": {
+        "message": "Нет доступа к переводчику. Выдайте его в настройках дополнения или включите автоперевод заново"
+    },
+    "updateBannerTitle": {
+        "message": "Вышла новая версия расширения"
+    },
+    "updateBannerBody": {
+        "message": "У вас установлена $CURRENT$, доступна $LATEST$.",
+        "placeholders": {
+            "current": { "content": "$1", "example": "2.1.2" },
+            "latest": { "content": "$2", "example": "2.2.0" }
+        }
+    },
+    "updateStep1": {
+        "message": "Переходим по ссылке в браузере: chrome://extensions/"
+    },
+    "updateStep2": {
+        "message": "Включаем Режим разработчика."
+    },
+    "updateStep3": {
+        "message": "Нажимаем кнопку \"Обновить\"."
+    },
+    "showRealLotPrices": {
+        "message": "Реальные цены лотов"
+    },
+    "showRealLotPricesDesc": {
+        "message": "Под ценой каждого лота в таблице раздела показывает реальную цену: сумму без комиссии FunPay и платёжных систем (сколько фактически получит продавец)."
+    },
+    "featureGatedRealLotPricesMessage": {
+        "message": "«Реальные цены лотов» - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "lotTranslateButton": {
+        "message": "Перевести с русского"
+    },
+    "lotTranslateSectionLabel": {
+        "message": "Автоматический перевод"
+    },
+    "lotTranslateStatusLoading": {
+        "message": "Перевожу…"
+    },
+    "lotTranslateStatusDone": {
+        "message": "Лот переведён успешно"
+    },
+    "lotTranslateStatusError": {
+        "message": "Не удалось перевести"
+    },
+    "lotTranslatePermissionDenied": {
+        "message": "Нет разрешения на перевод"
+    },
+    "lotTranslateValidationMissingTitle": {
+        "message": "Заполните название лота на русском"
+    },
+    "lotTranslateValidationMissingDesc": {
+        "message": "Заполните описание лота на русском"
+    },
+    "lotTranslateValidationMissingBoth": {
+        "message": "Заполните название и описание лота на русском"
+    },
+    "lotTranslateConsentTitle": {
+        "message": "Разрешение на перевод"
+    },
+    "lotTranslateConsentBody": {
+        "message": "Чтобы переводить названия и описания лотов на английский, расширению нужен разовый доступ к translate.googleapis.com."
+    },
+    "lotTranslateConsentGrant": {
+        "message": "Разрешить"
+    },
+    "lotTranslateConsentCancel": {
+        "message": "Отмена"
+    },
+    "featureGatedOpenTariffs": {
+        "message": "Перейти к статусам"
+    },
+    "featureGatedHideThis": {
+        "message": "Не отображать эту функцию"
+    },
+    "featureGatedHiddenToast": {
+        "message": "Больше не покажем. Вернуть — в настройках расширения, раздел «Кастомизация»."
+    },
+    "pendingUnlockReady": {
+        "message": "Подписка обновилась — функция доступна. Обновите страницу, если её ещё не видно."
+    },
+    "trialOfferTitle": {
+        "message": "3 дня Premium - бесплатно"
+    },
+    "trialOfferBody": {
+        "message": "Это подарок от нас: все функции расширения открыты на 3\u00a0дня\u00a0- используйте всё, что захочется. Карта не нужна."
+    },
+    "trialOfferStart": {
+        "message": "Получить Premium на 3 дня"
+    },
+    "trialOfferLater": {
+        "message": "Не сейчас"
+    },
+    "trialOfferNote": {
+        "message": "Подарок закрепится за вашим аккаунтом FunPay."
+    },
+    "trialOfferWorking": {
+        "message": "Включаю…"
+    },
+    "trialStartedToast": {
+        "message": "Premium включён на 3 дня. Все функции уже доступны."
+    },
+    "trialAlreadyUsed": {
+        "message": "Пробный период на этом аккаунте FunPay уже был."
+    },
+    "trialHasPaidPlan": {
+        "message": "Пробный период - для тех, у кого ещё не было платного тарифа."
+    },
+    "trialNeedsLogin": {
+        "message": "Войдите в аккаунт, чтобы включить пробный период."
+    },
+    "trialClosed": {
+        "message": "Пробный период сейчас недоступен. Попробуйте позже."
+    },
+    "trialFailed": {
+        "message": "Не получилось включить пробный период. Попробуйте позже."
+    },
+    "trialNotEstablished": {
+        "message": "Пробный период доступен продавцам, у которых на FunPay есть хотя бы один отзыв."
+    },
+    "trialFunpayUnreachable": {
+        "message": "Не удалось проверить аккаунт на FunPay. Попробуйте ещё раз."
+    },
+    "trialLinkFailed": {
+        "message": "Не получилось привязать аккаунт FunPay. Попробуйте ещё раз."
+    },
+    "trialNeedsFunpay": {
+        "message": "Войдите в аккаунт FunPay в этом браузере, чтобы получить пробный период."
+    },
+    "settingsCategoryAccount": {
+        "message": "Аккаунт"
+    },
+    "accountSubscriptionTitle": {
+        "message": "Статус"
+    },
+    "accountSubscriptionBasic": {
+        "message": "Базовый"
+    },
+    "accountSubscriptionExpires": {
+        "message": "Действует до"
+    },
+    "accountSubscriptionLifetime": {
+        "message": "Бессрочно"
+    },
+    "accountSignInPrompt": {
+        "message": "Войдите, чтобы управлять аккаунтом и статусом."
+    },
+    "settingsCategoryInfo": {
+        "message": "Инфо"
+    },
+    "settingsCategoryChangelog": {
+        "message": "Обновления"
+    },
+    "changelogHeading": {
+        "message": "Что изменилось"
+    },
+    "changelogDesc": {
+        "message": "Список изменений по версиям расширения - новые возможности, улучшения и исправления."
+    },
+    "changelogLoading": {
+        "message": "Загружаем список изменений…"
+    },
+    "changelogEmpty": {
+        "message": "Список изменений сейчас недоступен. Все обновления мы анонсируем в Telegram-канале."
+    },
+    "changelogInstalled": {
+        "message": "установлена у вас"
+    },
+    "changelogTypeAdded": {
+        "message": "Новое"
+    },
+    "changelogTypeImproved": {
+        "message": "Улучшено"
+    },
+    "changelogTypeFixed": {
+        "message": "Исправлено"
+    },
+    "changelogTypeRemoved": {
+        "message": "Убрано"
+    },
+    "settingsCategoryReviews": {
+        "message": "Отзывы"
+    },
+    "reviewsRatingLimitsButton": {
+        "message": "Посмотреть ограничения рейтинга"
+    },
+    "reviewsRatingLimitsDesc": {
+        "message": "Информация об ограничении рейтинга для аккаунта"
+    },
+    "settingsCategoryApi": {
+        "message": "API"
+    },
+    "infoVersionLabel": {
+        "message": "🔖 Версия расширения"
+    },
+    "deleteAccountLabel": {
+        "message": "🗑️ Удаление аккаунта"
+    },
+    "deleteAccountBlocked": {
+        "message": "Пока действует подписка, удалить аккаунт нельзя. Дождитесь окончания её срока."
+    },
+    "deleteAccountButton": {
+        "message": "Удалить аккаунт FunPay Lite Bot"
+    },
+    "deleteAccountConfirmTitle": {
+        "message": "Удалить аккаунт FunPay Lite Bot?"
+    },
+    "deleteAccountConfirmText": {
+        "message": "Аккаунт FunPay Lite Bot будет удалён вместе с историей заказов. Привязанные аккаунты (FunPay, Telegram, Google, VK) будут отвязаны. Расширение продолжит работать, но без входа. Это действие необратимо."
+    },
+    "deleteAccountConfirmCta": {
+        "message": "Да, удалить"
+    },
+    "deleteAccountDone": {
+        "message": "Аккаунт удалён"
+    },
+    "deleteAccountFailed": {
+        "message": "Не удалось удалить аккаунт. Попробуйте позже."
+    },
+    "accountIdCopyHint": {
+        "message": "Нажмите, чтобы скопировать ID аккаунта"
+    },
+    "accountIdCopied": {
+        "message": "ID аккаунта скопирован"
+    },
+    "accountIdCopyFailed": {
+        "message": "Не удалось скопировать ID аккаунта"
+    },
+    "accountIdLabel": {
+        "message": "🆔 ID аккаунта"
+    },
+    "goldenKeyTitle": {
+        "message": "Авторизация - Golden Key"
+    },
+    "goldenKeyDesc": {
+        "message": "Этот ключ хранится в куки FunPay и часто используется внешними приложениями для автоматизации. Он даёт полный доступ к аккаунту - никому его не передавайте."
+    },
+    "goldenKeyMissing": {
+        "message": "Ключ не найден. Войдите на funpay.com, чтобы он появился."
+    },
+    "goldenKeyShow": {
+        "message": "Показать"
+    },
+    "goldenKeyHide": {
+        "message": "Скрыть"
+    },
+    "goldenKeyCopy": {
+        "message": "Скопировать"
+    },
+    "goldenKeyCopied": {
+        "message": "Ключ скопирован"
+    },
+    "goldenKeyRevoke": {
+        "message": "Отозвать"
+    },
+    "goldenKeyRevokeConfirmTitle": {
+        "message": "Отозвать Golden Key?"
+    },
+    "goldenKeyRevokeConfirmText": {
+        "message": "Это удалит сессию FunPay во всех браузерах. Вы будете разлогинены и потребуется войти на funpay.com заново."
+    },
+    "goldenKeyRevokeConfirmCta": {
+        "message": "Да, отозвать"
+    },
+    "goldenKeyRevokeCancel": {
+        "message": "Отмена"
+    },
+    "goldenKeyRevoked": {
+        "message": "Golden Key отозван"
+    },
+    "goldenKeyRevokeFailed": {
+        "message": "Не удалось отозвать ключ. Попробуйте выйти из аккаунта вручную на funpay.com."
+    },
+    "tariffsBasicIncluded": {
+        "message": "Бесплатно"
+    },
+    "communityLinkTelegramFirst": {
+        "message": "Сначала привяжите Telegram в меню пользователя, потом возвращайтесь."
+    },
+    "authLogIn": {
+        "message": "Войти"
+    },
+    "authRegister": {
+        "message": "Регистрация"
+    },
+    "authRegisterWith": {
+        "message": "Регистрация через $PROVIDER$",
+        "placeholders": { "provider": { "content": "$1" } }
+    },
+    "authLoginSubtitle": {
+        "message": "Войдите через сервис, через который регистрировались."
+    },
+    "authRegisterSubtitle": {
+        "message": "Создайте новый аккаунт FunPayLiteBot."
+    },
+    "authNoAccountTitle": {
+        "message": "Аккаунт не найден"
+    },
+    "authNoAccountBody": {
+        "message": "Мы не нашли аккаунт FunPayLiteBot, привязанный к этому провайдеру. Зарегистрировать новый?"
+    },
+    "authNoAccountConfirm": {
+        "message": "Зарегистрировать"
+    },
+    "authAlreadyRegisteredTitle": {
+        "message": "Аккаунт уже существует"
+    },
+    "authAlreadyRegisteredBody": {
+        "message": "На этом провайдере уже зарегистрирован аккаунт. Войти в него?"
+    },
+    "authAlreadyRegisteredConfirm": {
+        "message": "Войти"
+    },
+    "authCancel": {
+        "message": "Отмена"
+    },
+    "authNoAccountSwitchHint": {
+        "message": "Аккаунт не найден. Перейдите на вкладку «Регистрация», чтобы создать новый."
+    },
+    "authAlreadyRegisteredSwitchHint": {
+        "message": "Аккаунт уже существует. Перейдите на вкладку «Вход», чтобы войти."
+    },
+    "authTelegramFastLoginUnsupported": {
+        "message": "Быстрый вход через Telegram не возвращает в расширение. Войдите через QR-код или номер телефона."
+    },
+    "authLogOut": {
+        "message": "Выйти"
+    },
+    "authLoginWith": {
+        "message": "Войти через $PROVIDER$",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authLinkedAccounts": {
+        "message": "Привязанные аккаунты"
+    },
+    "authLinked": {
+        "message": "Привязан"
+    },
+    "authNotLinked": {
+        "message": "Не привязан"
+    },
+    "authLink": {
+        "message": "Привязать"
+    },
+    "authUnlink": {
+        "message": "Отвязать"
+    },
+    "authLinkConflict": {
+        "message": "Этот аккаунт $PROVIDER$ уже привязан к другому пользователю.",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authCannotUnlinkLast": {
+        "message": "Нельзя отвязать единственного провайдера - сначала привяжите другой."
+    },
+    "authSessionExpired": {
+        "message": "Сессия истекла. Пожалуйста, войдите заново."
+    },
+    "authLoginFailed": {
+        "message": "Ошибка входа: $REASON$",
+        "placeholders": {
+            "reason": { "content": "$1", "example": "OAUTH_GOOGLE_TOKEN_REJECTED" }
+        }
+    },
+    "authLoggedIn": {
+        "message": "Вход выполнен: $NAME$",
+        "placeholders": {
+            "name": { "content": "$1", "example": "Андрей" }
+        }
+    },
+    "authLoggedOut": {
+        "message": "Вы вышли"
+    },
+    "authProviderLinked": {
+        "message": "$PROVIDER$ привязан",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "authProviderUnlinked": {
+        "message": "$PROVIDER$ отвязан",
+        "placeholders": {
+            "provider": { "content": "$1", "example": "Google" }
+        }
+    },
+    "telegramLinkTitle": {
+        "message": "Привязка Telegram"
+    },
+    "telegramLinkOAuthOption": {
+        "message": "Войти через Telegram"
+    },
+    "telegramLinkOAuthDesc": {
+        "message": "Авторизация в браузере через Telegram. Самый быстрый способ, если Telegram у вас открывается."
+    },
+    "telegramLinkCodeOption": {
+        "message": "Привязать по коду"
+    },
+    "telegramLinkCodeDesc": {
+        "message": "Используйте, если вход через Telegram заблокирован в браузере. Мы выдадим код для отправки боту."
+    },
+    "telegramLinkCodeInstructions": {
+        "message": "Откройте @FunPayLiteBot и отправьте ему этот код."
+    },
+    "telegramLinkCodeWaiting": {
+        "message": "Ожидаем подтверждения от бота…"
+    },
+    "telegramLinkCodeSuccess": {
+        "message": "Telegram успешно привязан!"
+    },
+    "telegramLoginCodeButton": {
+        "message": "Войти по коду (Telegram)"
+    },
+    "telegramLoginCodeTitle": {
+        "message": "Вход через Telegram"
+    },
+    "telegramLoginOAuthOption": {
+        "message": "Стандартный вход"
+    },
+    "telegramLoginOAuthDesc": {
+        "message": "Через страницу Telegram (oauth.telegram.org)."
+    },
+    "telegramLoginCodeOption": {
+        "message": "Вход по коду"
+    },
+    "telegramLoginCodeDesc": {
+        "message": "Если страница Telegram не открывается. Отправьте код боту."
+    },
+    "telegramLoginCodeInstructions": {
+        "message": "Откройте @FunPayLiteBot, отправьте этот код и подтвердите вход."
+    },
+    "telegramLoginCodeWaiting": {
+        "message": "Ожидание подтверждения в Telegram…"
+    },
+    "telegramLoginCodeSuccess": {
+        "message": "Готово! Вы вошли."
+    },
+    "telegramLoginCodeError": {
+        "message": "Не удалось выполнить вход. Попробуйте ещё раз."
+    },
+    "authRetry": {
+        "message": "Повторить"
+    },
+    "telegramLinkOpenBot": {
+        "message": "Открыть бота"
+    },
+    "telegramLinkCopy": {
+        "message": "Копировать"
+    },
+    "telegramLinkCodeError": {
+        "message": "Не удалось получить код. Попробуйте ещё раз."
+    },
+    "telegramLinkAlreadyLinked": {
+        "message": "Telegram уже привязан к вашему аккаунту."
+    },
+    "telegramLinkCopied": {
+        "message": "Код скопирован"
+    },
+    "quickCopyOrderId": {
+        "message": "Копирование номера заказа"
+    },
+    "quickCopyOrderIdDesc": {
+        "message": "На странице заказа добавляет иконку копирования - нажмите, чтобы скопировать номер заказа."
+    },
+    "orderIdCopied": {
+        "message": "Номер заказа скопирован"
+    },
+    "orderIdCopyHint": {
+        "message": "Нажмите, чтобы скопировать номер заказа"
+    },
+    "orderIdCopyFailed": {
+        "message": "Не удалось скопировать номер заказа"
+    },
+    "featureGatedQuickCopyMessage": {
+        "message": "Копирование номера заказа - функция статуса Community. Получите Community, чтобы включить."
+    },
+    "showUnconfirmedSales": {
+        "message": "Копировать ID неподтверждённых продаж"
+    },
+    "showUnconfirmedSalesDesc": {
+        "message": "Добавляет кнопку «Скопировать неподтверждённые» на страницу Продажи рядом с кнопкой Экспорта, для быстрой выгрузки номеров заказов, которые покупатели оплатили, но ещё не подтвердили."
+    },
+    "unconfirmedOrdersButton": {
+        "message": "Скопировать неподтверждённые"
+    },
+    "unconfirmedSalesTitle": {
+        "message": "Неподтверждённые продажи"
+    },
+    "unconfirmedOrdersThresholdAll": {
+        "message": "Все оплаченные"
+    },
+    "unconfirmedOrdersThreshold12": {
+        "message": "Оплачены >12 часов"
+    },
+    "unconfirmedOrdersThreshold24": {
+        "message": "Оплачены >24 часов"
+    },
+    "unconfirmedOrdersThreshold48": {
+        "message": "Оплачены >48 часов"
+    },
+    "unconfirmedOrdersThreshold72": {
+        "message": "Оплачены >72 часов"
+    },
+    "unconfirmedOrdersCount": {
+        "message": "Найдено: $COUNT$",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "42"
+            }
+        }
+    },
+    "unconfirmedOrdersLoading": {
+        "message": "Загрузка…"
+    },
+    "unconfirmedOrdersCopy": {
+        "message": "Копировать"
+    },
+    "unconfirmedOrdersCopied": {
+        "message": "Скопировано ✓"
+    },
+    "unconfirmedOrdersClose": {
+        "message": "Закрыть"
+    },
+    "unconfirmedOrdersStatusError": {
+        "message": "Не удалось получить список"
+    },
+    "featureGatedUnconfirmedOrdersMessage": {
+        "message": "Копирование неподтверждённых заказов - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "supportConfirmTickets": {
+        "message": "Заявки в поддержку на подтверждение заказов"
+    },
+    "supportConfirmTicketsDesc": {
+        "message": "Если покупатель не подтверждает заказ, на странице заказа появятся кнопки «Отправить на подтверждение» и «Добавить в список на подтверждение». Первая открывает заявку в поддержку FunPay по этому заказу, вторая откладывает заказ в список, который отправляется со страницы «Мои продажи». Перед отправкой расширение проверяет, что заказы всё ещё ждут подтверждения, и показывает текст заявки."
+    },
+    "featureGatedSupportConfirmTickets": {
+        "message": "Заявки в поддержку на подтверждение заказов - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "supportConfirmSend": {
+        "message": "Отправить на подтверждение"
+    },
+    "supportConfirmSentAt": {
+        "message": "Заявка отправлена $TIME$",
+        "placeholders": {
+            "time": {
+                "content": "$1",
+                "example": "10.09, 14:05"
+            }
+        }
+    },
+    "supportConfirmAddToList": {
+        "message": "Добавить в список на подтверждение"
+    },
+    "supportConfirmRemoveFromList": {
+        "message": "Убрать из списка на подтверждение"
+    },
+    "supportConfirmAdded": {
+        "message": "Заказ добавлен в список на подтверждение. Заказов в списке: $COUNT$. Отправить список можно на странице «Мои продажи».",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "3"
+            }
+        }
+    },
+    "supportConfirmRemoved": {
+        "message": "Заказ убран из списка на подтверждение."
+    },
+    "supportConfirmListButton": {
+        "message": "Отправить список на подтверждение ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "3"
+            }
+        }
+    },
+    "supportTicketSendFromCopy": {
+        "message": "Отправить в поддержку"
+    },
+    "supportTicketTitle": {
+        "message": "Заявка в поддержку FunPay"
+    },
+    "supportTicketLead": {
+        "message": "Тема заявки: «Покупатель забыл подтвердить заказ». Поддержка проверит переписку в чате заказа и подтвердит его, если товар передан."
+    },
+    "supportTicketChecking": {
+        "message": "Проверяю, какие заказы ещё ждут подтверждения…"
+    },
+    "supportTicketOrders": {
+        "message": "Заказы в заявке"
+    },
+    "supportTicketText": {
+        "message": "Текст заявки"
+    },
+    "supportTicketTextOne": {
+        "message": "Здравствуйте! Покупатель не подтвердил заказ $ORDERS$. Товар передан, это видно в чате заказа. Прошу подтвердить заказ. Спасибо!",
+        "placeholders": {
+            "orders": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketTextMany": {
+        "message": "Здравствуйте! Покупатели не подтвердили заказы $ORDERS$. Товар передан, это видно в чатах заказов. Прошу подтвердить эти заказы. Спасибо!",
+        "placeholders": {
+            "orders": {
+                "content": "$1",
+                "example": "#BLPWJF6T, #GZSHW9UT"
+            }
+        }
+    },
+    "supportTicketOverflow": {
+        "message": "В одну заявку входит до $MAX$ заказов. Ещё $COUNT$ можно отправить следующей заявкой.",
+        "placeholders": {
+            "max": {
+                "content": "$1",
+                "example": "25"
+            },
+            "count": {
+                "content": "$2",
+                "example": "4"
+            }
+        }
+    },
+    "supportTicketSkippedNotPaid": {
+        "message": "Уже не ждут подтверждения и в заявку не попадут: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketSkippedRecent": {
+        "message": "Уже отправлялись в поддержку за последние сутки и в заявку не попадут: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T (10.09, 14:05)"
+            }
+        }
+    },
+    "supportTicketNothing": {
+        "message": "Отправлять нечего."
+    },
+    "supportTicketRemoveFromList": {
+        "message": "Убрать из списка"
+    },
+    "supportTicketRemoveFromTicket": {
+        "message": "Убрать из заявки"
+    },
+    "supportTicketSend": {
+        "message": "Отправить заявку"
+    },
+    "supportTicketSending": {
+        "message": "Отправляю заявку…"
+    },
+    "supportTicketSent": {
+        "message": "Заявка отправлена. Ответ поддержки придёт в эту заявку."
+    },
+    "supportTicketSentToast": {
+        "message": "Заявка в поддержку FunPay отправлена."
+    },
+    "supportTicketOpen": {
+        "message": "Открыть заявку"
+    },
+    "supportTicketMyTickets": {
+        "message": "Мои заявки"
+    },
+    "supportTicketNewManual": {
+        "message": "Создать заявку вручную"
+    },
+    "supportTicketRetry": {
+        "message": "Повторить"
+    },
+    "supportTicketErrLogin": {
+        "message": "Не удалось открыть поддержку FunPay. Проверьте, что вы вошли в аккаунт FunPay, и попробуйте ещё раз."
+    },
+    "supportTicketErrCheck": {
+        "message": "Не удалось проверить заказы на FunPay. Проверьте соединение и попробуйте ещё раз."
+    },
+    "supportTicketErrNetwork": {
+        "message": "Не удалось связаться с поддержкой FunPay. Заявка не отправлена, попробуйте ещё раз."
+    },
+    "supportTicketErrForm": {
+        "message": "Форма заявки в поддержке FunPay изменилась, поэтому расширение ничего не отправило. Создайте заявку вручную."
+    },
+    "supportTicketErrRejected": {
+        "message": "Поддержка FunPay не приняла заявку: $REASON$",
+        "placeholders": {
+            "reason": {
+                "content": "$1",
+                "example": "HTTP 403"
+            }
+        }
+    },
+    "supportTicketErrUncertain": {
+        "message": "Не удалось узнать, создана ли заявка. Прежде чем отправлять снова, откройте свои заявки в поддержке и проверьте."
+    },
+    "supportTicketErrBusy": {
+        "message": "Заявка уже отправляется, дождитесь результата."
+    },
+    "supportTicketErrGeneric": {
+        "message": "Не удалось отправить заявку. Попробуйте ещё раз."
+    },
+    "supportTicketErrCheckLogin": {
+        "message": "Похоже, вы вышли из аккаунта FunPay. Войдите и попробуйте ещё раз."
+    },
+    "supportTicketErrAccount": {
+        "message": "Поддержка FunPay открыта под аккаунтом $SUPPORT$, а на FunPay вы сейчас $FUNPAY$. Заявка не отправлена. Откройте поддержку, выйдите из неё и попробуйте снова.",
+        "placeholders": {
+            "support": {
+                "content": "$1",
+                "example": "OldNick"
+            },
+            "funpay": {
+                "content": "$2",
+                "example": "MaxQV"
+            }
+        }
+    },
+    "supportTicketOpenSupport": {
+        "message": "Открыть поддержку"
+    },
+    "supportTicketSkippedUnseen": {
+        "message": "Не нашлись среди неподтверждённых продаж и в заявку не попадут: $LIST$",
+        "placeholders": {
+            "list": {
+                "content": "$1",
+                "example": "#BLPWJF6T"
+            }
+        }
+    },
+    "supportTicketUncertainMark": {
+        "message": "результат неизвестен"
+    },
+    "supportConfirmMaybeSentAt": {
+        "message": "Заявка, возможно, отправлена $TIME$",
+        "placeholders": {
+            "time": {
+                "content": "$1",
+                "example": "10.09, 14:05"
+            }
+        }
+    },
+    "welcomeMessageTitle": {
+        "message": "Приветственное сообщение"
+    },
+    "welcomeMessageDesc": {
+        "message": "Автоматически отправляет заданное сообщение покупателю, который написал вам впервые (или снова - по истечении таймаута). Работает в фоне, пока запущен браузер."
+    },
+    "welcomeMessagePlaceholder": {
+        "message": "Здравствуйте! Спасибо за обращение, отвечу в ближайшее время."
+    },
+    "welcomeMessageVars": {
+        "message": "Переменные: {buyername} - имя покупателя, {welcome} - приветствие по времени суток, {date} - дата и время."
+    },
+    "welcomeMessageCooldownLabel": {
+        "message": "Отправлять повторно через"
+    },
+    "welcomeMessageUnitHours": {
+        "message": "часов"
+    },
+    "welcomeMessageUnitDays": {
+        "message": "дней"
+    },
+    "welcomeMessageCooldownDesc": {
+        "message": "Если покупатель напишет снова после этого времени, сообщение отправится повторно. 0 - отправлять только один раз для каждого чата."
+    },
+    "welcomeMessageImagesLabel": {
+        "message": "Изображения (необязательно)"
+    },
+    "welcomeMessageAddImage": {
+        "message": "Добавить изображение"
+    },
+    "welcomeMessageRemoveImage": {
+        "message": "Удалить"
+    },
+    "welcomeMessageImageNotImage": {
+        "message": "Выберите изображение."
+    },
+    "welcomeMessageImageFailed": {
+        "message": "Не удалось добавить изображение."
+    },
+    "featureGatedWelcomeMessage": {
+        "message": "«Приветственное сообщение» - функция статуса Pro. Получите его, чтобы включить."
+    },
+    "welcomeMessageSettings": {
+        "message": "Настройки"
+    },
+    "reviewReplyTitle": {
+        "message": "Автоответ на отзывы"
+    },
+    "reviewReplyDesc": {
+        "message": "Автоматически отправляет заданный ответ на отзыв покупателя к вашему заказу - свой текст для каждой оценки (1-5 звёзд). Работает в фоне, пока запущен браузер."
+    },
+    "reviewReplySettings": {
+        "message": "Настройки"
+    },
+    "reviewReplyModalDesc": {
+        "message": "Задайте ответ для каждой оценки. Ответ отправляется, только когда для полученной оценки задан текст. Пустое поле - не отвечать на эту оценку."
+    },
+    "reviewReplyPlaceholder": {
+        "message": "Спасибо за ваш отзыв и оценку!"
+    },
+    "reviewReplyVars": {
+        "message": "Переменные: {buyername} - имя покупателя, {lotname} - название лота, {orderid} - номер заказа, {stars} - оценка, {date} - дата и время."
+    },
+    "featureGatedReviewReply": {
+        "message": "«Автоответ на отзывы» - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "aiReviewReplyTitle": {
+        "message": "ИИ авто-ответ на отзыв покупателя"
+    },
+    "aiReviewReplyDesc": {
+        "message": "Отвечает на отзыв текстом, который пишет нейросеть по словам самого покупателя, а не заранее заданным шаблоном. Если нейросеть недоступна, отправится ваш шаблон для этой оценки. Работает в фоне, пока запущен браузер."
+    },
+    "aiReviewReplySettings": {
+        "message": "Настройки"
+    },
+    "aiReviewReplyModalDesc": {
+        "message": "Ответ отправляется публично от вашего имени, поэтому нейросеть не обещает возвраты и скидки, не признаёт вину и не оставляет контактов вне FunPay. Если ответ не пройдёт проверку, отправится ваш шаблон из «Автоответа на отзывы»."
+    },
+    "aiReviewReplyRatingsLabel": {
+        "message": "На какие оценки отвечать"
+    },
+    "aiReviewReplyNoteLabel": {
+        "message": "Пожелание к тону ответа"
+    },
+    "aiReviewReplyNotePlaceholder": {
+        "message": "Например: пиши коротко и на «ты», без смайликов"
+    },
+    "aiReviewReplyHint": {
+        "message": "До 300 символов. Расход общий с генерацией текста лота, 1000 обращений в месяц."
+    },
+    "aiReviewReplySave": {
+        "message": "Сохранить"
+    },
+    "aiReviewReplySaved": {
+        "message": "Сохранено"
+    },
+    "aiReviewReplyUnsaved": {
+        "message": "Изменения не сохранены"
+    },
+    "featureGatedAiReviewReply": {
+        "message": "«ИИ авто-ответ на отзыв покупателя» - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "autoReplyTitle": {
+        "message": "Автоответ по ключевым словам"
+    },
+    "autoReplyDesc": {
+        "message": "Автоматически отправляет заданный ответ, когда сообщение покупателя точно совпадает с командой или содержит указанное слово либо фразу. Работает в фоне, пока запущен браузер."
+    },
+    "autoReplySettings": {
+        "message": "Настройки"
+    },
+    "autoReplyModalDesc": {
+        "message": "Добавьте правила. Для каждого нового сообщения покупателя срабатывает первое подходящее правило. «Точное совпадение» - сообщение полностью равно ключевому слову; «Содержит» - ключевое слово встречается в сообщении."
+    },
+    "autoReplyColKeyword": {
+        "message": "Ключевое слово / фраза"
+    },
+    "autoReplyColMode": {
+        "message": "Режим"
+    },
+    "autoReplyColResponse": {
+        "message": "Ответ"
+    },
+    "autoReplyColEnabled": {
+        "message": "Вкл"
+    },
+    "autoReplyModeExact": {
+        "message": "Точное совпадение"
+    },
+    "autoReplyModeContains": {
+        "message": "Содержит"
+    },
+    "autoReplyKeywordPlaceholder": {
+        "message": "например: цена"
+    },
+    "autoReplyResponsePlaceholder": {
+        "message": "Текст ответа"
+    },
+    "autoReplyAddRule": {
+        "message": "Добавить правило"
+    },
+    "autoReplyVars": {
+        "message": "Переменные: {buyername} - имя покупателя, {date} - дата и время."
+    },
+    "featureGatedAutoReply": {
+        "message": "«Автоответ по ключевым словам» - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "orderConfirmReplyTitle": {
+        "message": "Автоответ после подтверждения заказа"
+    },
+    "orderConfirmReplyDesc": {
+        "message": "Автоматически отправляет заданное сообщение сразу после того, как покупатель подтвердил выполнение заказа. Работает в фоне, пока запущен браузер."
+    },
+    "orderConfirmReplySettings": {
+        "message": "Настройки"
+    },
+    "orderConfirmReplyModalDesc": {
+        "message": "Сообщение отправляется один раз на каждое подтверждение заказа. По умолчанию стоит «Спасибо за покупку!», текст можно изменить на любой."
+    },
+    "orderConfirmReplyPlaceholder": {
+        "message": "Спасибо за покупку!"
+    },
+    "orderConfirmReplyVars": {
+        "message": "Переменные: {buyername} - имя покупателя, {orderid} - номер заказа, {date} - дата и время."
+    },
+    "orderConfirmReplyDefault": {
+        "message": "Спасибо за покупку!"
+    },
+    "orderConfirmReplySave": {
+        "message": "Сохранить"
+    },
+    "orderConfirmReplySaved": {
+        "message": "Сохранено"
+    },
+    "orderConfirmReplyUnsaved": {
+        "message": "Изменения не сохранены"
+    },
+    "featureGatedOrderConfirmReply": {
+        "message": "«Автоответ после подтверждения заказа» - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "lotCostPrice": {
+        "message": "Себестоимость лотов"
+    },
+    "lotCostPriceDesc": {
+        "message": "На странице редактирования лота добавляет поле себестоимости с выбором валюты и показывает чистую прибыль. Себестоимость также попадёт в экспорт заказов. Привязывается к существующим лотам."
+    },
+    "costPriceLabel": {
+        "message": "Себестоимость (необязательно)"
+    },
+    "costPriceNetProfitLabel": {
+        "message": "Чистая прибыль"
+    },
+    "costPriceNoRate": {
+        "message": "нет курса"
+    },
+    "costPriceWithdrawalCommission": {
+        "message": "Комиссия на вывод"
+    },
+    "featureGatedLotCostPrice": {
+        "message": "«Себестоимость лотов» - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "finances": {
+        "message": "Финансы"
+    },
+    "showFinancesStats": {
+        "message": "Статистика финансов"
+    },
+    "showFinancesStatsDesc": {
+        "message": "На странице баланса (/account/balance) показывает статистику по операциям: поступления, расходы, чистый поток, разбивку по типам и график."
+    },
+    "exportFinancesEnable": {
+        "message": "Экспорт финансов"
+    },
+    "exportFinancesEnableDesc": {
+        "message": "Кнопка экспорта истории операций в Excel / JSON на странице баланса."
+    },
+    "financesStatsTitle": {
+        "message": "Статистика"
+    },
+    "financesCardIncome": {
+        "message": "Поступления"
+    },
+    "financesCardExpense": {
+        "message": "Расходы"
+    },
+    "financesCardNet": {
+        "message": "Чистый поток"
+    },
+    "financesCardOps": {
+        "message": "Всего операций"
+    },
+    "financesTypesTitle": {
+        "message": "По типам операций"
+    },
+    "financesChartTitle": {
+        "message": "Динамика (поступления / расходы)"
+    },
+    "financesUpdate": {
+        "message": "Обновить"
+    },
+    "financesExport": {
+        "message": "Экспорт"
+    },
+    "financesUpdating": {
+        "message": "Загрузка операций…"
+    },
+    "financesEmpty": {
+        "message": "Нет данных за период"
+    },
+    "financesTypeOrder": {
+        "message": "Заказы"
+    },
+    "financesTypePayment": {
+        "message": "Пополнения"
+    },
+    "financesTypeWithdraw": {
+        "message": "Выводы"
+    },
+    "financesTypeWithdrawCancel": {
+        "message": "Отмены выводов"
+    },
+    "financesTypeRefund": {
+        "message": "Возвраты"
+    },
+    "financesTypeOther": {
+        "message": "Другое"
+    },
+    "financesStatusComplete": {
+        "message": "Завершено"
+    },
+    "financesStatusWaiting": {
+        "message": "Ожидание"
+    },
+    "financesStatusCancel": {
+        "message": "Отменено"
+    },
+    "financesTopIncome": {
+        "message": "Больше всего поступлений"
+    },
+    "financesTopExpense": {
+        "message": "Больше всего расходов"
+    },
+    "financesDiagramStatus": {
+        "message": "По статусам"
+    },
+    "financesDiagramCurrency": {
+        "message": "По валютам"
+    },
+    "financesDetailNet": {
+        "message": "Чистый поток по типам"
+    },
+    "exportFinancesTitle": {
+        "message": "Экспорт финансов"
+    },
+    "featureGatedFinanceStats": {
+        "message": "«Финансы» (статистика и экспорт) - функция статуса Premium. Получите его, чтобы включить."
+    },
+    "settingsCategoryNotifications": {
+        "message": "Уведомления"
+    },
+    "bulkLotEdit": {
+        "message": "Массовое редактирование лотов"
+    },
+    "bulkLotEditDesc": {
+        "message": "На странице ваших предложений и на своей странице профиля появится кнопка «Выбрать лоты»: можно выбрать сразу несколько лотов и включить, выключить, изменить им цену или удалить. В разделе лоты ещё и перетаскиваются мышью - выбранный порядок применяется пересозданием тех лотов, которые переехали."
+    },
+    "featureGatedBulkLotEdit": {
+        "message": "Массовое редактирование лотов доступно с планом Pro."
+    },
+    "bulkEnter": {
+        "message": "Выбрать лоты"
+    },
+    "bulkExit": {
+        "message": "Готово"
+    },
+    "bulkOrderApply": {
+        "message": "Применить порядок"
+    },
+    "bulkOrderAsk": {
+        "message": "Будет пересоздано лотов: $COUNT$ из $TOTAL$. У них изменится номер: ссылки на эти лоты в переписках и на сторонних сайтах перестанут работать, а лоты потеряют свой возраст. Товары автовыдачи переносятся. Копия создаётся до удаления оригинала, поэтому лот не потеряется.",
+        "placeholders": { "count": { "content": "$1" }, "total": { "content": "$2" } }
+    },
+    "bulkOrderConfirm": {
+        "message": "Пересоздать: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderDone": {
+        "message": "Порядок применён. Пересоздано лотов: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderDuplicate": {
+        "message": "Лот $ID$ сейчас есть в двух экземплярах - лишний можно удалить вручную",
+        "placeholders": { "id": { "content": "$1" } }
+    },
+    "bulkOrderFailed": {
+        "message": "Порядок применён не полностью"
+    },
+    "bulkOrderHint": {
+        "message": "Потяните строку, чтобы изменить порядок"
+    },
+    "bulkOrderMovedN": {
+        "message": "Перемещено: $COUNT$",
+        "placeholders": { "count": { "content": "$1" } }
+    },
+    "bulkOrderNothing": {
+        "message": "Порядок уже такой"
+    },
+    "bulkOrderReset": {
+        "message": "Вернуть как было"
+    },
+    "bulkOrderTitle": {
+        "message": "Применить новый порядок?"
+    },
+    "bulkSelectAll": {
+        "message": "Все"
+    },
+    "bulkSelectedN": {
+        "message": "Выбрано: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkNothingSelected": {
+        "message": "Выберите лоты - нажмите на строку"
+    },
+    "bulkActivate": {
+        "message": "Включить"
+    },
+    "bulkDeactivate": {
+        "message": "Выключить"
+    },
+    "bulkPrice": {
+        "message": "Цена…"
+    },
+    "bulkDelete": {
+        "message": "Удалить"
+    },
+    "bulkCancel": {
+        "message": "Прервать"
+    },
+    "bulkActivatedN": {
+        "message": "включено: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeactivatedN": {
+        "message": "выключено: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPricedN": {
+        "message": "цена изменена: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeletedN": {
+        "message": "удалено: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkSkippedN": {
+        "message": "без изменений: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkFailedN": {
+        "message": "не удалось: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkUnknownN": {
+        "message": "неизвестно: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkRateLimited": {
+        "message": "FunPay попросил притормозить - остановились"
+    },
+    "bulkCancelled": {
+        "message": "прервано"
+    },
+    "bulkDeleteTitle": {
+        "message": "Удалить выбранные лоты?"
+    },
+    "bulkDeleteAsk": {
+        "message": "Будет удалено лотов: $COUNT$. Отменить это будет нельзя.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeleteAskChips": {
+        "message": "Будет удалено лотов: $COUNT$. Валютные лоты пропущены - их так удалить нельзя. Отменить это будет нельзя.",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkDeleteConfirm": {
+        "message": "Удалить: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkChipsOnly": {
+        "message": "Валютные лоты так не удаляются - обнулите у них количество"
+    },
+    "bulkPriceTitle": {
+        "message": "Изменить цену"
+    },
+    "bulkPriceLead": {
+        "message": "Применится к выбранным лотам: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceModeSet": {
+        "message": "Установить"
+    },
+    "bulkPriceModeAdd": {
+        "message": "Прибавить"
+    },
+    "bulkPriceModeSub": {
+        "message": "Вычесть"
+    },
+    "bulkPriceModePctUp": {
+        "message": "Поднять на %"
+    },
+    "bulkPriceModePctDown": {
+        "message": "Снизить на %"
+    },
+    "bulkPriceRound": {
+        "message": "Округлять до целого"
+    },
+    "bulkPriceMin": {
+        "message": "Не ниже"
+    },
+    "bulkPriceMax": {
+        "message": "Не выше"
+    },
+    "bulkPricePreview": {
+        "message": "Что получится"
+    },
+    "bulkPriceMore": {
+        "message": "…и ещё $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceUnreadable": {
+        "message": "Без предпросмотра: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "bulkPriceApply": {
+        "message": "Применить"
+    },
+    "bulkPriceApplyN": {
+        "message": "Применить к $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "lotAiGenerate": {
+        "message": "Заполнение лота нейросетью"
+    },
+    "lotAiGenerateDesc": {
+        "message": "На форме предложения появится кнопка «Написать текст лота»: нейросеть напишет название, описание и сообщение после оплаты по данным вашего лота. Результат сначала показывается в отдельном окне, в лот ничего не попадает без вашего нажатия."
+    },
+    "transferSearch": {
+        "message": "Поиск по названию"
+    },
+    "transferSearching": {
+        "message": "Ищу разделы с вашими лотами"
+    },
+    "transferNothingFound": {
+        "message": "Лотов не нашлось"
+    },
+    "transferOtherGames": {
+        "message": "Прочее"
+    },
+    "transferFindNote": {
+        "message": "Не хватает разделов? Те, где все лоты выключены, в профиле не видны."
+    },
+    "transferFindNear": {
+        "message": "Поискать в моих играх"
+    },
+    "transferFindFar": {
+        "message": "Поискать везде (больше часа)"
+    },
+    "lotTransfer": {
+        "message": "Экспорт лотов"
+    },
+    "lotTransferDesc": {
+        "message": "На своей странице профиля появятся кнопки «Экспорт лотов» и «Импорт лотов». Экспорт сохраняет все ваши лоты и валютные разделы в один файл - JSON или Excel на выбор, импорт создаёт лоты из такого файла и принимает оба формата. Существующие лоты при импорте не меняются: создаются только новые. На чужом профиле кнопка экспорта тоже появится, но выгрузит лишь то, что видно покупателю: описания, цену и наличие - без товаров автовыдачи и сообщения после оплаты."
+    },
+    "featureGatedLotTransfer": {
+        "message": "Экспорт лотов доступен с планом Premium."
+    },
+    "transferExportButton": {
+        "message": "Экспорт лотов"
+    },
+    "transferImportButton": {
+        "message": "Импорт лотов"
+    },
+    "transferExportTitle": {
+        "message": "Экспорт лотов в файл"
+    },
+    "transferImportTitle": {
+        "message": "Импорт лотов из файла"
+    },
+    "transferExportLead": {
+        "message": "Отметьте разделы, которые нужно экспортировать."
+    },
+    "transferImportLead": {
+        "message": "В файле"
+    },
+    "transferSelectAll": {
+        "message": "Выбрать все"
+    },
+    "transferSelected": {
+        "message": "Выбрано разделов"
+    },
+    "transferKindLots": {
+        "message": "лоты"
+    },
+    "transferKindChips": {
+        "message": "валюта"
+    },
+    "transferIncludeDisabled": {
+        "message": "Включая выключенные лоты"
+    },
+    "transferWarnTime": {
+        "message": "Это займёт примерно"
+    },
+    "transferWarnKeepOpen": {
+        "message": "Не закрывайте эту вкладку и не уходите со страницы, пока идёт работа."
+    },
+    "transferWarnSecrets": {
+        "message": "В файл попадут товары автовыдачи, включая логины и пароли. Храните его так же, как пароль."
+    },
+    "lotManagementForeignTitle": {
+        "message": "Лоты продавца"
+    },
+    "transferExportForeignButton": {
+        "message": "Экспорт лотов продавца"
+    },
+    "transferExportForeignTitle": {
+        "message": "Экспорт лотов продавца"
+    },
+    "transferExportForeignLead": {
+        "message": "Отметьте разделы продавца, которые нужно выгрузить."
+    },
+    "transferWarnPublicOnly": {
+        "message": "С чужого профиля читается только то, что видит покупатель: описания, цена и наличие. Товары автовыдачи и сообщение после оплаты не попадут — их видит лишь владелец лота."
+    },
+    "transferWarnPublicOff": {
+        "message": "Выключенных лотов на сайте не видно, поэтому в файл они не попадут. Созданные из такого файла лоты будут выключены — проверьте их перед включением."
+    },
+    "transferCurrencySkip": {
+        "message": "Пропущено из-за валюты файла"
+    },
+    "transferCreatedOff": {
+        "message": "Лоты с чужого профиля созданы выключенными — проверьте их перед включением"
+    },
+    "transferParamUnplaced": {
+        "message": "Параметр не перенесён, оставлено значение по умолчанию"
+    },
+    "transferUnderMinute": {
+        "message": "меньше минуты"
+    },
+    "transferMinutesShort": {
+        "message": "мин"
+    },
+    "transferHoursShort": {
+        "message": "ч"
+    },
+    "transferCancel": {
+        "message": "Отмена"
+    },
+    "transferStartExport": {
+        "message": "Экспорт"
+    },
+    "transferStartImport": {
+        "message": "Импорт"
+    },
+    "transferAbort": {
+        "message": "Прервать"
+    },
+    "transferAborting": {
+        "message": "Останавливаю…"
+    },
+    "transferKeepOpenShort": {
+        "message": "Вкладку не закрывать"
+    },
+    "transferDone": {
+        "message": "Готово"
+    },
+    "transferSaved": {
+        "message": "Сохранено лотов"
+    },
+    "transferSavedChips": {
+        "message": "валютных разделов"
+    },
+    "transferCreated": {
+        "message": "Создано лотов"
+    },
+    "transferWroteChips": {
+        "message": "валютных разделов"
+    },
+    "transferStopped": {
+        "message": "Остановлено"
+    },
+    "transferSkippedDisabled": {
+        "message": "Пропущено выключенных"
+    },
+    "transferSkippedDeleted": {
+        "message": "Пропущено удалённых"
+    },
+    "transferSectionSkipped": {
+        "message": "раздел пропущен"
+    },
+    "transferFailed": {
+        "message": "Не получилось экспортировать"
+    },
+    "transferImportFailed": {
+        "message": "Не получилось импортировать"
+    },
+    "transferBadJson": {
+        "message": "Это не файл экспорта: не удалось его прочитать."
+    },
+    "transferBadFormat": {
+        "message": "Это не файл экспорта лотов FunPay Lite Bot."
+    },
+    "transferNewerFile": {
+        "message": "Файл сделан более новой версией расширения. Обновите расширение."
+    },
+    "transferEmptyFile": {
+        "message": "В файле нет ни одного лота."
+    },
+    "featureGatedLotAiGenerate": {
+        "message": "Заполнение лота нейросетью доступно с планом Pro."
+    },
+    "lotAiSectionLabel": {
+        "message": "Заполнение нейросетью"
+    },
+    "lotAiButton": {
+        "message": "Написать текст лота"
+    },
+    "lotAiUndo": {
+        "message": "Вернуть как было"
+    },
+    "lotAiModalTitle": {
+        "message": "Сгенерировать лот"
+    },
+    "lotAiSubjectLabel": {
+        "message": "Что продаём?"
+    },
+    "lotAiSubjectPlaceholder": {
+        "message": "Например: аккаунт Steam с почтой и 200 играми"
+    },
+    "lotAiTemplateLabel": {
+        "message": "Ссылка на лот-шаблон, необязательно"
+    },
+    "lotAiTemplatePlaceholder": {
+        "message": "https://funpay.com/lots/offer?id=…"
+    },
+    "lotAiTemplateDesc": {
+        "message": "Откроем этот лот и возьмём его текст как образец стиля. Товар в нём может быть любым - перенимается манера подачи, а не содержание."
+    },
+    "lotAiTemplateBadUrl": {
+        "message": "Это не похоже на ссылку на лот FunPay. Пример: https://funpay.com/lots/offer?id=12345678"
+    },
+    "lotAiTemplateFailed": {
+        "message": "Не удалось прочитать лот-шаблон. Проверьте ссылку или уберите её"
+    },
+    "lotAiFieldTitle": {
+        "message": "Название"
+    },
+    "lotAiFieldDescription": {
+        "message": "Описание"
+    },
+    "lotAiFieldPaymentMsg": {
+        "message": "Сообщение после оплаты"
+    },
+    "lotAiFieldNotWritable": {
+        "message": "В этом разделе поле не редактируется, текст можно скопировать вручную"
+    },
+    "lotAiWorking": {
+        "message": "Пишем текст, обычно это занимает несколько секунд"
+    },
+    "lotAiAgain": {
+        "message": "Сгенерировать ещё раз"
+    },
+    "lotAiInsert": {
+        "message": "Вставить в лот"
+    },
+    "lotAiQuotaLeft": {
+        "message": "Осталось генераций в этом месяце: $COUNT$",
+        "placeholders": {
+            "count": { "content": "$1", "example": "5" }
+        }
+    },
+    "lotAiInserted": {
+        "message": "Текст вставлен. Проверьте и сохраните лот"
+    },
+    "lotAiUndone": {
+        "message": "Прежний текст возвращён"
+    },
+    "lotAiInsertNothing": {
+        "message": "В этом разделе нечего заполнять"
+    },
+    "lotAiErrorQuota": {
+        "message": "Вы израсходовали генерации на этот месяц. Лимит обновится первого числа"
+    },
+    "lotAiErrorBusy": {
+        "message": "Сейчас слишком много запросов. Попробуйте через минуту"
+    },
+    "lotAiErrorUnavailable": {
+        "message": "Генерация временно недоступна. Попробуйте позже"
+    },
+    "lotAiErrorRejected": {
+        "message": "Текст не прошёл проверку и был отброшен. Нажмите ещё раз или уточните, что продаёте"
+    },
+    "lotAiErrorFeature": {
+        "message": "Генерация доступна с планом Pro"
+    },
+    "lotAiErrorSession": {
+        "message": "Войдите в аккаунт FunPayLiteBot, чтобы пользоваться генерацией"
+    },
+    "lotAiErrorNetwork": {
+        "message": "Нет связи с сервером. Проверьте интернет и попробуйте снова"
+    },
+    "lotAiErrorGeneric": {
+        "message": "Не удалось написать текст. Попробуйте ещё раз"
+    },
+    "lotAiStart": {
+        "message": "Сгенерировать"
+    }
+}

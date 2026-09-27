@@ -1,0 +1,72 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "author": "NightStranger",
+  "description": "__MSG_extDescription__",
+  "version": "2.3.1",
+  "default_locale": "ru",
+  "icons": {
+    "128": "assets/logo.png"
+  },
+  "action": {
+    "default_icon": "assets/logo.png"
+  },
+  "options_page": "content/static/litebotpage/redirect.html",
+  "homepage_url": "https://funpaylitebot.com",
+  "background": {
+    "service_worker": "background/b.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://funpay.com/*",
+        "https://*.funpay.com/*"
+      ],
+      "css": [
+        "content/static/style.css"
+      ],
+      "js": [
+        "content/t.js",
+        "content/c.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": [
+    "https://funpay.com/*",
+    "https://*.funpay.com/*",
+    "https://translate.googleapis.com/*",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "optional_host_permissions": [
+    "https://translate.googleapis.com/*"
+  ],
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "cookies",
+    "offscreen",
+    "alarms",
+    "identity"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*",
+        "style/*",
+        "content/*",
+        "popup/*"
+      ],
+      "matches": [
+        "https://funpay.com/*",
+        "https://*.funpay.com/*"
+      ],
+      "extension_ids": []
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgQFGSB+L4Ol7lz3V0JdRxaka+RY95DBgX93dUvuaLMagYfthqFa+ph5tJd81Aurrv2L7jrGPCF01ZKUDhSkasEIKJO2iNtbwn94uzp8btOcT2x/wHvo683nC4QsVK+yumM4XtTmZufP74tsvsN9gXkAZdTjq7QOMbyl+PJifvoPFuJ8WJhZeSGAlhdDcikc12t7KG6t4+2yFXzS52d0VKDZarWzibfylCj3HP7BObEkxK7mMiA7iQGjKeKId8Gf62b4L5jnEi+SPY7jC4AVrqaWVylW0PCxotfm+pnAlUJ0Q5+fP2f8jtX299y1NEbEMFrWzzOsLLmquGs04mhLoWQIDAQAB"
+}
