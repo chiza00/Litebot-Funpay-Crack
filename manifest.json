@@ -39,9 +39,6 @@
     "https://*/*",
     "http://*/*"
   ],
-  "optional_host_permissions": [
-    "https://translate.googleapis.com/*"
-  ],
   "permissions": [
     "storage",
     "unlimitedStorage",
