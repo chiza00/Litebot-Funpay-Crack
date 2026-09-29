@@ -1,6 +1,6 @@
 # Litebot Funpay Crack
 
-**Crack made by markiz**
+**Crack made by ilysha**
 
 **fixes were made by chi_za**
 
