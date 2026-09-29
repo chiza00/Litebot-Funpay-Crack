@@ -299,7 +299,7 @@ async function Xt(){
   let n=Number(e?.nodeId),
   r=Array.isArray(e?.params)?e.params.map(s=>({label:ne(s?.label,60),value:ne(s?.value,120)})).filter(s=>!!s.label&&!!s.value).slice(0,20):void 0,
   t=Array.isArray(e?.styleExamples)?e.styleExamples.map(s=>ne(s,120)).filter(s=>!!s).slice(0,15):void 0,
-  o={title:ne(e?.current?.title,200),description:ne(e?.current?.description,2e3),paymentMsg:ne(e?.current?.paymentMsg,1e3)},
+  o={title:ne(e?.current?.title,200),description:ne(e?.current?.description,4000),paymentMsg:ne(e?.current?.paymentMsg,1500)},
   a=!!(o.title||o.description||o.paymentMsg);
   return {
     nodeId:Number.isFinite(n)&&n>0?Math.floor(n):void 0,
@@ -310,33 +310,60 @@ async function Xt(){
     hint:ne(e?.hint??e?.subject,500),
     subject:ne(e?.subject??e?.hint,500),
     styleExamples:t&&t.length>0?t:void 0,
-    styleTemplate:e?.styleTemplate
+    styleTemplate:e?.styleTemplate ? {
+      title: typeof e.styleTemplate.title=="string"?e.styleTemplate.title.trim().slice(0,300):"",
+      description: typeof e.styleTemplate.description=="string"?e.styleTemplate.description.trim().slice(0,4000):""
+    } : void 0
   };
 }
 
 async function Or(e) {
-  let sysPrompt = "Ты опытный продавец на бирже игровых товаров FunPay. Составь привлекательное, аккуратное и структурированное объявление (лот) на русском языке.\n" +
+  let hasTemplate = !!(e?.styleTemplate && (e.styleTemplate.title || e.styleTemplate.description));
+
+  let sysPrompt = "Ты лучший копирайтер и топ-продавец на FunPay. Ты создаёшь идеальные, привлекательные и продающие объявления (лоты) на русском языке.\n" +
     "Ответь СТРОГО в формате валидного JSON без markdown-обёртки: \n" +
-    '{\"title\": \"краткий заголовок (до 100 символов)\", \"description\": \"подробное описание лота с переносами строк\", \"paymentMsg\": \"сообщение покупателю после оплаты\"}';
+    '{\"title\": \"заголовок лота (до 100 символов)\", \"description\": \"подробное описание лота с переносами строк\\n\", \"paymentMsg\": \"сообщение покупателю сразу после оплаты\"}';
+
+  if (hasTemplate) {
+    sysPrompt += "\n\nКРИТИЧЕСКИ ВАЖНОЕ ТРЕБОВАНИЕ: Тебе предоставлен ЭТАЛОННЫЙ ЛОТ-ШАБЛОН. Ты ОБЯЗАН СТРОГО СКОПИРОВАТЬ его стиль оформления, структуру, все декоративные элементы, эмодзи, рамки, скобки (например 【 】, 🈵, 🔴, ⛩️, 🏮, 🎯, ⛔ и т.д.), разделители, абзацы и названия блоков ('ЧТО ВЫ ПОЛУЧАЕТЕ:', 'ВАЖНО:', 'ИНСТРУКЦИЯ:' и т.д.). Адаптируй только смысловую часть под конкретный продаваемый товар, но сохрани точную визуальную форму шаблона!";
+  }
 
   let userParts = [];
-  if (e?.game) userParts.push(`Игра: ${e.game}`);
-  if (e?.section) userParts.push(`Раздел/Категория: ${e.section}`);
+  if (e?.game) userParts.push(`🎮 Игра: ${e.game}`);
+  if (e?.section) userParts.push(`📁 Раздел/Категория: ${e.section}`);
   let subject = e?.hint || e?.subject;
-  if (subject) userParts.push(`Что продаётся: ${subject}`);
+  if (subject) userParts.push(`📦 Что продаётся / Суть товара: ${subject}`);
   if (Array.isArray(e?.params) && e.params.length > 0) {
-    userParts.push("Параметры: " + e.params.map(p => `${p.label}: ${p.value}`).join(", "));
+    userParts.push("⚙️ Параметры лота: " + e.params.map(p => `${p.label}: ${p.value}`).join(", "));
   }
-  if (e?.styleTemplate && (e.styleTemplate.title || e.styleTemplate.description)) {
-    userParts.push(`Образец стиля другого лота: Заголовок: "${e.styleTemplate.title || ''}", Описание: "${e.styleTemplate.description || ''}"`);
+
+  if (hasTemplate) {
+    let tplTitle = (e.styleTemplate.title || "").trim();
+    let tplDesc = (e.styleTemplate.description || "").trim();
+    userParts.push(
+      "\n=====================================================================\n" +
+      "🔥 ОБЯЗАТЕЛЬНЫЙ ЭТАЛОННЫЙ ЛОТ-ШАБЛОН (СКОПИРУЙ ЕГО ФОРМАТ И СТИЛЬ):\n" +
+      "=====================================================================\n" +
+      (tplTitle ? `[ШАБЛОН ЗАГОЛОВКА]:\n${tplTitle}\n\n` : "") +
+      (tplDesc ? `[ШАБЛОН ОПИСАНИЯ]:\n${tplDesc}\n` : "") +
+      "=====================================================================\n" +
+      "ПРАВИЛА ГЕНЕРАЦИИ ПО ШАБЛОНУ:\n" +
+      "1. ЗАГОЛОВОК (title): Сформируй заголовок в ТОЧНО ТАКОМ ЖЕ СТИЛЕ, как [ШАБЛОН ЗАГОЛОВКА]. Используй те же скобки, спецсимволы, эмодзи и схему построения, заменив название товара на наш.\n" +
+      "2. ОПИСАНИЕ (description): Сформируй описание СТРОГО по структуре [ШАБЛОН ОПИСАНИЯ]. Повтори все визуальные блоки, списки, буллеты, заголовки секций (с теми же эмодзи и выделителями) и разделители, подставив информацию о нашем товаре.\n" +
+      "3. СООБЩЕНИЕ ПОСЛЕ ОПЛАТЫ (paymentMsg): Составь вежливую инструкцию для покупателя после покупки в аналогичном красивом стиле с эмодзи.\n" +
+      "НЕ УХОДИ В СВОЙ ПРОИЗВОЛЬНЫЙ СТИЛЬ! Полностью перейми манеру, структуру и декоративное оформление шаблона!"
+    );
+  } else {
+    if (Array.isArray(e?.styleExamples) && e.styleExamples.length > 0) {
+      userParts.push(`Примеры заголовков продавца: ${e.styleExamples.slice(0, 6).join("; ")}`);
+    }
+    if (e?.current && (e.current.title || e.current.description)) {
+      userParts.push(`Текущий текст (улучшить): Заголовок: "${e.current.title || ''}", Описание: "${e.current.description || ''}"`);
+    }
+    userParts.push('Сгенерируй привлекательный заголовок (title), красивое описание (description) и сообщение после оплаты (paymentMsg).');
   }
-  if (Array.isArray(e?.styleExamples) && e.styleExamples.length > 0) {
-    userParts.push(`Примеры заголовков продавца: ${e.styleExamples.slice(0, 6).join("; ")}`);
-  }
-  if (e?.current && (e.current.title || e.current.description)) {
-    userParts.push(`Текущий текст (улучшить): Заголовок: "${e.current.title || ''}", Описание: "${e.current.description || ''}"`);
-  }
-  userParts.push('Сгенерируй привлекательный заголовок (title), красивое описание (description) и сообщение после оплаты (paymentMsg) в формате JSON: {\"title\": \"...\", \"description\": \"...\", \"paymentMsg\": \"...\"}');
+
+  userParts.push('Ответь СТРОГО в формате JSON без markdown-тегов: {\"title\": \"...\", \"description\": \"...\", \"paymentMsg\": \"...\"}');
 
   let res = await callCustomAi({
     messages: [
